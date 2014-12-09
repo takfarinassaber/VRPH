@@ -1,0 +1,104 @@
+\hypertarget{class_three_opt}{
+\section{ThreeOpt Class Reference}
+\label{class_three_opt}\index{ThreeOpt@{ThreeOpt}}
+}
+
+
+{\ttfamily \#include $<$ThreeOpt.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_three_opt_a353cc9c135c88d7d3f4441a0e542ff1c}{route\_\-search} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int r, int criteria)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_three_opt_a24a9fd729107903e4078f03e255dbeba}{evaluate} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int a, int b, int c, int d, int e, int f, int criteria, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\item 
+bool \hyperlink{class_three_opt_a27126f3cba7603f1f37d7ce20ecd081c}{move} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file ThreeOpt.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_three_opt_a24a9fd729107903e4078f03e255dbeba}{
+\index{ThreeOpt@{ThreeOpt}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!ThreeOpt@{ThreeOpt}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}bool ThreeOpt::evaluate (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{a, }
+\item[{int}]{b, }
+\item[{int}]{c, }
+\item[{int}]{d, }
+\item[{int}]{e, }
+\item[{int}]{f, }
+\item[{int}]{criteria, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_three_opt_a24a9fd729107903e4078f03e255dbeba}
+
+
+Evaluates the Three-\/Opt move involving the directed edges ab, cd, and ef, subject to the given rules. The function finds the most cost effective of the possible moves and stores the relevant data in the \hyperlink{class_v_r_p_move}{VRPMove} M and returns true. If no satisfactory move is found, the function returns false.
+
+
+
+Definition at line 214 of file ThreeOpt.cpp.
+
+\hypertarget{class_three_opt_a27126f3cba7603f1f37d7ce20ecd081c}{
+\index{ThreeOpt@{ThreeOpt}!move@{move}}
+\index{move@{move}!ThreeOpt@{ThreeOpt}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}bool ThreeOpt::move (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_three_opt_a27126f3cba7603f1f37d7ce20ecd081c}
+
+
+This function makes the actual solution modification involving the Three-\/Opt move with the edges V-\/$>$d\mbox{[}a\mbox{]}\mbox{[}b\mbox{]}, V-\/$>$d\mbox{[}c\mbox{]}\mbox{[}d\mbox{]}, and V-\/$>$d\mbox{[}e\mbox{]}\mbox{[}f\mbox{]}.
+
+!!!!
+
+!!!!
+
+!! 
+
+
+
+Definition at line 305 of file ThreeOpt.cpp.
+
+\hypertarget{class_three_opt_a353cc9c135c88d7d3f4441a0e542ff1c}{
+\index{ThreeOpt@{ThreeOpt}!route\_\-search@{route\_\-search}}
+\index{route\_\-search@{route\_\-search}!ThreeOpt@{ThreeOpt}}
+\subsubsection[{route\_\-search}]{\setlength{\rightskip}{0pt plus 5cm}bool ThreeOpt::route\_\-search (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{r, }
+\item[{int}]{criteria}
+\end{DoxyParamCaption}
+)}}
+\label{class_three_opt_a353cc9c135c88d7d3f4441a0e542ff1c}
+
+
+Searches for a Three-\/Opt move in route r. If a satisfactory move is found, then the move is made. If no move is found, false is returned.
+
+
+
+Definition at line 16 of file ThreeOpt.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_three_opt_8h}{ThreeOpt.h}\item 
+src/\hyperlink{_three_opt_8cpp}{ThreeOpt.cpp}\end{DoxyCompactItemize}

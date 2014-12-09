@@ -1,0 +1,70 @@
+\hypertarget{class_presert}{
+\section{Presert Class Reference}
+\label{class_presert}\index{Presert@{Presert}}
+}
+
+
+{\ttfamily \#include $<$Presert.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_presert_a4136679e25cd926d057e2b14630bf7ed}{evaluate} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int i, int j, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\item 
+bool \hyperlink{class_presert_a06f7d4764c7c4bede2a721e0e866b409}{move} (\hyperlink{class_v_r_p}{VRP} $\ast$V, int u, int i)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Presert.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_presert_a4136679e25cd926d057e2b14630bf7ed}{
+\index{Presert@{Presert}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!Presert@{Presert}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}bool Presert::evaluate (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)}}
+\label{class_presert_a4136679e25cd926d057e2b14630bf7ed}
+
+
+This function evaluates the move where we insert node u BEFORE node i in whatever route node i is currently in. If the move is feasible, the relevant solution information is placed in the \hyperlink{class_v_r_p_move}{VRPMove} M.
+
+
+
+Definition at line 15 of file Presert.cpp.
+
+\hypertarget{class_presert_a06f7d4764c7c4bede2a721e0e866b409}{
+\index{Presert@{Presert}!move@{move}}
+\index{move@{move}!Presert@{Presert}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}bool Presert::move (
+\begin{DoxyParamCaption}
+\item[{{\bf VRP} $\ast$}]{V, }
+\item[{int}]{u, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}
+\label{class_presert_a06f7d4764c7c4bede2a721e0e866b409}
+
+
+This function inserts node number u BEFORE node i in whatever route node i is currently in if the move is feasible.
+
+
+
+Definition at line 167 of file Presert.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_presert_8h}{Presert.h}\item 
+src/\hyperlink{_presert_8cpp}{Presert.cpp}\end{DoxyCompactItemize}

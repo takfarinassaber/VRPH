@@ -1,0 +1,116 @@
+\hypertarget{class_one_point_move}{
+\section{OnePointMove Class Reference}
+\label{class_one_point_move}\index{OnePointMove@{OnePointMove}}
+}
+
+
+{\ttfamily \#include $<$OnePointMove.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_one_point_move_aad20db32bc90ed81288a50a68d8a5927}{search} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int i, int rules)
+\item 
+bool \hyperlink{class_one_point_move_a8d64259ab9c6510ecf5797286b6a37b6}{route\_\-search} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int r1, int r2, int rules)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_one_point_move_a5037df617aea774ec85755a29c5adf61}{evaluate} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int j, int b, int rules, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\item 
+bool \hyperlink{class_one_point_move_ae26eb12befe7faabac4e501cd1ae04e0}{move} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file OnePointMove.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_one_point_move_a5037df617aea774ec85755a29c5adf61}{
+\index{OnePointMove@{OnePointMove}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!OnePointMove@{OnePointMove}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}bool OnePointMove::evaluate (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{j, }
+\item[{int}]{b, }
+\item[{int}]{rules, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_one_point_move_a5037df617aea774ec85755a29c5adf61}
+
+
+This function evaluates the move of inserting j either before or after node b and places the best savings found in the \hyperlink{class_v_r_p_move}{VRPMove} struct M if the move is feasible and returns false if no feasible move is found, true otherwise.
+
+
+
+Definition at line 268 of file OnePointMove.cpp.
+
+\hypertarget{class_one_point_move_ae26eb12befe7faabac4e501cd1ae04e0}{
+\index{OnePointMove@{OnePointMove}!move@{move}}
+\index{move@{move}!OnePointMove@{OnePointMove}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}bool OnePointMove::move (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_one_point_move_ae26eb12befe7faabac4e501cd1ae04e0}
+
+
+Makes the one point move determined by the \hyperlink{class_v_r_p_move}{VRPMove} M.
+
+
+
+Definition at line 496 of file OnePointMove.cpp.
+
+\hypertarget{class_one_point_move_a8d64259ab9c6510ecf5797286b6a37b6}{
+\index{OnePointMove@{OnePointMove}!route\_\-search@{route\_\-search}}
+\index{route\_\-search@{route\_\-search}!OnePointMove@{OnePointMove}}
+\subsubsection[{route\_\-search}]{\setlength{\rightskip}{0pt plus 5cm}bool OnePointMove::route\_\-search (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{r1, }
+\item[{int}]{r2, }
+\item[{int}]{rules}
+\end{DoxyParamCaption}
+)}}
+\label{class_one_point_move_a8d64259ab9c6510ecf5797286b6a37b6}
+
+
+Searches for a one point move where a node from route r1 is moved into route r2.
+
+
+
+Definition at line 152 of file OnePointMove.cpp.
+
+\hypertarget{class_one_point_move_aad20db32bc90ed81288a50a68d8a5927}{
+\index{OnePointMove@{OnePointMove}!search@{search}}
+\index{search@{search}!OnePointMove@{OnePointMove}}
+\subsubsection[{search}]{\setlength{\rightskip}{0pt plus 5cm}bool OnePointMove::search (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{i, }
+\item[{int}]{rules}
+\end{DoxyParamCaption}
+)}}
+\label{class_one_point_move_aad20db32bc90ed81288a50a68d8a5927}
+
+
+Attempts to find an appropriate one point move involving node j using the specified rules. If acceptable move is found, the move is made and function returns true. Returns false if no move is found.
+
+
+
+Definition at line 16 of file OnePointMove.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_one_point_move_8h}{OnePointMove.h}\item 
+src/\hyperlink{_one_point_move_8cpp}{OnePointMove.cpp}\end{DoxyCompactItemize}

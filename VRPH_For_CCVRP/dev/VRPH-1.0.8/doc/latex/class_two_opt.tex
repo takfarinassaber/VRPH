@@ -1,0 +1,118 @@
+\hypertarget{class_two_opt}{
+\section{TwoOpt Class Reference}
+\label{class_two_opt}\index{TwoOpt@{TwoOpt}}
+}
+
+
+{\ttfamily \#include $<$TwoOpt.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_two_opt_a25c0dab70146ebfb47209d41ee142c54}{search} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int i, int criteria)
+\item 
+bool \hyperlink{class_two_opt_ad7cda00cc9cd14a6edbd55d7108ca973}{route\_\-search} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int r1, int r2, int criteria)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_two_opt_afea58186ca3dbcdf0cca07a006a355a1}{evaluate} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int a, int b, int c, int d, int criteria, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\item 
+bool \hyperlink{class_two_opt_a881837b89e07a3d2c12890ec0c4f7297}{move} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file TwoOpt.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_two_opt_afea58186ca3dbcdf0cca07a006a355a1}{
+\index{TwoOpt@{TwoOpt}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!TwoOpt@{TwoOpt}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}bool TwoOpt::evaluate (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{a, }
+\item[{int}]{b, }
+\item[{int}]{c, }
+\item[{int}]{d, }
+\item[{int}]{criteria, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_two_opt_afea58186ca3dbcdf0cca07a006a355a1}
+
+
+Considers the Two-\/Opt move involving the edges a-\/b and c-\/d and the provided rules. If the move meets the rules, then the relevant changes to the solution are stored in the \hyperlink{class_v_r_p_move}{VRPMove} M and the function returns true. Returns false otherwise.
+
+
+
+Definition at line 580 of file TwoOpt.cpp.
+
+\hypertarget{class_two_opt_a881837b89e07a3d2c12890ec0c4f7297}{
+\index{TwoOpt@{TwoOpt}!move@{move}}
+\index{move@{move}!TwoOpt@{TwoOpt}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}bool TwoOpt::move (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_two_opt_a881837b89e07a3d2c12890ec0c4f7297}
+
+
+Makes the actual solution modification implied by the Two-\/Opt move involving edges a-\/b and c-\/d. Handles both intraroute and interroute moves
+
+
+
+Definition at line 890 of file TwoOpt.cpp.
+
+\hypertarget{class_two_opt_ad7cda00cc9cd14a6edbd55d7108ca973}{
+\index{TwoOpt@{TwoOpt}!route\_\-search@{route\_\-search}}
+\index{route\_\-search@{route\_\-search}!TwoOpt@{TwoOpt}}
+\subsubsection[{route\_\-search}]{\setlength{\rightskip}{0pt plus 5cm}bool TwoOpt::route\_\-search (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{r1, }
+\item[{int}]{r2, }
+\item[{int}]{criteria}
+\end{DoxyParamCaption}
+)}}
+\label{class_two_opt_ad7cda00cc9cd14a6edbd55d7108ca973}
+
+
+Searches for all two opt moves involving an edge from r1 and an edge from r2.
+
+
+
+Definition at line 478 of file TwoOpt.cpp.
+
+\hypertarget{class_two_opt_a25c0dab70146ebfb47209d41ee142c54}{
+\index{TwoOpt@{TwoOpt}!search@{search}}
+\index{search@{search}!TwoOpt@{TwoOpt}}
+\subsubsection[{search}]{\setlength{\rightskip}{0pt plus 5cm}bool TwoOpt::search (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{i, }
+\item[{int}]{criteria}
+\end{DoxyParamCaption}
+)}}
+\label{class_two_opt_a25c0dab70146ebfb47209d41ee142c54}
+
+
+Attempts to find the best Two-\/Opt move involving node b using the specified rules. If acceptable move is found, the move is made and all relevant solution modifications are made.
+
+
+
+Definition at line 16 of file TwoOpt.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_two_opt_8h}{TwoOpt.h}\item 
+src/\hyperlink{_two_opt_8cpp}{TwoOpt.cpp}\end{DoxyCompactItemize}

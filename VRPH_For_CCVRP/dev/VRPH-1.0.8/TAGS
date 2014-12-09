@@ -1,0 +1,475 @@
+
+inc/ClarkeWright.h,342
+#define _CW_H_CW_H14,686
+#define VRPH_UNUSED	VRPH_UNUSED17,702
+#define VRPH_ADDED	VRPH_ADDED18,750
+#define VRPH_INTERIOR	VRPH_INTERIOR19,797
+class ClarkeWrightClarkeWright21,847
+    class VRPSavingsElement *s;s27,995
+    bool has_savings_matrix;has_savings_matrix29,1111
+    int savings_matrix_size;savings_matrix_size30,1140
+
+inc/Concatenate.h,72
+#define _CONCAT_H_CONCAT_H13,689
+class ConcatenateConcatenate15,708
+
+inc/CrossExchange.h,80
+#define _CROSS_EX_H_CROSS_EX_H13,691
+class CrossExchangeCrossExchange15,712
+
+inc/Flip.h,54
+#define _FLIP_H_FLIP_H14,688
+class FlipFlip16,705
+
+inc/MoveString.h,74
+#define _MOVE_STR_H_MOVE_STR_H14,692
+class MoveStringMoveString16,713
+
+inc/OnePointMove.h,68
+#define _OPM_H_OPM_H14,687
+class OnePointMoveOnePointMove16,703
+
+inc/OrOpt.h,52
+#define _OR_H_OR_H14,686
+class OrOptOrOpt17,702
+
+inc/Osman.h,33
+#define _OSMAN_H_OSMAN_H11,506
+
+inc/Postsert.h,70
+#define _POSTSERT_H_POSTSERT_H14,692
+class PostsertPostsert16,713
+
+inc/Presert.h,66
+#define _PRESERT_H_PRESERT_H14,691
+class PresertPresert17,712
+
+inc/randvals.h,40
+static int randvals[]={randvals13,672
+
+inc/RNG.h,71
+#define _RNG_H_RNG_H14,687
+#define NUM_RANDVALS NUM_RANDVALS16,703
+
+inc/SwapEnds.h,72
+#define _SWAP_ENDS_H_SWAP_ENDS_H14,693
+class SwapEndsSwapEnds16,715
+
+inc/Swap.h,54
+#define _SWAP_H_SWAP_H14,688
+class SwapSwap16,705
+
+inc/Sweep.h,180
+#define _SWEEP_H_SWEEP_H14,689
+#define VRPH_UNUSED VRPH_UNUSED16,707
+#define VRPH_ADDED VRPH_ADDED17,772
+#define VRPH_INTERIOR VRPH_INTERIOR18,837
+class SweepSweep20,903
+
+inc/ThreeOpt.h,72
+#define _THREE_OPT_H_THREE_OPT_H14,693
+class ThreeOptThreeOpt16,715
+
+inc/ThreePointMove.h,80
+#define _THREEPM_H_THREEPM_H14,691
+class ThreePointMoveThreePointMove16,711
+
+inc/TwoOpt.h,62
+#define TWO_OPT_HTWO_OPT_H14,690
+class TwoOptTwoOpt16,709
+
+inc/TwoPointMove.h,70
+#define _TPM_H__TPM_H_15,689
+class TwoPointMoveTwoPointMove17,706
+
+inc/VRPConfig.h,165
+#define _VRP_CONFIG_H_VRP_CONFIG_H11,511
+#define EPS_EXE	EPS_EXE13,534
+#define RESEED_RNG RESEED_RNG23,808
+#define FORBID_TINY_MOVES FORBID_TINY_MOVES27,935
+
+inc/VRPDebug.h,1920
+#define _VRP_DEBUG_H_VRP_DEBUG_H14,693
+#define FIXED_DEBUG FIXED_DEBUG16,715
+#define    SEARCH_DEBUG SEARCH_DEBUG17,749
+#define VRPH_TABU_DEBUG VRPH_TABU_DEBUG18,783
+#define BLOAT_DEBUG BLOAT_DEBUG19,817
+#define WAREHOUSE_DEBUG WAREHOUSE_DEBUG20,851
+#define VERIFY_ALL VERIFY_ALL21,885
+#define CW_DEBUG CW_DEBUG23,920
+#define CLEAN_DEBUG CLEAN_DEBUG25,955
+#define Q_DEBUG Q_DEBUG27,990
+#define Q_VERIFY Q_VERIFY28,1024
+#define OP_VERIFY OP_VERIFY30,1072
+#define STRING_DEBUG STRING_DEBUG32,1107
+#define STRING_VERIFY STRING_VERIFY33,1141
+#define OPM_VERIFY OPM_VERIFY35,1189
+#define OPM_DEBUG OPM_DEBUG36,1236
+#define OR_VERIFY OR_VERIFY38,1275
+#define OR_DEBUG OR_DEBUG39,1322
+#define POSTSERT_VERIFY POSTSERT_VERIFY41,1357
+#define POSTSERT_DEBUG POSTSERT_DEBUG42,1404
+#define PRESERT_VERIFY PRESERT_VERIFY44,1439
+#define PRESERT_DEBUG PRESERT_DEBUG45,1486
+#define FLIP_DEBUG FLIP_DEBUG47,1521
+#define FLIP_VERIFY FLIP_VERIFY48,1555
+#define SWAP_ENDS_DEBUG SWAP_ENDS_DEBUG50,1603
+#define SWAP_ENDS_VERIFY SWAP_ENDS_VERIFY51,1637
+#define SWAP_DEBUG SWAP_DEBUG53,1685
+#define SWAP_VERIFY SWAP_VERIFY54,1719
+#define REVERSE_DEBUG REVERSE_DEBUG56,1767
+#define REVERSE_VERIFY REVERSE_VERIFY57,1805
+#define SWAP_VERIFY SWAP_VERIFY59,1853
+#define SWAP_DEBUG SWAP_DEBUG60,1900
+#define CONCATENATE_DEBUG CONCATENATE_DEBUG62,1936
+#define CONCATENATE_VERIFY CONCATENATE_VERIFY63,1970
+#define TPM_DEBUG TPM_DEBUG66,2019
+#define TPM_VERIFY TPM_VERIFY67,2053
+#define TWO_OPT_DEBUG TWO_OPT_DEBUG69,2101
+#define TWO_OPT_VERIFY TWO_OPT_VERIFY70,2135
+#define THREE_OPT_DEBUG THREE_OPT_DEBUG72,2183
+#define THREE_OPT_VERIFY THREE_OPT_VERIFY73,2217
+#define CROSS_EXCHANGE_DEBUG CROSS_EXCHANGE_DEBUG75,2265
+#define CROSS_EXCHANGE_VERIFY CROSS_EXCHANGE_VERIFY76,2299
+#define NEIGHBOR_DEBUG NEIGHBOR_DEBUG79,2348
+#define TSPLIB_DEBUG TSPLIB_DEBUG80,2382
+
+inc/VRPGenerator.h,37
+#define _VRP_GEN_H_VRP_GEN_H11,508
+
+inc/VRP.h,3696
+#define _VRP_H_VRP_H14,687
+class VRPVRP17,716
+    char name[VRPH_STRING_SIZE];name97,3081
+    VRPSolutionWarehouse *solution_wh; // To store additional solutionssolution_wh146,4877
+    VRPRouteWarehouse *route_wh;     // To store routes/columnsroute_wh147,4949
+    int num_evaluations[NUM_HEURISTICS];num_evaluations163,5362
+    int num_moves[NUM_HEURISTICS];num_moves164,5403
+    int num_nodes;num_nodes169,5496
+    double total_route_length;total_route_length170,5515
+    double total_service_time;total_service_time171,5546
+    int *best_sol_buff;                // Place for the best solution to livebest_sol_buff172,5577
+    double best_total_route_length;best_total_route_length173,5655
+    int total_number_of_routes;total_number_of_routes174,5691
+    int num_original_nodes;num_original_nodes175,5723
+    double best_known;  // Record of the best known solution for benchmarksbest_known176,5751
+    int num_days;        // For multi-day VRPsnum_days177,5827
+    int problem_type;problem_type178,5874
+    int total_demand;total_demand179,5896
+    int max_veh_capacity;max_veh_capacity180,5918
+    int orig_max_veh_capacity;orig_max_veh_capacity181,5944
+    double max_route_length;max_route_length182,5975
+    double min_route_length;min_route_length183,6004
+    double orig_max_route_length;orig_max_route_length184,6033
+    int min_vehicles;    // Not currently used    min_vehicles185,6067
+    bool has_service_times;has_service_times186,6118
+    double fixed_service_time;fixed_service_time187,6146
+    int edge_weight_type;edge_weight_type188,6177
+    int coord_type;coord_type189,6203
+    int display_type;display_type190,6223
+    int edge_weight_format;edge_weight_format191,6245
+    int matrix_size;matrix_size192,6273
+    double balance_parameter;    // For VRPH_BALANCED problemsbalance_parameter193,6294
+    int dummy_index;dummy_index194,6357
+    int neighbor_list_size;neighbor_list_size195,6378
+    double temperature;            // For VRPH_SIMULATED_ANNEALINGtemperature196,6406
+    double cooling_ratio;cooling_ratio197,6473
+    bool symmetric;                 // To keep track of symmetric/asymmetric instancessymmetric199,6504
+    bool can_display;can_display202,6733
+    double **d;                    // The distance matrix dd204,6756
+    bool **fixed;                // Matrix to keep track of fixed edgesfixed205,6816
+    class VRPNode *nodes;        // Array of nodes - contains coordinates, demandnodes207,6889
+    bool depot_normalized;        // Set to true if VRPH_DEPOT coords normalized to origindepot_normalized210,6993
+    bool forbid_tiny_moves;        // Set to true to prevent potentially nonsense movesforbid_tiny_moves213,7115
+    int search_size;            search_size218,7367
+    int *search_space;            search_space219,7400
+    int *next_array;next_array222,7460
+    int *pred_array;pred_array223,7481
+    int *route_num;route_num224,7502
+    bool *routed;            // Indicates whether the customer is in a route yet or notrouted225,7522
+    class VRPRoute *route;    // Array stores useful information about the routes in a solutionroute227,7611
+    class VRPTabuList *tabu_list;tabu_list230,7759
+    double record;        // For RTRrecord233,7848
+    double deviation;    // For RTRdeviation234,7885
+    double min_theta;min_theta236,7922
+    double max_theta;    // Polar min/maxmax_theta237,7944
+    int *current_sol_buff;  // Place for the current solution if desiredcurrent_sol_buff239,7987
+    class VRPViolation violation;violation246,8206
+    inline bool check_savings(VRPMove *M, int rules){check_savings279,9315
+
+inc/VRPHeuristic.h,2132
+#define _VRP_HEUR_H_VRP_HEUR_H14,692
+#define VRPH_DOWNHILL VRPH_DOWNHILL17,757
+#define VRPH_RECORD_TO_RECORD VRPH_RECORD_TO_RECORD18,807
+#define VRPH_SIMULATED_ANNEALING VRPH_SIMULATED_ANNEALING19,862
+#define VRPH_FIRST_ACCEPT VRPH_FIRST_ACCEPT20,917
+#define VRPH_BEST_ACCEPT VRPH_BEST_ACCEPT21,972
+#define VRPH_LI_ACCEPT VRPH_LI_ACCEPT22,1027
+#define VRPH_INTER_ROUTE_ONLY VRPH_INTER_ROUTE_ONLY23,1082
+#define VRPH_INTRA_ROUTE_ONLY VRPH_INTRA_ROUTE_ONLY24,1137
+#define VRPH_USE_NEIGHBOR_LIST VRPH_USE_NEIGHBOR_LIST25,1192
+#define VRPH_FREE VRPH_FREE26,1247
+#define VRPH_BALANCED VRPH_BALANCED27,1302
+#define VRPH_FORWARD VRPH_FORWARD28,1358
+#define VRPH_BACKWARD VRPH_BACKWARD29,1414
+#define VRPH_RANDOMIZED VRPH_RANDOMIZED30,1470
+#define VRPH_SAVINGS_ONLY VRPH_SAVINGS_ONLY31,1526
+#define VRPH_MINIMIZE_NUM_ROUTES VRPH_MINIMIZE_NUM_ROUTES32,1582
+#define VRPH_FIXED_EDGES VRPH_FIXED_EDGES33,1638
+#define VRPH_ALLOW_INFEASIBLE VRPH_ALLOW_INFEASIBLE34,1694
+#define VRPH_NO_NEW_ROUTE VRPH_NO_NEW_ROUTE35,1750
+#define VRPH_TABU VRPH_TABU36,1806
+#define ONE_POINT_MOVE ONE_POINT_MOVE39,1887
+#define TWO_POINT_MOVE TWO_POINT_MOVE40,1943
+#define TWO_OPT TWO_OPT41,1999
+#define OR_OPT OR_OPT42,2055
+#define THREE_OPT THREE_OPT43,2111
+#define CROSS_EXCHANGE CROSS_EXCHANGE44,2167
+#define THREE_POINT_MOVE THREE_POINT_MOVE45,2223
+#define KITCHEN_SINK KITCHEN_SINK46,2279
+#define ALL_HEURISTICS ALL_HEURISTICS48,2336
+#define NUM_HEURISTICS NUM_HEURISTICS53,2529
+#define ONE_POINT_MOVE_INDEX ONE_POINT_MOVE_INDEX55,2572
+#define TWO_POINT_MOVE_INDEX TWO_POINT_MOVE_INDEX56,2634
+#define TWO_OPT_INDEX TWO_OPT_INDEX57,2676
+#define OR_OPT_INDEX OR_OPT_INDEX58,2718
+#define THREE_OPT_INDEX THREE_OPT_INDEX59,2760
+#define CROSS_EXCHANGE_INDEX CROSS_EXCHANGE_INDEX60,2802
+#define THREE_POINT_MOVE_INDEX THREE_POINT_MOVE_INDEX61,2844
+#define PRESERT PRESERT66,2903
+#define POSTSERT POSTSERT67,2946
+#define CONCATENATE CONCATENATE68,2989
+#define SWAP_ENDS SWAP_ENDS69,3032
+#define FLIP FLIP70,3075
+#define MOVE_STRING MOVE_STRING71,3118
+#define SWAP SWAP72,3161
+
+inc/VRPH.h,3010
+#define _VRPH_H_VRPH_H18,835
+#define VRPH_TSP VRPH_TSP21,886
+#define VRPH_CVRP VRPH_CVRP22,920
+#define VRPH_FUNCTION VRPH_FUNCTION25,995
+#define VRPH_UPPER_ROW VRPH_UPPER_ROW26,1029
+#define VRPH_FULL_MATRIX VRPH_FULL_MATRIX31,1166
+#define VRPH_LOWER_ROW VRPH_LOWER_ROW33,1243
+#define VRPH_UPPER_DIAG_ROW VRPH_UPPER_DIAG_ROW34,1277
+#define VRPH_LOWER_DIAG_ROW VRPH_LOWER_DIAG_ROW35,1311
+#define VRPH_TWOD_COORDS VRPH_TWOD_COORDS38,1378
+#define VRPH_THREED_COORDS VRPH_THREED_COORDS39,1412
+#define VRPH_EXPLICIT VRPH_EXPLICIT46,1586
+#define VRPH_EUC_2D VRPH_EUC_2D48,1663
+#define VRPH_EUC_3D VRPH_EUC_3D49,1697
+#define VRPH_MAX_2D VRPH_MAX_2D50,1731
+#define VRPH_MAX_3D VRPH_MAX_3D51,1765
+#define VRPH_MAN_2D VRPH_MAN_2D52,1799
+#define VRPH_MAN_3D VRPH_MAN_3D53,1833
+#define VRPH_CEIL_2D VRPH_CEIL_2D54,1867
+#define VRPH_GEO VRPH_GEO55,1901
+#define VRPH_EXACT_2D VRPH_EXACT_2D56,1935
+#define VRPH_MIN(VRPH_MIN59,1987
+#define VRPH_MAX(VRPH_MAX60,2036
+#define VRPH_ABS(VRPH_ABS61,2085
+#define VRPH_RANDOM_SEARCH VRPH_RANDOM_SEARCH64,2181
+#define VRPH_REGRET_SEARCH VRPH_REGRET_SEARCH65,2215
+#define VRPH_EPS_EXE VRPH_EPS_EXE68,2282
+#define VRPH_BLACK VRPH_BLACK76,2453
+#define VRPH_RED VRPH_RED77,2483
+#define VRPH_YELLOW VRPH_YELLOW78,2513
+#define VRPH_GREEN VRPH_GREEN79,2543
+#define VRPH_AQUA VRPH_AQUA80,2573
+#define VRPH_PINK VRPH_PINK81,2603
+#define VRPH_WHEAT VRPH_WHEAT82,2633
+#define VRPH_GRAY VRPH_GRAY83,2663
+#define VRPH_BROWN VRPH_BROWN84,2693
+#define VRPH_BLUE VRPH_BLUE85,2723
+#define VRPH_VIOLET VRPH_VIOLET86,2753
+#define VRPH_CYAN VRPH_CYAN87,2784
+#define VRPH_TURQUOISE VRPH_TURQUOISE88,2815
+#define VRPH_MAGENTA VRPH_MAGENTA89,2846
+#define VRPH_SALMON VRPH_SALMON90,2877
+#define VRPH_WHITE VRPH_WHITE91,2908
+#define VRPH_DEFAULT_PLOT VRPH_DEFAULT_PLOT94,2964
+#define VRPH_BLACK_AND_WHITE VRPH_BLACK_AND_WHITE95,3002
+#define VRPH_COLOR VRPH_COLOR96,3040
+#define VRPH_BOXED VRPH_BOXED97,3078
+#define VRPH_NO_TITLE VRPH_NO_TITLE98,3116
+#define VRPH_BARE_BONES VRPH_BARE_BONES99,3154
+#define VRPH_NO_POINTS VRPH_NO_POINTS100,3193
+#define VRPH_NO_DEPOT_EDGES VRPH_NO_DEPOT_EDGES101,3232
+#define VRPH_WEIGHTED VRPH_WEIGHTED102,3271
+#define VRPH_ADD_ENTROPY VRPH_ADD_ENTROPY108,3472
+#define VRPH_FORBID_TINY_MOVES VRPH_FORBID_TINY_MOVES111,3615
+#define VRPH_MAX_NUM_LAMBDAS VRPH_MAX_NUM_LAMBDAS112,3653
+#define VRPH_STRING_SIZE VRPH_STRING_SIZE113,3693
+#define VRPH_DEPOT VRPH_DEPOT114,3733
+#define VRPH_PI VRPH_PI115,3771
+#define VRPH_RRR VRPH_RRR116,3833
+#define VRP_INFINITY VRP_INFINITY117,3879
+#define VRP_INFEASIBLE VRP_INFEASIBLE118,3923
+#define VRPH_EPSILON VRPH_EPSILON119,3972
+#define VRPH_DEFAULT_DEVIATION VRPH_DEFAULT_DEVIATION120,4015
+#define VRPH_MAX_NUM_ROUTES VRPH_MAX_NUM_ROUTES121,4055
+#define VRPH_LI_PERTURB VRPH_LI_PERTURB123,4114
+#define VRPH_OSMAN_PERTURB VRPH_OSMAN_PERTURB125,4153
+#define VRPH_MAX_SERVICE_DAYS VRPH_MAX_SERVICE_DAYS127,4210
+
+inc/VRPMove.h,984
+#define _VRP_MOVE_H_VRP_MOVE_H13,691
+#define	MAX_AFFECTED_ROUTES MAX_AFFECTED_ROUTES15,712
+#define MAX_ARGUMENTS	MAX_ARGUMENTS16,746
+class VRPMoveVRPMove18,774
+	int    criteria;criteria33,998
+	int    num_affected_routes;num_affected_routes34,1016
+	int    route_nums [MAX_AFFECTED_ROUTES];route_nums35,1045
+	double route_lens [MAX_AFFECTED_ROUTES];route_lens36,1087
+	int    route_loads[MAX_AFFECTED_ROUTES];route_loads37,1129
+	int    route_custs[MAX_AFFECTED_ROUTES];route_custs38,1171
+    double *arrival_times; // for time window additionarrival_times40,1214
+	double savings;savings42,1270
+	int total_number_of_routes;total_number_of_routes43,1287
+	double new_total_route_length;new_total_route_length44,1316
+	int move_type;move_type45,1348
+	int num_arguments;num_arguments46,1364
+	int move_arguments[MAX_ARGUMENTS];move_arguments47,1384
+	int eval_arguments[MAX_ARGUMENTS];eval_arguments48,1420
+	bool evaluated_savings;	evaluated_savings50,1457
+
+inc/VRPNode.h,846
+#define _VRP_NODE_H_VRP_NODE_H14,692
+#define VRPTW VRPTW16,713
+#define MAX_NEIGHBORLIST_SIZE MAX_NEIGHBORLIST_SIZE17,748
+class VRPNode VRPNode19,785
+    double x;x23,815
+    double y;y24,829
+    double r;        // For polar    r25,843
+    double theta;    // coordinatestheta26,881
+    int id;id27,917
+    int demand;demand28,929
+    int *daily_demands; // For period VRPsdaily_demands29,945
+    int cluster;cluster30,988
+    VRPNeighborElement neighbor_list[MAX_NEIGHBORLIST_SIZE];neighbor_list31,1005
+    double service_time;service_time33,1078
+    double *daily_service_times; // For period VRPsdaily_service_times35,1151
+    double arrival_time;arrival_time37,1204
+    double start_tw;start_tw38,1229
+    double end_tw;// Time windowsend_tw39,1250
+    int num_days; // For multi-day VRPsnum_days41,1285
+
+inc/VRPRoute.h,1214
+#define _VRP_ROUTE_H_VRP_ROUTE_H14,693
+#define MAX_NEIGHBORING_ROUTES	MAX_NEIGHBORING_ROUTES17,716
+#define DUPLICATE_ROUTE	DUPLICATE_ROUTE18,750
+#define OVERWRITTEN_ROUTE	OVERWRITTEN_ROUTE19,779
+#define ADDED_ROUTE	ADDED_ROUTE20,809
+#define BETTER_ROUTE	BETTER_ROUTE21,835
+class VRPRouteVRPRoute24,863
+	int start;start37,1099
+	int end;end38,1111
+	double length;length39,1121
+	int load;load40,1137
+	int num_customers;num_customers41,1148
+	double obj_val;obj_val42,1168
+	int hash_val;hash_val44,1186
+	int hash_val2;hash_val245,1201
+	double total_service_time;total_service_time47,1219
+	double time;time48,1247
+	double *x;x49,1261
+	double *y;y50,1273
+	char *name;		// Used when we add a route to an IP as a columnname52,1286
+	double x_center;x_center54,1351
+	double y_center;y_center55,1369
+	double min_theta;min_theta57,1388
+	double max_theta;max_theta58,1407
+	int neighboring_routes[MAX_NEIGHBORING_ROUTES];neighboring_routes60,1428
+	int *ordering;ordering62,1478
+class VRPRouteWarehouseVRPRouteWarehouse71,1544
+	int hash_table_size;hash_table_size78,1656
+	int num_unique_routes;num_unique_routes79,1678
+	struct htable_entry* hash_table;hash_table80,1702
+
+inc/VRPSolution.h,664
+#define _VRP_SOLUTION_H_VRP_SOLUTION_H14,696
+class VRPSolutionVRPSolution16,721
+	bool in_IP;		// Flag to tell if the solution has been added to the IP beforein_IP27,881
+	double obj;		// objective function valueobj28,959
+	int n;			// # of non-DEPOT nodes in the solutionn29,1001
+	int *sol;		// Place for a solution buffersol30,1051
+	double time;	// time at which the solution was first discoveredtime31,1094
+class VRPSolutionWarehouseVRPSolutionWarehouse36,1186
+	int num_sols;num_sols46,1323
+	int max_size;max_size47,1338
+	double worst_obj;worst_obj48,1353
+	VRPSolution *sols;sols49,1372
+	struct htable_entry* hash_table;hash_table50,1392
+
+inc/VRPTabuList.h,352
+#define _VRP_VRPH_TABU_H_VRP_VRPH_TABU_H14,697
+#define NUM_VRPH_TABU_ROUTES	NUM_VRPH_TABU_ROUTES16,723
+class VRPTabuListVRPTabuList18,757
+	int max_entries;max_entries28,889
+	int num_entries;num_entries29,907
+	int start_index;start_index30,925
+	int *hash_vals1;hash_vals131,943
+	int *hash_vals2;hash_vals232,961
+	bool full;full34,1040
+
+inc/VRPUtils.h,1727
+#define _VRP_UTIL_H_VRP_UTIL_H14,692
+#define MAX_FILES	MAX_FILES17,714
+#define MAX_FILENAME_LENGTH	MAX_FILENAME_LENGTH18,741
+#define NUM_ELITE_SOLUTIONS	NUM_ELITE_SOLUTIONS21,782
+#define MAX_NUM_COLS	MAX_NUM_COLS22,815
+#define NUM_ENTRIES	NUM_ENTRIES23,844
+#define MAX_VRPH_TABU_LIST_SIZE MAX_VRPH_TABU_LIST_SIZE24,869
+#define HASH_TABLE_SIZE	HASH_TABLE_SIZE26,905
+#define SALT_1	SALT_127,939
+#define SALT_2	SALT_228,960
+struct htable_entryhtable_entry30,983
+	int num_vals;num_vals40,1266
+	int hash_val_2[NUM_ENTRIES];hash_val_241,1281
+	int tot;tot42,1311
+	double length[NUM_ENTRIES];length43,1321
+struct int_intint_int47,1355
+	int i;i49,1372
+	int j;j50,1380
+struct double_intdouble_int52,1391
+	double d;d54,1411
+	int k;k55,1422
+class VRPSavingsElementVRPSavingsElement58,1434
+	double savings;savings63,1553
+	int position;position64,1570
+	int i;i65,1585
+	int j;j66,1593
+class VRPNeighborElementVRPNeighborElement70,1606
+	double val;val73,1641
+	int position;position74,1654
+class VRPViolationVRPViolation78,1674
+	double length_violation;length_violation81,1703
+	int    capacity_violation;capacity_violation82,1729
+class VRPSeedElement VRPSeedElement87,1763
+	double val;val89,1787
+	int position;position90,1800
+	int demand;demand91,1815
+class VRPNeighborhoodVRPNeighborhood94,1832
+	int move_type;move_type97,1864
+	int node_1, node_2;node_198,1880
+	int node_1, node_2;node_298,1880
+	class VRPMove *Moves;Moves99,1901
+	int size;size100,1924
+struct VRPSegmentVRPSegment105,1965
+	int segment_start;segment_start112,2067
+	int segment_end;segment_end113,2087
+	int num_custs;num_custs115,2106
+	int load;load116,2122
+	double len;len117,2133
+
+sevaux/pgm-pour-transformation/generate-big-m.c,45
+int main(int argc, char *argv[])main18,495
+
+src/apps/SYMPHONY_vrp_main.c,314
+#define COMPILING_FOR_MASTERCOMPILING_FOR_MASTER21,1383
+#define USE_VRPH USE_VRPH22,1413
+#define NUM_VRPH_SOLUTIONS NUM_VRPH_SOLUTIONS24,1484
+int main(int argc, char **argv)main35,1888
+int main(int argc, char **argv)main75,2833
+int vrp_test(sym_environment *env, int argc, char **argv)vrp_test173,6009

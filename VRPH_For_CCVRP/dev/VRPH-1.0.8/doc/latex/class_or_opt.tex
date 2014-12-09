@@ -1,0 +1,120 @@
+\hypertarget{class_or_opt}{
+\section{OrOpt Class Reference}
+\label{class_or_opt}\index{OrOpt@{OrOpt}}
+}
+
+
+{\ttfamily \#include $<$OrOpt.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_or_opt_ae8df6617295301ec8591dad3c869d002}{search} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int i, int j, int rules)
+\item 
+bool \hyperlink{class_or_opt_a3ed869c764beece77a430a5c5d87e439}{route\_\-search} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int r1, int r2, int k, int rules)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_or_opt_a0bef223452522d6b54b9b8aa88923855}{evaluate} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int a, int len, int c, int d, int rules, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\item 
+bool \hyperlink{class_or_opt_a599424fbfe7f8631b74369d931f80fd4}{move} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file OrOpt.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_or_opt_a0bef223452522d6b54b9b8aa88923855}{
+\index{OrOpt@{OrOpt}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!OrOpt@{OrOpt}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}bool OrOpt::evaluate (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{a, }
+\item[{int}]{len, }
+\item[{int}]{c, }
+\item[{int}]{d, }
+\item[{int}]{rules, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_or_opt_a0bef223452522d6b54b9b8aa88923855}
+
+
+Evaluates the move of taking the string of length len beginning at a and inserting it between c and d subject to the provided rules
+
+
+
+Definition at line 297 of file OrOpt.cpp.
+
+\hypertarget{class_or_opt_a599424fbfe7f8631b74369d931f80fd4}{
+\index{OrOpt@{OrOpt}!move@{move}}
+\index{move@{move}!OrOpt@{OrOpt}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}bool OrOpt::move (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_or_opt_a599424fbfe7f8631b74369d931f80fd4}
+
+
+Modifies all solution information by taking the string of length len at and inserting between c and d if it meets the rules
+
+
+
+Definition at line 388 of file OrOpt.cpp.
+
+\hypertarget{class_or_opt_a3ed869c764beece77a430a5c5d87e439}{
+\index{OrOpt@{OrOpt}!route\_\-search@{route\_\-search}}
+\index{route\_\-search@{route\_\-search}!OrOpt@{OrOpt}}
+\subsubsection[{route\_\-search}]{\setlength{\rightskip}{0pt plus 5cm}bool OrOpt::route\_\-search (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{r1, }
+\item[{int}]{r2, }
+\item[{int}]{k, }
+\item[{int}]{rules}
+\end{DoxyParamCaption}
+)}}
+\label{class_or_opt_a3ed869c764beece77a430a5c5d87e439}
+
+
+Searches for the best \hyperlink{class_or_opt}{OrOpt} move where we take a string of length len from route r1 and try to move the string into route r2 (and vice versa) subject to the provided rules
+
+
+
+Definition at line 213 of file OrOpt.cpp.
+
+\hypertarget{class_or_opt_ae8df6617295301ec8591dad3c869d002}{
+\index{OrOpt@{OrOpt}!search@{search}}
+\index{search@{search}!OrOpt@{OrOpt}}
+\subsubsection[{search}]{\setlength{\rightskip}{0pt plus 5cm}bool OrOpt::search (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{int}]{rules}
+\end{DoxyParamCaption}
+)}}
+\label{class_or_opt_ae8df6617295301ec8591dad3c869d002}
+
+
+Looks for string insertions of length len beginning at a that meet the provided rules. Makes move if one is found.
+
+
+
+Definition at line 16 of file OrOpt.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_or_opt_8h}{OrOpt.h}\item 
+src/\hyperlink{_or_opt_8cpp}{OrOpt.cpp}\end{DoxyCompactItemize}

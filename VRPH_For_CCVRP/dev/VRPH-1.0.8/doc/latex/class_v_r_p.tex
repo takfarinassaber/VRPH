@@ -1,0 +1,2685 @@
+\hypertarget{class_v_r_p}{
+\section{VRP Class Reference}
+\label{class_v_r_p}\index{VRP@{VRP}}
+}
+
+
+{\ttfamily \#include $<$VRP.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_v_r_p_aea92b2395b85af8de610684eba870e52}{VRP} (int n)
+\item 
+\hyperlink{class_v_r_p_a696a3111d2a8cc4495bf75f8e0bb4564}{VRP} (int n, int ndays)
+\item 
+\hyperlink{class_v_r_p_a78e9e0bdcba60d1f3f69df96d0d88e1b}{$\sim$VRP} ()
+\item 
+void \hyperlink{class_v_r_p_a484362e33edbb65b0015b82b60740817}{read\_\-TSPLIB\_\-file} (const char $\ast$infile)
+\item 
+void \hyperlink{class_v_r_p_aae4bfa00f65383453b3d86a0e63a5f78}{write\_\-TSPLIB\_\-file} (const char $\ast$outfile)
+\item 
+void \hyperlink{class_v_r_p_ada636b72ffc5ea0831bd083b408ada37}{show\_\-next\_\-array} ()
+\item 
+void \hyperlink{class_v_r_p_adb428999690dc1538a9136be2fc4a545}{show\_\-pred\_\-array} ()
+\item 
+bool \hyperlink{class_v_r_p_a5e3e1361a093bd343ce5cdc51d20857d}{verify\_\-routes} (const char $\ast$message)
+\item 
+bool \hyperlink{class_v_r_p_af00d2002e90f65c8dd86e37228134779}{check\_\-fixed\_\-edges} (const char $\ast$message)
+\item 
+void \hyperlink{class_v_r_p_aaa5bdbb47495253df1a26d38db0f5b32}{create\_\-pred\_\-array} ()
+\item 
+void \hyperlink{class_v_r_p_aa1fecc4f90a6cd959205eb8f244148da}{print\_\-stats} ()
+\item 
+void \hyperlink{class_v_r_p_a53325e48991274fa0e36efd92abbf868}{write\_\-solution\_\-file} (const char $\ast$filename)
+\item 
+void \hyperlink{class_v_r_p_a8db444175bfce88c819fe551ac2c2392}{write\_\-solutions} (int num\_\-sols, const char $\ast$filename)
+\item 
+void \hyperlink{class_v_r_p_a5e08e9d713236b6fa098ed9ed2aeb180}{write\_\-tex\_\-file} (const char $\ast$filename)
+\item 
+void \hyperlink{class_v_r_p_a88640397d743e6b40095fc2b9a74ad96}{read\_\-solution\_\-file} (const char $\ast$filename)
+\item 
+int \hyperlink{class_v_r_p_a7b056dcb823f18a187ba74dfe46fe148}{read\_\-fixed\_\-edges} (const char $\ast$filename)
+\item 
+void \hyperlink{class_v_r_p_a7766815e5d2eaf7972078e389f3cb44d}{export\_\-solution\_\-buff} (int $\ast$sol\_\-buff)
+\item 
+void \hyperlink{class_v_r_p_a295efd4df161f2aac13aaaedf0e9448c}{import\_\-solution\_\-buff} (int $\ast$sol\_\-buff)
+\item 
+void \hyperlink{class_v_r_p_adb439544630c4817fc6e9373a3216ef5}{export\_\-canonical\_\-solution\_\-buff} (int $\ast$sol\_\-buff)
+\item 
+void \hyperlink{class_v_r_p_a220683d7cff96be26550a081f948cfd2}{show\_\-routes} ()
+\item 
+void \hyperlink{class_v_r_p_abe8dee5bd3d4ace4c38d9ec68b39e409}{show\_\-route} (int k)
+\item 
+void \hyperlink{class_v_r_p_a3bbbdd28b87f379ff56606c06b27393c}{summary} ()
+\item 
+void \hyperlink{class_v_r_p_a6c9d4499eab192e2af3de9ae2ee2d93a}{reset} ()
+\item 
+bool \hyperlink{class_v_r_p_a8c6b6d381f6c0940f7ee71ceaa393806}{plot} (const char $\ast$filename, int options, int orientation)
+\item 
+bool \hyperlink{class_v_r_p_a9583d909b7f2f8d550f3633d8d4aa897}{plot} (const char $\ast$filename)
+\item 
+bool \hyperlink{class_v_r_p_a10b8abb343d7826fc576aebd73ba11f9}{plot\_\-route} (int r, const char $\ast$filename)
+\item 
+bool \hyperlink{class_v_r_p_ad9c2a0f28188939816bbbd948df2378d}{clone} (\hyperlink{class_v_r_p}{VRP} $\ast$W)
+\item 
+double \hyperlink{class_v_r_p_add8a377bf3c6136beda15b2a571bc8ad}{RTR\_\-solve} (int heuristics, int intensity, int max\_\-stuck, int num\_\-perturbs, double dev, int nlist\_\-size, int perturb\_\-type, int accept\_\-type, bool \hyperlink{vrp__glpk__sp_8cpp_ab3f078684998b83967d507d0f453f454}{verbose})
+\item 
+double \hyperlink{class_v_r_p_a721540de1b77fe2c90aadd09a7491be8}{SA\_\-solve} (int heuristics, double start\_\-temp, double cool\_\-ratio, int iters\_\-per\_\-loop, int num\_\-loops, int nlist\_\-size, bool \hyperlink{vrp__glpk__sp_8cpp_ab3f078684998b83967d507d0f453f454}{verbose})
+\item 
+void \hyperlink{class_v_r_p_acb5f69737f56a2abdcb05fcb7a994396}{set\_\-daily\_\-demands} (int day)
+\item 
+void \hyperlink{class_v_r_p_a90bd8e393c92c78fcab13b22c283e88f}{set\_\-daily\_\-service\_\-times} (int day)
+\item 
+bool \hyperlink{class_v_r_p_a6ba7dfc7f4a60f4b098e13dc87fc2212}{create\_\-default\_\-routes} ()
+\item 
+bool \hyperlink{class_v_r_p_a88a2eb7e0503aa9b0a4a004ede31b58f}{create\_\-default\_\-routes} (int day)
+\item 
+bool \hyperlink{class_v_r_p_af222e1b7a1d55c864e37ca237cce2408}{eject\_\-node} (int k)
+\item 
+int \hyperlink{class_v_r_p_ae3abaa97f9abf1a46348068a5a11d4e8}{inject\_\-set} (int num, int $\ast$nodelist, int rules, int attempts)
+\item 
+void \hyperlink{class_v_r_p_acaf05691fee990e75fa6e2bd9a53d6ce}{eject\_\-neighborhood} (int j, int num, int $\ast$nodelist)
+\item 
+void \hyperlink{class_v_r_p_a0780f49cd584076612217a25b2c92c67}{refresh\_\-routes} ()
+\item 
+void \hyperlink{class_v_r_p_ac3b9b76240401f3e9be1153d4ea703fd}{normalize\_\-route\_\-numbers} ()
+\item 
+void \hyperlink{class_v_r_p_a53c375f3acdb43efc3f2e63b40cdca01}{update\_\-route} (int j, \hyperlink{class_v_r_p_route}{VRPRoute} $\ast$R)
+\item 
+void \hyperlink{class_v_r_p_ac574e47d01cbb632c4b3b398e5dc14a0}{clean\_\-route} (int r, int heuristics)
+\item 
+double \hyperlink{class_v_r_p_a660ca2a84b28b869d8b4994b00d01f40}{split} (double p)
+\item 
+int \hyperlink{class_v_r_p_a274f22551361e9575bfc95611fa7df28}{split\_\-routes} (double p, int $\ast$$\ast$ejected\_\-routes, double $\ast$t)
+\item 
+void \hyperlink{class_v_r_p_a8296873147c5a0cd8c286c294566524b}{add\_\-route} (int $\ast$route\_\-buff)
+\item 
+void \hyperlink{class_v_r_p_a46304ce927c893445b93c1df22d04863}{append\_\-route} (int $\ast$sol\_\-buff, int $\ast$route\_\-buff)
+\item 
+int \hyperlink{class_v_r_p_add02d688670a2a569755981227421800}{intersect\_\-solutions} (int $\ast$new\_\-sol, int $\ast$$\ast$routes, int $\ast$sol1, int $\ast$sol2, int min\_\-routes)
+\item 
+int \hyperlink{class_v_r_p_af5ff0b40d59ae77de3717e5a8be19828}{find\_\-common\_\-routes} (int $\ast$sol1, int $\ast$sol2, int $\ast$route\_\-nums)
+\item 
+void \hyperlink{class_v_r_p_a7ef75affd632e4493c1c2c2ed14c2ecd}{list\_\-fixed\_\-edges} (int $\ast$fixed\_\-list)
+\item 
+void \hyperlink{class_v_r_p_ae71ef1c9462cf6d175d20abb357e8c31}{unfix\_\-all} ()
+\item 
+void \hyperlink{class_v_r_p_a5dd07c6c3a29a8ac0d1f149bef9eb433}{fix\_\-edge} (int start, int end)
+\item 
+void \hyperlink{class_v_r_p_a1f927132c4d90c5a6aa793a3cbfeb5f5}{unfix\_\-edge} (int start, int end)
+\item 
+void \hyperlink{class_v_r_p_a8ea26e9e50f8e5064097d68f12f53e94}{fix\_\-string} (int $\ast$node\_\-string, int k)
+\item 
+int \hyperlink{class_v_r_p_a28d56748005cb291e0299acfa7a72346}{get\_\-num\_\-nodes} ()
+\item 
+double \hyperlink{class_v_r_p_a2197b98f43f825d1af6c74bed717b3b4}{get\_\-total\_\-route\_\-length} ()
+\item 
+double \hyperlink{class_v_r_p_a78e8995a693b0619a9c4e1ec6150f4f3}{get\_\-total\_\-service\_\-time} ()
+\item 
+double \hyperlink{class_v_r_p_abe6b9554fab15788c1159937aac8f7ab}{get\_\-best\_\-sol\_\-buff} (int $\ast$sol\_\-buff)
+\item 
+double \hyperlink{class_v_r_p_a3f7a41c3d1f896909a0cc83004a55993}{get\_\-best\_\-total\_\-route\_\-length} ()
+\item 
+int \hyperlink{class_v_r_p_a50f7c69b6795b89895c1b3a0fd267ea3}{get\_\-total\_\-number\_\-of\_\-routes} ()
+\item 
+int \hyperlink{class_v_r_p_a2e165fe21cf793a8f58efb039ebf36f5}{get\_\-num\_\-original\_\-nodes} ()
+\item 
+int \hyperlink{class_v_r_p_a0080e91ea13bffc3f372c60fc2f2444a}{get\_\-num\_\-days} ()
+\item 
+double \hyperlink{class_v_r_p_aa0ac9587aa6a5282550fbdf32fcfeb11}{get\_\-best\_\-known} ()
+\item 
+void \hyperlink{class_v_r_p_a88f8ccc266e829d431e726c2e8b81caa}{set\_\-best\_\-total\_\-route\_\-length} (double val)
+\item 
+int \hyperlink{class_v_r_p_aa001538b0c1fdfdda8f47661e4e98b6e}{get\_\-max\_\-veh\_\-capacity} ()
+\item 
+double \hyperlink{class_v_r_p_aac110a652caa37ca55af15b8fe732805}{get\_\-max\_\-route\_\-length} ()
+\item 
+void \hyperlink{class_v_r_p_af29c214351fe56211ead2ffbb88704b0}{create\_\-distance\_\-matrix} (int type)
+\item 
+void \hyperlink{class_v_r_p_ad130cf735469fba7515836247a4666bc}{create\_\-neighbor\_\-lists} (int nsize)
+\item 
+bool \hyperlink{class_v_r_p_a2eea5225f0f8f9756bfeac54cd8371b9}{perturb} ()
+\item 
+bool \hyperlink{class_v_r_p_a094295c8278aa30ec623750dd6830b3b}{eject\_\-route} (int r, int $\ast$route\_\-buff)
+\item 
+bool \hyperlink{class_v_r_p_abc1fa45b42d0fc00f9465ad1be62fd2c}{inject\_\-node} (int j)
+\item 
+void \hyperlink{class_v_r_p_ac16a3bfc6dd90097231615e74c365e99}{reverse\_\-route} (int i)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{class_v_r_p_af9d32e74c8941ce1ae12fdb057350dc3}{name} \mbox{[}VRPH\_\-STRING\_\-SIZE\mbox{]}
+\item 
+\hyperlink{class_v_r_p_solution_warehouse}{VRPSolutionWarehouse} $\ast$ \hyperlink{class_v_r_p_a858342764727f7bea3c965b4e9fb3dfa}{solution\_\-wh}
+\item 
+\hyperlink{class_v_r_p_route_warehouse}{VRPRouteWarehouse} $\ast$ \hyperlink{class_v_r_p_a57c6657f57f74ec450a59d277706dfd6}{route\_\-wh}
+\item 
+int \hyperlink{class_v_r_p_a5adda95e03e133206d5fbcdf742954e0}{num\_\-evaluations} \mbox{[}NUM\_\-HEURISTICS\mbox{]}
+\item 
+int \hyperlink{class_v_r_p_ad2c3d755cc77b47e448d0c40dedaf4f2}{num\_\-moves} \mbox{[}NUM\_\-HEURISTICS\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_v_r_p_a55fa1cba5d51bd97f2e43b9caa647ecd}{create\_\-search\_\-neighborhood} (int j, int rules)
+\item 
+bool \hyperlink{class_v_r_p_aca16c9ae324bfa368ffab0ee117d924c}{check\_\-tabu\_\-status} (\hyperlink{class_v_r_p_move}{VRPMove} $\ast$M, int $\ast$old\_\-sol)
+\item 
+bool \hyperlink{class_v_r_p_a6fc078e7bedb3a2d9da0af62dbb645b2}{before} (int a, int b)
+\item 
+bool \hyperlink{class_v_r_p_a3e28bddbeace44a21b1128a296f956d0}{check\_\-feasibility} (\hyperlink{class_v_r_p_violation}{VRPViolation} $\ast$VV)
+\item 
+bool \hyperlink{class_v_r_p_a5f0fb6339cdf256c019638137ef13746}{is\_\-feasible} (\hyperlink{class_v_r_p_move}{VRPMove} $\ast$M, int rules)
+\item 
+bool \hyperlink{class_v_r_p_a07a2321a19c5ba2a787a093beffa1d6a}{postsert\_\-dummy} (int i)
+\item 
+bool \hyperlink{class_v_r_p_ae24478bfd7fcb13d077bc8109f12f7d0}{presert\_\-dummy} (int i)
+\item 
+bool \hyperlink{class_v_r_p_aa63c8539a72e3c407ee8cd0892ae858d}{remove\_\-dummy} ()
+\item 
+bool \hyperlink{class_v_r_p_a6a2e828a5fbf2830988738768107512b}{osman\_\-insert} (int k, double alpha)
+\item 
+int \hyperlink{class_v_r_p_ade1046ec3a60adbfb75be9e7ff98daef}{osman\_\-perturb} (int num, double alpha)
+\item 
+bool \hyperlink{class_v_r_p_a9b3ea7b28cecf0994b7545c48eef94b4}{insert\_\-node} (int j, int i, int k)
+\item 
+void \hyperlink{class_v_r_p_ac5b4714d8c880144772ddd8296c8b972}{perturb\_\-locations} (double c)
+\item 
+void \hyperlink{class_v_r_p_a4de3406506e3f48638a9975d303d386f}{find\_\-cheapest\_\-insertion} (int j, int $\ast$edge, double $\ast$costs, int rules)
+\item 
+double \hyperlink{class_v_r_p_af0f506119e3959a809d47976f5643348}{insertion\_\-cost} (int u, int a, int b)
+\item 
+double \hyperlink{class_v_r_p_aa876ebb6a2b91a4d6097f2aa8d4ef4e3}{ejection\_\-cost} (int u)
+\item 
+void \hyperlink{class_v_r_p_a6046e20fffcbd601a1f02a42a1a92a0c}{update} (\hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\item 
+void \hyperlink{class_v_r_p_ae691693a774a5012bb7e77fc9fdee918}{compute\_\-route\_\-center} (int r)
+\item 
+void \hyperlink{class_v_r_p_acee4564d9d4ed7ddce32ecc7def8b623}{find\_\-neighboring\_\-routes} ()
+\item 
+void \hyperlink{class_v_r_p_a1de9915c296a739ee5b1e5338889434c}{capture\_\-best\_\-solution} ()
+\item 
+void \hyperlink{class_v_r_p_a4cd15e9a1a08aeb112bb60ead67f689f}{update\_\-solution\_\-wh} ()
+\item 
+bool \hyperlink{class_v_r_p_af96ea632c4f247d8430b44a1dd49f2d0}{get\_\-segment\_\-info} (int a, int b, struct \hyperlink{struct_v_r_p_segment}{VRPSegment} $\ast$S)
+\item 
+double \hyperlink{class_v_r_p_ac43dd1c3af478740817c4e6e4e1e54e7}{get\_\-distance\_\-between} (int a, int b)
+\item 
+int \hyperlink{class_v_r_p_a6f6c6973bc8fdda2fdb499b35b715f31}{get\_\-string\_\-end} (int a, int len)
+\item 
+int \hyperlink{class_v_r_p_a6f937aafe71c8de3408386f12bbb1e7c}{count\_\-num\_\-routes} ()
+\item 
+void \hyperlink{class_v_r_p_aa5233a27a24a804a69c973247c684557}{update\_\-arrival\_\-times} ()
+\item 
+bool \hyperlink{class_v_r_p_a1c10f1c6714cb3d1215c7f2c4f877b8c}{check\_\-move} (\hyperlink{class_v_r_p_move}{VRPMove} $\ast$M, int rules)
+\item 
+bool \hyperlink{class_v_r_p_a20d87546b54c2c14e85ff93a8b814248}{check\_\-savings} (\hyperlink{class_v_r_p_move}{VRPMove} $\ast$M, int rules)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_v_r_p_a18aadb4711a9495b4f9c01d5ba839cde}{num\_\-nodes}
+\item 
+double \hyperlink{class_v_r_p_a4c206d5757a64335ad660ad03116c376}{total\_\-route\_\-length}
+\item 
+double \hyperlink{class_v_r_p_a8e6219158b959b07443ecee7508f820b}{total\_\-service\_\-time}
+\item 
+int $\ast$ \hyperlink{class_v_r_p_a3f3ca7d6c3a3c632c07750afa2b31b63}{best\_\-sol\_\-buff}
+\item 
+double \hyperlink{class_v_r_p_afd48775dd53edd84340f68f704b8f9dc}{best\_\-total\_\-route\_\-length}
+\item 
+int \hyperlink{class_v_r_p_aaf80fa84fe5d2641ecbd125b237a69fe}{total\_\-number\_\-of\_\-routes}
+\item 
+int \hyperlink{class_v_r_p_aba1d749c32b7c7f03b4223d4e824c67f}{num\_\-original\_\-nodes}
+\item 
+double \hyperlink{class_v_r_p_a8c1aea504be581f3d44cbe809343dd59}{best\_\-known}
+\item 
+int \hyperlink{class_v_r_p_aca4af6860b5f2e6f8b9d2d962bc08d92}{num\_\-days}
+\item 
+int \hyperlink{class_v_r_p_aa6eca2d600d3493057af43499619abf4}{problem\_\-type}
+\item 
+int \hyperlink{class_v_r_p_a65f10da2ba558e09769475bdcbb107de}{total\_\-demand}
+\item 
+int \hyperlink{class_v_r_p_ae6557cfbba614dc5d75567a7e0abf099}{max\_\-veh\_\-capacity}
+\item 
+int \hyperlink{class_v_r_p_a23ee0d0e34908651c27f2710d08b182d}{orig\_\-max\_\-veh\_\-capacity}
+\item 
+double \hyperlink{class_v_r_p_a8884ecddc6d2592162c012b284df672a}{max\_\-route\_\-length}
+\item 
+double \hyperlink{class_v_r_p_a4e20cf6dd60c29bd004d4160f93bdb98}{min\_\-route\_\-length}
+\item 
+double \hyperlink{class_v_r_p_a2697a8a76a766c0fec117719f719f402}{orig\_\-max\_\-route\_\-length}
+\item 
+int \hyperlink{class_v_r_p_ab48770e40f4f4ca52b032d6d1d33cde2}{min\_\-vehicles}
+\item 
+bool \hyperlink{class_v_r_p_aba36cee3f7c8bdc5f97ccf8b35c2e6d5}{has\_\-service\_\-times}
+\item 
+double \hyperlink{class_v_r_p_a31a699aee99ab5ceb4ef1a8ac517937f}{fixed\_\-service\_\-time}
+\item 
+int \hyperlink{class_v_r_p_aae0d4e2df1a97802b5c5f9e0c0757ef0}{edge\_\-weight\_\-type}
+\item 
+int \hyperlink{class_v_r_p_aa20a5dbd3e3070a63a72a76c2ff46722}{coord\_\-type}
+\item 
+int \hyperlink{class_v_r_p_a47e17e1b022eac02504a129ba26f28b8}{display\_\-type}
+\item 
+int \hyperlink{class_v_r_p_a4de4cdf0660a89b599a3d2086698a27c}{edge\_\-weight\_\-format}
+\item 
+int \hyperlink{class_v_r_p_aa84ae03f2bd1c91491f270a672f8fcd1}{matrix\_\-size}
+\item 
+double \hyperlink{class_v_r_p_a90a29b6636daa9e4ada8c01069b52d07}{balance\_\-parameter}
+\item 
+int \hyperlink{class_v_r_p_a8f07dd3927e226e01c2f77f380c17ac3}{dummy\_\-index}
+\item 
+int \hyperlink{class_v_r_p_ac68b2c8f1b906dcce3b32a3c308240b3}{neighbor\_\-list\_\-size}
+\item 
+double \hyperlink{class_v_r_p_a328026fe60722fe6cc09a4c5aae404b8}{temperature}
+\item 
+double \hyperlink{class_v_r_p_a68589860bea9d0a278ab57bbefb3f8a0}{cooling\_\-ratio}
+\item 
+bool \hyperlink{class_v_r_p_afaf85ef2953e205d5eae0b1355ffe973}{symmetric}
+\item 
+bool \hyperlink{class_v_r_p_a22da6861faa4543f73b7a66d89a92f91}{can\_\-display}
+\item 
+double $\ast$$\ast$ \hyperlink{class_v_r_p_ade83b7d5a9db82ff85e730daa4caac5a}{d}
+\item 
+bool $\ast$$\ast$ \hyperlink{class_v_r_p_ab4390370cb73c51ac6ebe12aaf51f2c4}{fixed}
+\item 
+class \hyperlink{class_v_r_p_node}{VRPNode} $\ast$ \hyperlink{class_v_r_p_a35f503e16fdbf0d9bd3e79d79bc70acd}{nodes}
+\item 
+bool \hyperlink{class_v_r_p_a464f8802b533b943a25e7b47e15e7cd1}{depot\_\-normalized}
+\item 
+bool \hyperlink{class_v_r_p_a7de6d41fe877d981e8a5bf5b25a39cab}{forbid\_\-tiny\_\-moves}
+\item 
+int \hyperlink{class_v_r_p_a30b72e877a153354bd5d8411c4dd5971}{search\_\-size}
+\item 
+int $\ast$ \hyperlink{class_v_r_p_aff4f38285d931237cc1cb7006d1d4fcd}{search\_\-space}
+\item 
+int $\ast$ \hyperlink{class_v_r_p_acd2b81d8d25db522d089a33b212107ce}{next\_\-array}
+\item 
+int $\ast$ \hyperlink{class_v_r_p_a171c6f136ff0334141eba4f8df239f3a}{pred\_\-array}
+\item 
+int $\ast$ \hyperlink{class_v_r_p_aaf42240b29e2ddf0c79b3da8cd6a3087}{route\_\-num}
+\item 
+bool $\ast$ \hyperlink{class_v_r_p_a49559f4098eea0527da72878fb5d5404}{routed}
+\item 
+class \hyperlink{class_v_r_p_route}{VRPRoute} $\ast$ \hyperlink{class_v_r_p_a031f5b20e9fcbcb5f79839444ce0bbfc}{route}
+\item 
+class \hyperlink{class_v_r_p_tabu_list}{VRPTabuList} $\ast$ \hyperlink{class_v_r_p_ae2febf169fbb970db5d3e4b1afdfdf2b}{tabu\_\-list}
+\item 
+double \hyperlink{class_v_r_p_a0561674f364aba302b1cc4d0f76f6837}{record}
+\item 
+double \hyperlink{class_v_r_p_a1e39d7493e674f4a22f22f21e5d0bd87}{deviation}
+\item 
+double \hyperlink{class_v_r_p_a3690e58ce5c9ad561b338359181203f3}{min\_\-theta}
+\item 
+double \hyperlink{class_v_r_p_a99bfad6795281816b4036ad42a900b3d}{max\_\-theta}
+\item 
+int $\ast$ \hyperlink{class_v_r_p_a8117433ec924a862c615d1a4c5f89b4a}{current\_\-sol\_\-buff}
+\item 
+class \hyperlink{class_v_r_p_violation}{VRPViolation} \hyperlink{class_v_r_p_a3bd307863feb6d22fb036771d76d0f48}{violation}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_v_r_p_a3eb7e09375cb9efb60e174576602cc2a}{OnePointMove}
+\item 
+class \hyperlink{class_v_r_p_a39ceb628e29d77c67f2f02033a2947fd}{TwoPointMove}
+\item 
+class \hyperlink{class_v_r_p_af9c805ac13341028e10098c88c60b2ba}{ThreePointMove}
+\item 
+class \hyperlink{class_v_r_p_a0c92c8936f6281af1fd5ed7eac0ebf7a}{TwoOpt}
+\item 
+class \hyperlink{class_v_r_p_af723275dce636f74121f91687deedc70}{ThreeOpt}
+\item 
+class \hyperlink{class_v_r_p_aad4e90257d9562aaba2f6cb67b18b0b4}{OrOpt}
+\item 
+class \hyperlink{class_v_r_p_ab4edeb2c24ce03a58fd64a672344879d}{CrossExchange}
+\item 
+class \hyperlink{class_v_r_p_a0db13b3e7109396073d590aa1a62d0ec}{Postsert}
+\item 
+class \hyperlink{class_v_r_p_ab909d662038d19e5f8fe92828f2876c0}{Presert}
+\item 
+class \hyperlink{class_v_r_p_a639ad495d8fe15a35cd86e1e1bf86864}{MoveString}
+\item 
+class \hyperlink{class_v_r_p_a70514fe066409f0e910cf8622c6ec2fd}{Swap}
+\item 
+class \hyperlink{class_v_r_p_a8dcd8df53052c8616440b02c62028d2b}{SwapEnds}
+\item 
+class \hyperlink{class_v_r_p_a297dde4c15143a11faf5fbaec854461c}{Concatenate}
+\item 
+class \hyperlink{class_v_r_p_a01b574361116f8cdbdee667c2f0c7068}{Flip}
+\item 
+class \hyperlink{class_v_r_p_af4ac00f95018bc06be8f4ae5e19b3357}{ClarkeWright}
+\item 
+class \hyperlink{class_v_r_p_a908f328c298fc585c89c0ab14546aeba}{Sweep}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file VRP.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_v_r_p_aea92b2395b85af8de610684eba870e52}{
+\index{VRP@{VRP}!VRP@{VRP}}
+\index{VRP@{VRP}!VRP@{VRP}}
+\subsubsection[{VRP}]{\setlength{\rightskip}{0pt plus 5cm}VRP::VRP (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_aea92b2395b85af8de610684eba870e52}
+
+
+Constructor for an n-\/node problem.
+
+
+
+Definition at line 24 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a696a3111d2a8cc4495bf75f8e0bb4564}{
+\index{VRP@{VRP}!VRP@{VRP}}
+\index{VRP@{VRP}!VRP@{VRP}}
+\subsubsection[{VRP}]{\setlength{\rightskip}{0pt plus 5cm}VRP::VRP (
+\begin{DoxyParamCaption}
+\item[{int}]{n, }
+\item[{int}]{ndays}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a696a3111d2a8cc4495bf75f8e0bb4564}
+
+
+Constructor for an n-\/node, ndays-\/day problem.
+
+
+
+Definition at line 107 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a78e9e0bdcba60d1f3f69df96d0d88e1b}{
+\index{VRP@{VRP}!$\sim$VRP@{$\sim$VRP}}
+\index{$\sim$VRP@{$\sim$VRP}!VRP@{VRP}}
+\subsubsection[{$\sim$VRP}]{\setlength{\rightskip}{0pt plus 5cm}VRP::$\sim$VRP (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a78e9e0bdcba60d1f3f69df96d0d88e1b}
+
+
+Destructor for the \hyperlink{class_v_r_p}{VRP}.
+
+
+
+Definition at line 194 of file VRP.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_v_r_p_a8296873147c5a0cd8c286c294566524b}{
+\index{VRP@{VRP}!add\_\-route@{add\_\-route}}
+\index{add\_\-route@{add\_\-route}!VRP@{VRP}}
+\subsubsection[{add\_\-route}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::add\_\-route (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{route\_\-buff}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a8296873147c5a0cd8c286c294566524b}
+
+
+Adds the route in the provided buffer to the solution. The new route should not have any nodes in common with the existing solution! The route\_\-buff\mbox{[}\mbox{]} should be terminated with a -\/1.
+
+
+
+Definition at line 3747 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a46304ce927c893445b93c1df22d04863}{
+\index{VRP@{VRP}!append\_\-route@{append\_\-route}}
+\index{append\_\-route@{append\_\-route}!VRP@{VRP}}
+\subsubsection[{append\_\-route}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::append\_\-route (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{sol\_\-buff, }
+\item[{int $\ast$}]{route\_\-buff}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a46304ce927c893445b93c1df22d04863}
+
+
+Appends the single route contained in route\_\-buff\mbox{[}\mbox{]} (which ends in a -\/1) to the solution buffer sol\_\-buff, updating the first entry in sol\_\-buff which is the \# of nodes in the solution. Does NOT import the resulting solution and assumes that route\_\-buff and sol\_\-buff are disjoint.
+
+
+
+Definition at line 3790 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a6fc078e7bedb3a2d9da0af62dbb645b2}{
+\index{VRP@{VRP}!before@{before}}
+\index{before@{before}!VRP@{VRP}}
+\subsubsection[{before}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::before (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a6fc078e7bedb3a2d9da0af62dbb645b2}
+
+
+This function returns TRUE if a comes before b in their route and FALSE if b is before a. An error is reported if a and b are in different routes. Should be used sparingly as it loops and can be slow for large routes.
+
+
+
+Definition at line 3082 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a1de9915c296a739ee5b1e5338889434c}{
+\index{VRP@{VRP}!capture\_\-best\_\-solution@{capture\_\-best\_\-solution}}
+\index{capture\_\-best\_\-solution@{capture\_\-best\_\-solution}!VRP@{VRP}}
+\subsubsection[{capture\_\-best\_\-solution}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::capture\_\-best\_\-solution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a1de9915c296a739ee5b1e5338889434c}
+
+
+Determines if the current solution is the best found so far.
+
+
+
+Definition at line 3242 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a3e28bddbeace44a21b1128a296f956d0}{
+\index{VRP@{VRP}!check\_\-feasibility@{check\_\-feasibility}}
+\index{check\_\-feasibility@{check\_\-feasibility}!VRP@{VRP}}
+\subsubsection[{check\_\-feasibility}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::check\_\-feasibility (
+\begin{DoxyParamCaption}
+\item[{{\bf VRPViolation} $\ast$}]{VV}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a3e28bddbeace44a21b1128a296f956d0}
+
+
+The function returns true if the routes are all feasible and false if any of them are infeasible, placing the worst violations in the \hyperlink{class_v_r_p_violation}{VRPViolation} VV
+
+
+
+Definition at line 653 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_af00d2002e90f65c8dd86e37228134779}{
+\index{VRP@{VRP}!check\_\-fixed\_\-edges@{check\_\-fixed\_\-edges}}
+\index{check\_\-fixed\_\-edges@{check\_\-fixed\_\-edges}!VRP@{VRP}}
+\subsubsection[{check\_\-fixed\_\-edges}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::check\_\-fixed\_\-edges (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{message}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_af00d2002e90f65c8dd86e37228134779}
+
+
+Makes sure that all fixed edges are still in the solution. If fixed edges are missing from the solution, then some information is displayed and the provided message is printed before exiting.
+
+
+
+Definition at line 4051 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a1c10f1c6714cb3d1215c7f2c4f877b8c}{
+\index{VRP@{VRP}!check\_\-move@{check\_\-move}}
+\index{check\_\-move@{check\_\-move}!VRP@{VRP}}
+\subsubsection[{check\_\-move}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::check\_\-move (
+\begin{DoxyParamCaption}
+\item[{{\bf VRPMove} $\ast$}]{M, }
+\item[{int}]{rules}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a1c10f1c6714cb3d1215c7f2c4f877b8c}
+
+
+Evaluates the move in terms of the rules. Can consider savings, as well as other aspects of the \hyperlink{class_v_r_p_move}{VRPMove} M.
+
+
+
+Definition at line 1763 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a20d87546b54c2c14e85ff93a8b814248}{
+\index{VRP@{VRP}!check\_\-savings@{check\_\-savings}}
+\index{check\_\-savings@{check\_\-savings}!VRP@{VRP}}
+\subsubsection[{check\_\-savings}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::check\_\-savings (
+\begin{DoxyParamCaption}
+\item[{{\bf VRPMove} $\ast$}]{M, }
+\item[{int}]{rules}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline, private\mbox{]}}}}
+\label{class_v_r_p_a20d87546b54c2c14e85ff93a8b814248}
+
+
+Evaluates the given savings in terms of the rules. The only part of the rules considered are things such as VRPH\_\-DOWNHILL, VRPH\_\-RECORD\_\-TO\_\-RECORD, VRPH\_\-SIMULATED\_\-ANNEALING
+
+
+
+Definition at line 279 of file VRP.h.
+
+\hypertarget{class_v_r_p_aca16c9ae324bfa368ffab0ee117d924c}{
+\index{VRP@{VRP}!check\_\-tabu\_\-status@{check\_\-tabu\_\-status}}
+\index{check\_\-tabu\_\-status@{check\_\-tabu\_\-status}!VRP@{VRP}}
+\subsubsection[{check\_\-tabu\_\-status}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::check\_\-tabu\_\-status (
+\begin{DoxyParamCaption}
+\item[{{\bf VRPMove} $\ast$}]{M, }
+\item[{int $\ast$}]{old\_\-sol}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_aca16c9ae324bfa368ffab0ee117d924c}
+
+
+The tabu search rules is entirely route-\/based. We hash each of the affected routes and see if the values are in the tabu list. If the move is tabu, then we revert back to the old solution and return false. Otherwise, we allow the move and return true. When the move is allowed, we update the tabu list using a circular buffer.
+
+
+
+Definition at line 4290 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_ac574e47d01cbb632c4b3b398e5dc14a0}{
+\index{VRP@{VRP}!clean\_\-route@{clean\_\-route}}
+\index{clean\_\-route@{clean\_\-route}!VRP@{VRP}}
+\subsubsection[{clean\_\-route}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::clean\_\-route (
+\begin{DoxyParamCaption}
+\item[{int}]{r, }
+\item[{int}]{heuristics}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_ac574e47d01cbb632c4b3b398e5dc14a0}
+
+
+Runs the provided set of heuristics on route r until a local minimum is reached.
+
+
+
+Definition at line 2916 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_ad9c2a0f28188939816bbbd948df2378d}{
+\index{VRP@{VRP}!clone@{clone}}
+\index{clone@{clone}!VRP@{VRP}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::clone (
+\begin{DoxyParamCaption}
+\item[{{\bf VRP} $\ast$}]{W}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_ad9c2a0f28188939816bbbd948df2378d}
+
+
+Copy Constructor for \hyperlink{class_v_r_p}{VRP}.
+
+
+
+Definition at line 317 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_ae691693a774a5012bb7e77fc9fdee918}{
+\index{VRP@{VRP}!compute\_\-route\_\-center@{compute\_\-route\_\-center}}
+\index{compute\_\-route\_\-center@{compute\_\-route\_\-center}!VRP@{VRP}}
+\subsubsection[{compute\_\-route\_\-center}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::compute\_\-route\_\-center (
+\begin{DoxyParamCaption}
+\item[{int}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_ae691693a774a5012bb7e77fc9fdee918}
+
+
+Computes the mean x and y coord's of the nodes in a route, storing the information in the \hyperlink{class_v_r_p_route}{VRPRoute}\mbox{[}\mbox{]} array
+
+
+
+Definition at line 3158 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a6f937aafe71c8de3408386f12bbb1e7c}{
+\index{VRP@{VRP}!count\_\-num\_\-routes@{count\_\-num\_\-routes}}
+\index{count\_\-num\_\-routes@{count\_\-num\_\-routes}!VRP@{VRP}}
+\subsubsection[{count\_\-num\_\-routes}]{\setlength{\rightskip}{0pt plus 5cm}int VRP::count\_\-num\_\-routes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a6f937aafe71c8de3408386f12bbb1e7c}
+
+
+Manually counts the \# of routes in the current solution.
+
+
+
+Definition at line 1452 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a6ba7dfc7f4a60f4b098e13dc87fc2212}{
+\index{VRP@{VRP}!create\_\-default\_\-routes@{create\_\-default\_\-routes}}
+\index{create\_\-default\_\-routes@{create\_\-default\_\-routes}!VRP@{VRP}}
+\subsubsection[{create\_\-default\_\-routes}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::create\_\-default\_\-routes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a6ba7dfc7f4a60f4b098e13dc87fc2212}
+
+
+This function creates routes VRPH\_\-DEPOT-\/i-\/VRPH\_\-DEPOT for all nodes i and properly initializes all the associated arrays. Returns true if successful, false if the default routes violate some capacity or route length constraint.
+
+
+
+Definition at line 1208 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a88a2eb7e0503aa9b0a4a004ede31b58f}{
+\index{VRP@{VRP}!create\_\-default\_\-routes@{create\_\-default\_\-routes}}
+\index{create\_\-default\_\-routes@{create\_\-default\_\-routes}!VRP@{VRP}}
+\subsubsection[{create\_\-default\_\-routes}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::create\_\-default\_\-routes (
+\begin{DoxyParamCaption}
+\item[{int}]{day}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a88a2eb7e0503aa9b0a4a004ede31b58f}
+
+
+This function creates routes VRPH\_\-DEPOT-\/i-\/VRPH\_\-DEPOT for all nodes that require service on the provided day. Returns true if successful, false if the default routes violate some capacity or route length constraint.
+
+
+
+Definition at line 1334 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_af29c214351fe56211ead2ffbb88704b0}{
+\index{VRP@{VRP}!create\_\-distance\_\-matrix@{create\_\-distance\_\-matrix}}
+\index{create\_\-distance\_\-matrix@{create\_\-distance\_\-matrix}!VRP@{VRP}}
+\subsubsection[{create\_\-distance\_\-matrix}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::create\_\-distance\_\-matrix (
+\begin{DoxyParamCaption}
+\item[{int}]{type}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_af29c214351fe56211ead2ffbb88704b0}
+
+
+Creates the O(n$^\wedge$2) size distance matrix for the provided data using the distance function referenced by type. If the type is EXPLICIT, then the entire distance matrix should be provided in the actual TSPLIB file.
+
+
+
+Definition at line 370 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_ad130cf735469fba7515836247a4666bc}{
+\index{VRP@{VRP}!create\_\-neighbor\_\-lists@{create\_\-neighbor\_\-lists}}
+\index{create\_\-neighbor\_\-lists@{create\_\-neighbor\_\-lists}!VRP@{VRP}}
+\subsubsection[{create\_\-neighbor\_\-lists}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::create\_\-neighbor\_\-lists (
+\begin{DoxyParamCaption}
+\item[{int}]{nsize}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_ad130cf735469fba7515836247a4666bc}
+
+
+Creates the neighbor list of size nsize for each node including the VRPH\_\-DEPOT.
+
+
+
+Definition at line 406 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_aaa5bdbb47495253df1a26d38db0f5b32}{
+\index{VRP@{VRP}!create\_\-pred\_\-array@{create\_\-pred\_\-array}}
+\index{create\_\-pred\_\-array@{create\_\-pred\_\-array}!VRP@{VRP}}
+\subsubsection[{create\_\-pred\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::create\_\-pred\_\-array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_aaa5bdbb47495253df1a26d38db0f5b32}
+
+
+This function creates a pred\_\-array from the existing next\_\-array
+
+
+
+Definition at line 813 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a55fa1cba5d51bd97f2e43b9caa647ecd}{
+\index{VRP@{VRP}!create\_\-search\_\-neighborhood@{create\_\-search\_\-neighborhood}}
+\index{create\_\-search\_\-neighborhood@{create\_\-search\_\-neighborhood}!VRP@{VRP}}
+\subsubsection[{create\_\-search\_\-neighborhood}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::create\_\-search\_\-neighborhood (
+\begin{DoxyParamCaption}
+\item[{int}]{j, }
+\item[{int}]{rules}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a55fa1cba5d51bd97f2e43b9caa647ecd}
+
+
+Creates the search\_\-size and search\_\-space fields for the current \hyperlink{class_v_r_p}{VRP} in terms of the given node j and the rules.
+
+
+
+Definition at line 2642 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_acaf05691fee990e75fa6e2bd9a53d6ce}{
+\index{VRP@{VRP}!eject\_\-neighborhood@{eject\_\-neighborhood}}
+\index{eject\_\-neighborhood@{eject\_\-neighborhood}!VRP@{VRP}}
+\subsubsection[{eject\_\-neighborhood}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::eject\_\-neighborhood (
+\begin{DoxyParamCaption}
+\item[{int}]{j, }
+\item[{int}]{num, }
+\item[{int $\ast$}]{nodelist}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_acaf05691fee990e75fa6e2bd9a53d6ce}
+
+
+Ejects num different randomly selected nodes that are in the vicinity of node j, placing the list of ejected nodes in the nodelist\mbox{[}\mbox{]} array. Node j is also ejected! The candidates for ejection are randomly chosen from the 2$\ast$num nearest neighbors of j.
+
+
+
+Definition at line 2469 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_af222e1b7a1d55c864e37ca237cce2408}{
+\index{VRP@{VRP}!eject\_\-node@{eject\_\-node}}
+\index{eject\_\-node@{eject\_\-node}!VRP@{VRP}}
+\subsubsection[{eject\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::eject\_\-node (
+\begin{DoxyParamCaption}
+\item[{int}]{k}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_af222e1b7a1d55c864e37ca237cce2408}
+
+
+This function removes node j from the current solution and adjusts the solution information appropriately.
+
+
+
+Definition at line 1627 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a094295c8278aa30ec623750dd6830b3b}{
+\index{VRP@{VRP}!eject\_\-route@{eject\_\-route}}
+\index{eject\_\-route@{eject\_\-route}!VRP@{VRP}}
+\subsubsection[{eject\_\-route}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::eject\_\-route (
+\begin{DoxyParamCaption}
+\item[{int}]{r, }
+\item[{int $\ast$}]{route\_\-buff}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a094295c8278aa30ec623750dd6830b3b}
+
+
+Ejects all nodes from the current solution that are in route r. Places an ordered list of the ejected nodes in route\_\-buff\mbox{[}\mbox{]}.
+
+
+
+Definition at line 1732 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_aa876ebb6a2b91a4d6097f2aa8d4ef4e3}{
+\index{VRP@{VRP}!ejection\_\-cost@{ejection\_\-cost}}
+\index{ejection\_\-cost@{ejection\_\-cost}!VRP@{VRP}}
+\subsubsection[{ejection\_\-cost}]{\setlength{\rightskip}{0pt plus 5cm}double VRP::ejection\_\-cost (
+\begin{DoxyParamCaption}
+\item[{int}]{u}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_aa876ebb6a2b91a4d6097f2aa8d4ef4e3}
+
+
+Returns the reduction in the objective function value obtained by ejecting u from the current solution.
+
+
+
+Definition at line 2896 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_adb439544630c4817fc6e9373a3216ef5}{
+\index{VRP@{VRP}!export\_\-canonical\_\-solution\_\-buff@{export\_\-canonical\_\-solution\_\-buff}}
+\index{export\_\-canonical\_\-solution\_\-buff@{export\_\-canonical\_\-solution\_\-buff}!VRP@{VRP}}
+\subsubsection[{export\_\-canonical\_\-solution\_\-buff}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::export\_\-canonical\_\-solution\_\-buff (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{sol\_\-buff}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_adb439544630c4817fc6e9373a3216ef5}
+
+
+Puts the solution into the buffer in a \char`\"{}canonical form\char`\"{}. The orientation of each route is such that start$<$end. Also, the ordering of the different routes is determined so that route i precedes route j in the ordering if start\_\-i $<$ start\_\-j.
+
+
+
+Definition at line 1238 of file VRPIO.cpp.
+
+\hypertarget{class_v_r_p_a7766815e5d2eaf7972078e389f3cb44d}{
+\index{VRP@{VRP}!export\_\-solution\_\-buff@{export\_\-solution\_\-buff}}
+\index{export\_\-solution\_\-buff@{export\_\-solution\_\-buff}!VRP@{VRP}}
+\subsubsection[{export\_\-solution\_\-buff}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::export\_\-solution\_\-buff (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{sol\_\-buff}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a7766815e5d2eaf7972078e389f3cb44d}
+
+
+Exports the solution to sol\_\-buff.
+
+
+
+Definition at line 1213 of file VRPIO.cpp.
+
+\hypertarget{class_v_r_p_a4de3406506e3f48638a9975d303d386f}{
+\index{VRP@{VRP}!find\_\-cheapest\_\-insertion@{find\_\-cheapest\_\-insertion}}
+\index{find\_\-cheapest\_\-insertion@{find\_\-cheapest\_\-insertion}!VRP@{VRP}}
+\subsubsection[{find\_\-cheapest\_\-insertion}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::find\_\-cheapest\_\-insertion (
+\begin{DoxyParamCaption}
+\item[{int}]{j, }
+\item[{int $\ast$}]{edge, }
+\item[{double $\ast$}]{costs, }
+\item[{int}]{rules}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a4de3406506e3f48638a9975d303d386f}
+
+
+Finds the cheapest insertion of node j into the current solution. We store both the best feasible insertion as well as the best overall insertion. The value of edge\mbox{[}0\mbox{]} is the start node of the best feasible edge to be broken and edge\mbox{[}1\mbox{]} is the end node. Similarly, edge\mbox{[}2\mbox{]} and edge\mbox{[}3\mbox{]} represent the start and end of the best overall edge, disregarding feasibility (may be the same as edge\mbox{[}0\mbox{]} and edge\mbox{[}1\mbox{]}). The costs of these insertions are placed in costs\mbox{[}0\mbox{]} and costs\mbox{[}1\mbox{]}. If rules==VRPH\_\-USE\_\-NEIGHBOR\_\-LIST, then only the neighbor list (plus the VRPH\_\-DEPOT to guarantee a singleton route) is searched. If rules==VRPH\_\-NO\_\-NEW\_\-ROUTE, then we do not allow the customer to be added in a new singleton route.
+
+
+
+Definition at line 2026 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_af5ff0b40d59ae77de3717e5a8be19828}{
+\index{VRP@{VRP}!find\_\-common\_\-routes@{find\_\-common\_\-routes}}
+\index{find\_\-common\_\-routes@{find\_\-common\_\-routes}!VRP@{VRP}}
+\subsubsection[{find\_\-common\_\-routes}]{\setlength{\rightskip}{0pt plus 5cm}int VRP::find\_\-common\_\-routes (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{sol1, }
+\item[{int $\ast$}]{sol2, }
+\item[{int $\ast$}]{route\_\-nums}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_af5ff0b40d59ae77de3717e5a8be19828}
+
+
+Finds the routes that are shared by the two solutions sol1 and sol2. Places the numbers of these routes (numbers from sol1 which are 1-\/based) into the route\_\-nums\mbox{[}\mbox{]} buffer and returns the number of shared routes.
+
+
+
+Definition at line 4113 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_acee4564d9d4ed7ddce32ecc7def8b623}{
+\index{VRP@{VRP}!find\_\-neighboring\_\-routes@{find\_\-neighboring\_\-routes}}
+\index{find\_\-neighboring\_\-routes@{find\_\-neighboring\_\-routes}!VRP@{VRP}}
+\subsubsection[{find\_\-neighboring\_\-routes}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::find\_\-neighboring\_\-routes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_acee4564d9d4ed7ddce32ecc7def8b623}
+
+
+Finds the nearest set of neighboring routes, placing the corresponding set of route numbers in each route's neighboring\_\-routes\mbox{[}\mbox{]} array.
+
+
+
+Definition at line 3180 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a5dd07c6c3a29a8ac0d1f149bef9eb433}{
+\index{VRP@{VRP}!fix\_\-edge@{fix\_\-edge}}
+\index{fix\_\-edge@{fix\_\-edge}!VRP@{VRP}}
+\subsubsection[{fix\_\-edge}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::fix\_\-edge (
+\begin{DoxyParamCaption}
+\item[{int}]{start, }
+\item[{int}]{end}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a5dd07c6c3a29a8ac0d1f149bef9eb433}
+
+
+Forces that the provided edge always remains in the solution. The edge may not currently be in the solution, but once it is encountered it will remain in the solution until the edge is unfixed. Note that the fixing of edges is only relevant if you use the heuristics with a VRPH\_\-FIXED\_\-EDGES rules.
+
+
+
+Definition at line 3529 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a8ea26e9e50f8e5064097d68f12f53e94}{
+\index{VRP@{VRP}!fix\_\-string@{fix\_\-string}}
+\index{fix\_\-string@{fix\_\-string}!VRP@{VRP}}
+\subsubsection[{fix\_\-string}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::fix\_\-string (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{node\_\-string, }
+\item[{int}]{k}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a8ea26e9e50f8e5064097d68f12f53e94}
+
+
+Fixes all edges in the node\_\-string\mbox{[}\mbox{]} array. For example, given the array \{1,3,5,4,2\}, the edges 1-\/3, 3-\/5, 5-\/4, 4-\/2 will be fixed. The value of k is the number of nodes in the string.
+
+
+
+Definition at line 3597 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_aa0ac9587aa6a5282550fbdf32fcfeb11}{
+\index{VRP@{VRP}!get\_\-best\_\-known@{get\_\-best\_\-known}}
+\index{get\_\-best\_\-known@{get\_\-best\_\-known}!VRP@{VRP}}
+\subsubsection[{get\_\-best\_\-known}]{\setlength{\rightskip}{0pt plus 5cm}double VRP::get\_\-best\_\-known (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_aa0ac9587aa6a5282550fbdf32fcfeb11}
+
+
+Definition at line 295 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_abe6b9554fab15788c1159937aac8f7ab}{
+\index{VRP@{VRP}!get\_\-best\_\-sol\_\-buff@{get\_\-best\_\-sol\_\-buff}}
+\index{get\_\-best\_\-sol\_\-buff@{get\_\-best\_\-sol\_\-buff}!VRP@{VRP}}
+\subsubsection[{get\_\-best\_\-sol\_\-buff}]{\setlength{\rightskip}{0pt plus 5cm}double VRP::get\_\-best\_\-sol\_\-buff (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{sol\_\-buff}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_abe6b9554fab15788c1159937aac8f7ab}
+
+
+Copies the best solution buffer found so far into the sol\_\-buff\mbox{[}\mbox{]} array. Assumes that sol\_\-buff\mbox{[}\mbox{]} is of sufficient size. Returns the total route length of this solution.
+
+
+
+Definition at line 247 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a3f7a41c3d1f896909a0cc83004a55993}{
+\index{VRP@{VRP}!get\_\-best\_\-total\_\-route\_\-length@{get\_\-best\_\-total\_\-route\_\-length}}
+\index{get\_\-best\_\-total\_\-route\_\-length@{get\_\-best\_\-total\_\-route\_\-length}!VRP@{VRP}}
+\subsubsection[{get\_\-best\_\-total\_\-route\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}double VRP::get\_\-best\_\-total\_\-route\_\-length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a3f7a41c3d1f896909a0cc83004a55993}
+
+
+Returns the total route length of the best solution discovered so far.
+
+
+
+Definition at line 259 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_ac43dd1c3af478740817c4e6e4e1e54e7}{
+\index{VRP@{VRP}!get\_\-distance\_\-between@{get\_\-distance\_\-between}}
+\index{get\_\-distance\_\-between@{get\_\-distance\_\-between}!VRP@{VRP}}
+\subsubsection[{get\_\-distance\_\-between}]{\setlength{\rightskip}{0pt plus 5cm}double VRP::get\_\-distance\_\-between (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_ac43dd1c3af478740817c4e6e4e1e54e7}
+\hypertarget{class_v_r_p_aac110a652caa37ca55af15b8fe732805}{
+\index{VRP@{VRP}!get\_\-max\_\-route\_\-length@{get\_\-max\_\-route\_\-length}}
+\index{get\_\-max\_\-route\_\-length@{get\_\-max\_\-route\_\-length}!VRP@{VRP}}
+\subsubsection[{get\_\-max\_\-route\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}double VRP::get\_\-max\_\-route\_\-length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_aac110a652caa37ca55af15b8fe732805}
+
+
+Definition at line 306 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_aa001538b0c1fdfdda8f47661e4e98b6e}{
+\index{VRP@{VRP}!get\_\-max\_\-veh\_\-capacity@{get\_\-max\_\-veh\_\-capacity}}
+\index{get\_\-max\_\-veh\_\-capacity@{get\_\-max\_\-veh\_\-capacity}!VRP@{VRP}}
+\subsubsection[{get\_\-max\_\-veh\_\-capacity}]{\setlength{\rightskip}{0pt plus 5cm}int VRP::get\_\-max\_\-veh\_\-capacity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_aa001538b0c1fdfdda8f47661e4e98b6e}
+
+
+Definition at line 301 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a0080e91ea13bffc3f372c60fc2f2444a}{
+\index{VRP@{VRP}!get\_\-num\_\-days@{get\_\-num\_\-days}}
+\index{get\_\-num\_\-days@{get\_\-num\_\-days}!VRP@{VRP}}
+\subsubsection[{get\_\-num\_\-days}]{\setlength{\rightskip}{0pt plus 5cm}int VRP::get\_\-num\_\-days (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a0080e91ea13bffc3f372c60fc2f2444a}
+
+
+Returns the number of days in the currently loaded instance.
+
+
+
+Definition at line 286 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a28d56748005cb291e0299acfa7a72346}{
+\index{VRP@{VRP}!get\_\-num\_\-nodes@{get\_\-num\_\-nodes}}
+\index{get\_\-num\_\-nodes@{get\_\-num\_\-nodes}!VRP@{VRP}}
+\subsubsection[{get\_\-num\_\-nodes}]{\setlength{\rightskip}{0pt plus 5cm}int VRP::get\_\-num\_\-nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a28d56748005cb291e0299acfa7a72346}
+
+
+Returns the number of nodes in the instance.
+
+
+
+Definition at line 220 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a2e165fe21cf793a8f58efb039ebf36f5}{
+\index{VRP@{VRP}!get\_\-num\_\-original\_\-nodes@{get\_\-num\_\-original\_\-nodes}}
+\index{get\_\-num\_\-original\_\-nodes@{get\_\-num\_\-original\_\-nodes}!VRP@{VRP}}
+\subsubsection[{get\_\-num\_\-original\_\-nodes}]{\setlength{\rightskip}{0pt plus 5cm}int VRP::get\_\-num\_\-original\_\-nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a2e165fe21cf793a8f58efb039ebf36f5}
+
+
+Returns the number of original nodes in the instance.
+
+
+
+Definition at line 277 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_af96ea632c4f247d8430b44a1dd49f2d0}{
+\index{VRP@{VRP}!get\_\-segment\_\-info@{get\_\-segment\_\-info}}
+\index{get\_\-segment\_\-info@{get\_\-segment\_\-info}!VRP@{VRP}}
+\subsubsection[{get\_\-segment\_\-info}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::get\_\-segment\_\-info (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{b, }
+\item[{struct {\bf VRPSegment} $\ast$}]{S}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_af96ea632c4f247d8430b44a1dd49f2d0}
+
+
+Calculates the length, load, and \# of customers on the segment of the route between nodes a and b. Assumes that a is before b in the route -\/ this is not checked! Example: a-\/i-\/j-\/b has length: d(a,i)+d(i,j)+d(j,b) load: a + i + j + b \#: 4
+
+
+
+Definition at line 856 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a6f6c6973bc8fdda2fdb499b35b715f31}{
+\index{VRP@{VRP}!get\_\-string\_\-end@{get\_\-string\_\-end}}
+\index{get\_\-string\_\-end@{get\_\-string\_\-end}!VRP@{VRP}}
+\subsubsection[{get\_\-string\_\-end}]{\setlength{\rightskip}{0pt plus 5cm}int VRP::get\_\-string\_\-end (
+\begin{DoxyParamCaption}
+\item[{int}]{a, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a6f6c6973bc8fdda2fdb499b35b715f31}
+
+
+Finds the node that is (len-\/1) hops from a so that the string from a to the end contains len nodes. Returns -\/1 if not possible to get such a string.
+
+
+
+Definition at line 935 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a50f7c69b6795b89895c1b3a0fd267ea3}{
+\index{VRP@{VRP}!get\_\-total\_\-number\_\-of\_\-routes@{get\_\-total\_\-number\_\-of\_\-routes}}
+\index{get\_\-total\_\-number\_\-of\_\-routes@{get\_\-total\_\-number\_\-of\_\-routes}!VRP@{VRP}}
+\subsubsection[{get\_\-total\_\-number\_\-of\_\-routes}]{\setlength{\rightskip}{0pt plus 5cm}int VRP::get\_\-total\_\-number\_\-of\_\-routes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a50f7c69b6795b89895c1b3a0fd267ea3}
+
+
+Returns the number of routes in the current solution.
+
+
+
+Definition at line 268 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a2197b98f43f825d1af6c74bed717b3b4}{
+\index{VRP@{VRP}!get\_\-total\_\-route\_\-length@{get\_\-total\_\-route\_\-length}}
+\index{get\_\-total\_\-route\_\-length@{get\_\-total\_\-route\_\-length}!VRP@{VRP}}
+\subsubsection[{get\_\-total\_\-route\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}double VRP::get\_\-total\_\-route\_\-length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a2197b98f43f825d1af6c74bed717b3b4}
+
+
+Returns the total route length of the current solution.
+
+
+
+Definition at line 229 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a78e8995a693b0619a9c4e1ec6150f4f3}{
+\index{VRP@{VRP}!get\_\-total\_\-service\_\-time@{get\_\-total\_\-service\_\-time}}
+\index{get\_\-total\_\-service\_\-time@{get\_\-total\_\-service\_\-time}!VRP@{VRP}}
+\subsubsection[{get\_\-total\_\-service\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}double VRP::get\_\-total\_\-service\_\-time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a78e8995a693b0619a9c4e1ec6150f4f3}
+
+
+Returns the total service time of all customers in the instance.
+
+
+
+Definition at line 238 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a295efd4df161f2aac13aaaedf0e9448c}{
+\index{VRP@{VRP}!import\_\-solution\_\-buff@{import\_\-solution\_\-buff}}
+\index{import\_\-solution\_\-buff@{import\_\-solution\_\-buff}!VRP@{VRP}}
+\subsubsection[{import\_\-solution\_\-buff}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::import\_\-solution\_\-buff (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{sol\_\-buff}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a295efd4df161f2aac13aaaedf0e9448c}
+
+
+Imports a solution from buffer produced by something like \hyperlink{class_v_r_p_a7766815e5d2eaf7972078e389f3cb44d}{export\_\-solution\_\-buff()}. Can be a partial solution if the first element in sol\_\-buff\mbox{[}\mbox{]} is less than num\_\-original\_\-nodes;
+
+
+
+Definition at line 1093 of file VRPIO.cpp.
+
+\hypertarget{class_v_r_p_abc1fa45b42d0fc00f9465ad1be62fd2c}{
+\index{VRP@{VRP}!inject\_\-node@{inject\_\-node}}
+\index{inject\_\-node@{inject\_\-node}!VRP@{VRP}}
+\subsubsection[{inject\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::inject\_\-node (
+\begin{DoxyParamCaption}
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_abc1fa45b42d0fc00f9465ad1be62fd2c}
+
+
+Takes the node with index j that is currently NOT in the current solution and adds it to the \hyperlink{class_v_r_p}{VRP} in the best possible feasible position.
+
+
+
+Definition at line 1877 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_ae3abaa97f9abf1a46348068a5a11d4e8}{
+\index{VRP@{VRP}!inject\_\-set@{inject\_\-set}}
+\index{inject\_\-set@{inject\_\-set}!VRP@{VRP}}
+\subsubsection[{inject\_\-set}]{\setlength{\rightskip}{0pt plus 5cm}int VRP::inject\_\-set (
+\begin{DoxyParamCaption}
+\item[{int}]{num, }
+\item[{int $\ast$}]{nodelist, }
+\item[{int}]{rules, }
+\item[{int}]{attempts}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_ae3abaa97f9abf1a46348068a5a11d4e8}
+
+
+Injects num different nodes in the nodelist\mbox{[}\mbox{]} array into the current solution. If rules=VRPH\_\-RANDOM\_\-SEARCH, then we try attempts different random permutations. If rules=VRPH\_\-REGRET\_\-SEARCH, then we try attempts different permutations and can backtrack by undoing certain moves that we end up regretting.
+
+!! The eventual sol\_\-buff is larger !!!! 
+
+
+
+Definition at line 2279 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a9b3ea7b28cecf0994b7545c48eef94b4}{
+\index{VRP@{VRP}!insert\_\-node@{insert\_\-node}}
+\index{insert\_\-node@{insert\_\-node}!VRP@{VRP}}
+\subsubsection[{insert\_\-node}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::insert\_\-node (
+\begin{DoxyParamCaption}
+\item[{int}]{j, }
+\item[{int}]{i, }
+\item[{int}]{k}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a9b3ea7b28cecf0994b7545c48eef94b4}
+
+
+Inserts j in between nodes i and k. Both i and k are assumed to be routed while j is not routed.
+
+
+
+Definition at line 1897 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_af0f506119e3959a809d47976f5643348}{
+\index{VRP@{VRP}!insertion\_\-cost@{insertion\_\-cost}}
+\index{insertion\_\-cost@{insertion\_\-cost}!VRP@{VRP}}
+\subsubsection[{insertion\_\-cost}]{\setlength{\rightskip}{0pt plus 5cm}double VRP::insertion\_\-cost (
+\begin{DoxyParamCaption}
+\item[{int}]{u, }
+\item[{int}]{a, }
+\item[{int}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_af0f506119e3959a809d47976f5643348}
+
+
+Returns the increased cost to the route containing a-\/b of inserting node u in between a and b (assumed to be adjacent!)
+
+
+
+Definition at line 2840 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_add02d688670a2a569755981227421800}{
+\index{VRP@{VRP}!intersect\_\-solutions@{intersect\_\-solutions}}
+\index{intersect\_\-solutions@{intersect\_\-solutions}!VRP@{VRP}}
+\subsubsection[{intersect\_\-solutions}]{\setlength{\rightskip}{0pt plus 5cm}int VRP::intersect\_\-solutions (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{new\_\-sol, }
+\item[{int $\ast$$\ast$}]{routes, }
+\item[{int $\ast$}]{sol1, }
+\item[{int $\ast$}]{sol2, }
+\item[{int}]{min\_\-routes}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_add02d688670a2a569755981227421800}
+
+
+Takes the two solutions sol1 and sol2 and constructs a smaller instance by ejecting the routes that are in both sol1 and sol2. If the resulting solution contains less than min\_\-routes routes, then we add more random routes from sol1 until the solution has min\_\-routes. Returns the number of routes ejected from sol1 and places these route buffers in the route\_\-list\mbox{[}\mbox{]}\mbox{[}\mbox{]} array which is a 0-\/based array of routes. Note that sol1 and sol2 are assumed to be full solutions to the \hyperlink{class_v_r_p}{VRP} instance. Imports the smaller solution new\_\-sol before returning.
+
+
+
+Definition at line 3826 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a5f0fb6339cdf256c019638137ef13746}{
+\index{VRP@{VRP}!is\_\-feasible@{is\_\-feasible}}
+\index{is\_\-feasible@{is\_\-feasible}!VRP@{VRP}}
+\subsubsection[{is\_\-feasible}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::is\_\-feasible (
+\begin{DoxyParamCaption}
+\item[{{\bf VRPMove} $\ast$}]{M, }
+\item[{int}]{rules}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a5f0fb6339cdf256c019638137ef13746}
+
+
+Determines whether a proposed move is feasible or not. Could add time window feasibility checks here, etc. The rules is currently not used.
+
+
+
+Definition at line 1860 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a7ef75affd632e4493c1c2c2ed14c2ecd}{
+\index{VRP@{VRP}!list\_\-fixed\_\-edges@{list\_\-fixed\_\-edges}}
+\index{list\_\-fixed\_\-edges@{list\_\-fixed\_\-edges}!VRP@{VRP}}
+\subsubsection[{list\_\-fixed\_\-edges}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::list\_\-fixed\_\-edges (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{fixed\_\-list}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a7ef75affd632e4493c1c2c2ed14c2ecd}
+
+
+Looks through the current solution and places all edges that are currently fixed and in the solution in the fixed\_\-list\mbox{[}\mbox{]} array. So if fixed\mbox{[}2\mbox{]}\mbox{[}3\mbox{]}==true and fixed\mbox{[}3\mbox{]}\mbox{[}7\mbox{]}==true, the array fixed\_\-list\mbox{[}\mbox{]} is \{2,3,3,7\}.
+
+
+
+Definition at line 3658 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_ac3b9b76240401f3e9be1153d4ea703fd}{
+\index{VRP@{VRP}!normalize\_\-route\_\-numbers@{normalize\_\-route\_\-numbers}}
+\index{normalize\_\-route\_\-numbers@{normalize\_\-route\_\-numbers}!VRP@{VRP}}
+\subsubsection[{normalize\_\-route\_\-numbers}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::normalize\_\-route\_\-numbers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_ac3b9b76240401f3e9be1153d4ea703fd}
+
+
+Renumbers the routes so that with R total routes, they are numbered 1,2, ..., R instead of all over the place as they typically are after Clarke Wright.
+
+
+
+Definition at line 2537 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a6a2e828a5fbf2830988738768107512b}{
+\index{VRP@{VRP}!osman\_\-insert@{osman\_\-insert}}
+\index{osman\_\-insert@{osman\_\-insert}!VRP@{VRP}}
+\subsubsection[{osman\_\-insert}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::osman\_\-insert (
+\begin{DoxyParamCaption}
+\item[{int}]{k, }
+\item[{double}]{alpha}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a6a2e828a5fbf2830988738768107512b}
+
+
+Inserts node k into a new location in the solution according to Osman's savings heuristic. Given existing edges i-\/k-\/j and l-\/m, with parameter alpha, we move k to new location l-\/k-\/m such that the quantity ( ik+kj-\/lm ) -\/ alpha$\ast$(lk+km-\/ij) is minimized.
+
+
+
+Definition at line 3903 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_ade1046ec3a60adbfb75be9e7ff98daef}{
+\index{VRP@{VRP}!osman\_\-perturb@{osman\_\-perturb}}
+\index{osman\_\-perturb@{osman\_\-perturb}!VRP@{VRP}}
+\subsubsection[{osman\_\-perturb}]{\setlength{\rightskip}{0pt plus 5cm}int VRP::osman\_\-perturb (
+\begin{DoxyParamCaption}
+\item[{int}]{num, }
+\item[{double}]{alpha}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_ade1046ec3a60adbfb75be9e7ff98daef}
+
+
+Perturbs the existing solution by attempting to move num different random nodes into new positions using Osman parameter alpha. Gives up after attempting 2$\ast$V.num\_\-nodes moves.
+
+
+
+Definition at line 4014 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a2eea5225f0f8f9756bfeac54cd8371b9}{
+\index{VRP@{VRP}!perturb@{perturb}}
+\index{perturb@{perturb}!VRP@{VRP}}
+\subsubsection[{perturb}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::perturb (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a2eea5225f0f8f9756bfeac54cd8371b9}
+
+
+Perturbs the current solution as suggested in Li, et al.
+
+
+
+Definition at line 1482 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_ac5b4714d8c880144772ddd8296c8b972}{
+\index{VRP@{VRP}!perturb\_\-locations@{perturb\_\-locations}}
+\index{perturb\_\-locations@{perturb\_\-locations}!VRP@{VRP}}
+\subsubsection[{perturb\_\-locations}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::perturb\_\-locations (
+\begin{DoxyParamCaption}
+\item[{double}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_ac5b4714d8c880144772ddd8296c8b972}
+
+
+Perturbs the current problem instance by moving each node slightly as in the TSP paper of Codenotti. The perturbations are scaled in terms of the value c. The distance matrix is recomputed after all locations have been perturbed.
+
+
+
+Definition at line 3706 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a8c6b6d381f6c0940f7ee71ceaa393806}{
+\index{VRP@{VRP}!plot@{plot}}
+\index{plot@{plot}!VRP@{VRP}}
+\subsubsection[{plot}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::plot (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{int}]{options, }
+\item[{int}]{orientation}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a8c6b6d381f6c0940f7ee71ceaa393806}
+
+
+Uses PLPLOT to draw the solution in a .ps file (no other formats supported). Valid options are VRPH\_\-BLACK\_\-AND\_\-WHITE, VRPH\_\-COLOR, VRPH\_\-BARE\_\-BONES, AXES, VRPH\_\-BOXED, TITLED, VRPH\_\-NO\_\-POINTS, VRPH\_\-NO\_\-DEPOT\_\-EDGES, VRPH\_\-WEIGHTED. If options==0, then the default is to draw a VRPH\_\-BOXED, COLORed plot, with AXES and a TITLE. Setting VRPH\_\-BOXED draws a box around the plot with no axes, and setting VRPH\_\-BARE\_\-BONES draws no BOX or AXES. If VRPH\_\-NO\_\-POINTS is set, then the nodes are not drawn on the plot (default is to plot the points). Setting the option VRPH\_\-NO\_\-DEPOT\_\-EDGES will draw each route with the first and last edges of each route not shown and a VRPH\_\-WEIGHTED plot will make the size of the points proportional to their demand. The value of orientation should be 0, 1, 2, or 3, indicating that the image should be rotated through an angle of Pi/2 times orientation. A very primitive attempt is made to scale the line width and point size based on the problem size (number of nodes)
+
+
+
+Definition at line 15 of file VRPGraphics.cpp.
+
+\hypertarget{class_v_r_p_a9583d909b7f2f8d550f3633d8d4aa897}{
+\index{VRP@{VRP}!plot@{plot}}
+\index{plot@{plot}!VRP@{VRP}}
+\subsubsection[{plot}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::plot (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a9583d909b7f2f8d550f3633d8d4aa897}
+
+
+Assumes default options and plots the .ps file.
+
+
+
+Definition at line 280 of file VRPGraphics.cpp.
+
+\hypertarget{class_v_r_p_a10b8abb343d7826fc576aebd73ba11f9}{
+\index{VRP@{VRP}!plot\_\-route@{plot\_\-route}}
+\index{plot\_\-route@{plot\_\-route}!VRP@{VRP}}
+\subsubsection[{plot\_\-route}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::plot\_\-route (
+\begin{DoxyParamCaption}
+\item[{int}]{r, }
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a10b8abb343d7826fc576aebd73ba11f9}
+
+
+Uses PLPLOT to plot the individual route number r in a colored .ps file.
+
+
+
+Definition at line 300 of file VRPGraphics.cpp.
+
+\hypertarget{class_v_r_p_a07a2321a19c5ba2a787a093beffa1d6a}{
+\index{VRP@{VRP}!postsert\_\-dummy@{postsert\_\-dummy}}
+\index{postsert\_\-dummy@{postsert\_\-dummy}!VRP@{VRP}}
+\subsubsection[{postsert\_\-dummy}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::postsert\_\-dummy (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a07a2321a19c5ba2a787a093beffa1d6a}
+
+
+Definition at line 1037 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_ae24478bfd7fcb13d077bc8109f12f7d0}{
+\index{VRP@{VRP}!presert\_\-dummy@{presert\_\-dummy}}
+\index{presert\_\-dummy@{presert\_\-dummy}!VRP@{VRP}}
+\subsubsection[{presert\_\-dummy}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::presert\_\-dummy (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_ae24478bfd7fcb13d077bc8109f12f7d0}
+
+
+Definition at line 1097 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_aa1fecc4f90a6cd959205eb8f244148da}{
+\index{VRP@{VRP}!print\_\-stats@{print\_\-stats}}
+\index{print\_\-stats@{print\_\-stats}!VRP@{VRP}}
+\subsubsection[{print\_\-stats}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::print\_\-stats (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_aa1fecc4f90a6cd959205eb8f244148da}
+
+
+Prints the \# of evaluations and moves performed for each heuristic operator.
+
+
+
+Definition at line 4368 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a7b056dcb823f18a187ba74dfe46fe148}{
+\index{VRP@{VRP}!read\_\-fixed\_\-edges@{read\_\-fixed\_\-edges}}
+\index{read\_\-fixed\_\-edges@{read\_\-fixed\_\-edges}!VRP@{VRP}}
+\subsubsection[{read\_\-fixed\_\-edges}]{\setlength{\rightskip}{0pt plus 5cm}int VRP::read\_\-fixed\_\-edges (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a7b056dcb823f18a187ba74dfe46fe148}
+
+
+Reads a file of edges to be fixed. Letting k be the number of edges to be fixed, the file has the format
+
+k start\_\-1 end\_\-1 start\_\-2 end\_\-2 ... start\_\-k end\_\-k
+
+Returns the number of edges that are fixed.
+
+
+
+Definition at line 3617 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a88640397d743e6b40095fc2b9a74ad96}{
+\index{VRP@{VRP}!read\_\-solution\_\-file@{read\_\-solution\_\-file}}
+\index{read\_\-solution\_\-file@{read\_\-solution\_\-file}!VRP@{VRP}}
+\subsubsection[{read\_\-solution\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::read\_\-solution\_\-file (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a88640397d743e6b40095fc2b9a74ad96}
+
+
+Imports a solution from filename. File is assumed to be in the format produced by \hyperlink{class_v_r_p_a53325e48991274fa0e36efd92abbf868}{VRP.write\_\-solution\_\-file}
+
+
+
+Definition at line 1055 of file VRPIO.cpp.
+
+\hypertarget{class_v_r_p_a484362e33edbb65b0015b82b60740817}{
+\index{VRP@{VRP}!read\_\-TSPLIB\_\-file@{read\_\-TSPLIB\_\-file}}
+\index{read\_\-TSPLIB\_\-file@{read\_\-TSPLIB\_\-file}!VRP@{VRP}}
+\subsubsection[{read\_\-TSPLIB\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::read\_\-TSPLIB\_\-file (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{infile}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a484362e33edbb65b0015b82b60740817}
+
+
+Processes each section of the provided TSPLIB file and records the relevant data in the \hyperlink{class_v_r_p}{VRP} structure. See the example files for information on my interpretation of the TSPLIB standard as it applies to VRP's.
+
+
+
+Definition at line 15 of file VRPIO.cpp.
+
+\hypertarget{class_v_r_p_a0780f49cd584076612217a25b2c92c67}{
+\index{VRP@{VRP}!refresh\_\-routes@{refresh\_\-routes}}
+\index{refresh\_\-routes@{refresh\_\-routes}!VRP@{VRP}}
+\subsubsection[{refresh\_\-routes}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::refresh\_\-routes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a0780f49cd584076612217a25b2c92c67}
+
+
+Ignores the current route length and load values and recalculates them directly from the next\_\-array.
+
+
+
+Definition at line 700 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_aa63c8539a72e3c407ee8cd0892ae858d}{
+\index{VRP@{VRP}!remove\_\-dummy@{remove\_\-dummy}}
+\index{remove\_\-dummy@{remove\_\-dummy}!VRP@{VRP}}
+\subsubsection[{remove\_\-dummy}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::remove\_\-dummy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_aa63c8539a72e3c407ee8cd0892ae858d}
+
+
+Definition at line 1155 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a6c9d4499eab192e2af3de9ae2ee2d93a}{
+\index{VRP@{VRP}!reset@{reset}}
+\index{reset@{reset}!VRP@{VRP}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a6c9d4499eab192e2af3de9ae2ee2d93a}
+
+
+Liquidates the solution memory and sets all nodes to unrouted.
+
+
+
+Definition at line 4396 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_ac16a3bfc6dd90097231615e74c365e99}{
+\index{VRP@{VRP}!reverse\_\-route@{reverse\_\-route}}
+\index{reverse\_\-route@{reverse\_\-route}!VRP@{VRP}}
+\subsubsection[{reverse\_\-route}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::reverse\_\-route (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_ac16a3bfc6dd90097231615e74c365e99}
+
+
+This function reverses route number i -\/ does no error checking since we don't know if the routes have normalized numbers or not...
+
+
+
+Definition at line 962 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_add8a377bf3c6136beda15b2a571bc8ad}{
+\index{VRP@{VRP}!RTR\_\-solve@{RTR\_\-solve}}
+\index{RTR\_\-solve@{RTR\_\-solve}!VRP@{VRP}}
+\subsubsection[{RTR\_\-solve}]{\setlength{\rightskip}{0pt plus 5cm}double VRP::RTR\_\-solve (
+\begin{DoxyParamCaption}
+\item[{int}]{heuristics, }
+\item[{int}]{intensity, }
+\item[{int}]{max\_\-stuck, }
+\item[{int}]{num\_\-perturbs, }
+\item[{double}]{dev, }
+\item[{int}]{nlist\_\-size, }
+\item[{int}]{perturb\_\-type, }
+\item[{int}]{accept\_\-type, }
+\item[{bool}]{verbose}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_add8a377bf3c6136beda15b2a571bc8ad}
+
+
+Uses the given parameters to generate a \hyperlink{class_v_r_p}{VRP} solution via record-\/to-\/record travel. Assumes that data has already been imported into V and that we have some existing solution. Returns the objective function value of the best solution found
+
+
+
+Definition at line 15 of file VRPSolvers.cpp.
+
+\hypertarget{class_v_r_p_a721540de1b77fe2c90aadd09a7491be8}{
+\index{VRP@{VRP}!SA\_\-solve@{SA\_\-solve}}
+\index{SA\_\-solve@{SA\_\-solve}!VRP@{VRP}}
+\subsubsection[{SA\_\-solve}]{\setlength{\rightskip}{0pt plus 5cm}double VRP::SA\_\-solve (
+\begin{DoxyParamCaption}
+\item[{int}]{heuristics, }
+\item[{double}]{start\_\-temp, }
+\item[{double}]{cool\_\-ratio, }
+\item[{int}]{iters\_\-per\_\-loop, }
+\item[{int}]{num\_\-loops, }
+\item[{int}]{nlist\_\-size, }
+\item[{bool}]{verbose}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a721540de1b77fe2c90aadd09a7491be8}
+
+
+Uses the given parameters to generate a \hyperlink{class_v_r_p}{VRP} solution using Simulated Annealing. Assumes that data has already been imported into V and that we have some existing solution. Returns the total route length of the best solution found.
+
+
+
+Definition at line 493 of file VRPSolvers.cpp.
+
+\hypertarget{class_v_r_p_a88f8ccc266e829d431e726c2e8b81caa}{
+\index{VRP@{VRP}!set\_\-best\_\-total\_\-route\_\-length@{set\_\-best\_\-total\_\-route\_\-length}}
+\index{set\_\-best\_\-total\_\-route\_\-length@{set\_\-best\_\-total\_\-route\_\-length}!VRP@{VRP}}
+\subsubsection[{set\_\-best\_\-total\_\-route\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::set\_\-best\_\-total\_\-route\_\-length (
+\begin{DoxyParamCaption}
+\item[{double}]{val}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a88f8ccc266e829d431e726c2e8b81caa}
+
+
+Definition at line 311 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_acb5f69737f56a2abdcb05fcb7a994396}{
+\index{VRP@{VRP}!set\_\-daily\_\-demands@{set\_\-daily\_\-demands}}
+\index{set\_\-daily\_\-demands@{set\_\-daily\_\-demands}!VRP@{VRP}}
+\subsubsection[{set\_\-daily\_\-demands}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::set\_\-daily\_\-demands (
+\begin{DoxyParamCaption}
+\item[{int}]{day}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_acb5f69737f56a2abdcb05fcb7a994396}
+
+
+Sets the demand of each node equal to the daily demand value for the given day. Used for period VRPs. The day should be a positive integer. If a day of 0 is given, then we set the demand to the mean value.
+
+
+
+Definition at line 4180 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a90bd8e393c92c78fcab13b22c283e88f}{
+\index{VRP@{VRP}!set\_\-daily\_\-service\_\-times@{set\_\-daily\_\-service\_\-times}}
+\index{set\_\-daily\_\-service\_\-times@{set\_\-daily\_\-service\_\-times}!VRP@{VRP}}
+\subsubsection[{set\_\-daily\_\-service\_\-times}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::set\_\-daily\_\-service\_\-times (
+\begin{DoxyParamCaption}
+\item[{int}]{day}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a90bd8e393c92c78fcab13b22c283e88f}
+
+
+Sets the service time of each node equal to the daily service time for the given day. Used for period VRPs.
+
+
+
+Definition at line 4226 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_ada636b72ffc5ea0831bd083b408ada37}{
+\index{VRP@{VRP}!show\_\-next\_\-array@{show\_\-next\_\-array}}
+\index{show\_\-next\_\-array@{show\_\-next\_\-array}!VRP@{VRP}}
+\subsubsection[{show\_\-next\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::show\_\-next\_\-array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_ada636b72ffc5ea0831bd083b408ada37}
+
+
+Debugging function that shows the current next\_\-array\mbox{[}\mbox{]}
+
+
+
+Definition at line 16 of file VRPDebug.cpp.
+
+\hypertarget{class_v_r_p_adb428999690dc1538a9136be2fc4a545}{
+\index{VRP@{VRP}!show\_\-pred\_\-array@{show\_\-pred\_\-array}}
+\index{show\_\-pred\_\-array@{show\_\-pred\_\-array}!VRP@{VRP}}
+\subsubsection[{show\_\-pred\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::show\_\-pred\_\-array (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_adb428999690dc1538a9136be2fc4a545}
+
+
+Debugging function that shows the pred\_\-array.
+
+
+
+Definition at line 32 of file VRPDebug.cpp.
+
+\hypertarget{class_v_r_p_abe8dee5bd3d4ace4c38d9ec68b39e409}{
+\index{VRP@{VRP}!show\_\-route@{show\_\-route}}
+\index{show\_\-route@{show\_\-route}!VRP@{VRP}}
+\subsubsection[{show\_\-route}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::show\_\-route (
+\begin{DoxyParamCaption}
+\item[{int}]{k}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_abe8dee5bd3d4ace4c38d9ec68b39e409}
+
+
+Displays information about route number k.
+
+
+
+Definition at line 1396 of file VRPIO.cpp.
+
+\hypertarget{class_v_r_p_a220683d7cff96be26550a081f948cfd2}{
+\index{VRP@{VRP}!show\_\-routes@{show\_\-routes}}
+\index{show\_\-routes@{show\_\-routes}!VRP@{VRP}}
+\subsubsection[{show\_\-routes}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::show\_\-routes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a220683d7cff96be26550a081f948cfd2}
+
+
+Displays all routes in the solution.
+
+
+
+Definition at line 1295 of file VRPIO.cpp.
+
+\hypertarget{class_v_r_p_a660ca2a84b28b869d8b4994b00d01f40}{
+\index{VRP@{VRP}!split@{split}}
+\index{split@{split}!VRP@{VRP}}
+\subsubsection[{split}]{\setlength{\rightskip}{0pt plus 5cm}double VRP::split (
+\begin{DoxyParamCaption}
+\item[{double}]{p}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a660ca2a84b28b869d8b4994b00d01f40}
+
+
+Splits an existing \hyperlink{class_v_r_p}{VRP} into two parts by drawing a random ray from the VRPH\_\-DEPOT. We repeatedly try to split the problem in this way until we have two sets of nodes that each has k nodes where k is between p$\ast$num\_\-nodes and (1-\/p)$\ast$num\_\-nodes. The value of p must be less than .5. Returns the angle theta used to split the problem
+
+
+
+Definition at line 3371 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a274f22551361e9575bfc95611fa7df28}{
+\index{VRP@{VRP}!split\_\-routes@{split\_\-routes}}
+\index{split\_\-routes@{split\_\-routes}!VRP@{VRP}}
+\subsubsection[{split\_\-routes}]{\setlength{\rightskip}{0pt plus 5cm}int VRP::split\_\-routes (
+\begin{DoxyParamCaption}
+\item[{double}]{p, }
+\item[{int $\ast$$\ast$}]{ejected\_\-routes, }
+\item[{double $\ast$}]{t}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a274f22551361e9575bfc95611fa7df28}
+
+
+Splits an existing \hyperlink{class_v_r_p}{VRP} into two parts by drawing a random ray from the VRPH\_\-DEPOT. We repeatedly try to split the problem in this way until we have two sets of nodes that each has k nodes where k is between p$\ast$num\_\-nodes and (1-\/p)$\ast$num\_\-nodes. Next, we take the larger part of the split solution and then keep all the routes that have at least one node in the larger part. The route-\/based decisions are based on the currently loaded solution. The ejected routes are placed in the ejected\_\-routes\mbox{[}\mbox{]}\mbox{[}\mbox{]} array and the function returns the number of routes ejected. The final value of theta that splits the problem is placed in t.
+
+
+
+Definition at line 3436 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a3bbbdd28b87f379ff56606c06b27393c}{
+\index{VRP@{VRP}!summary@{summary}}
+\index{summary@{summary}!VRP@{VRP}}
+\subsubsection[{summary}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::summary (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a3bbbdd28b87f379ff56606c06b27393c}
+
+
+This function prints out a summary of the current solution and the individual routes.
+
+
+
+Definition at line 1429 of file VRPIO.cpp.
+
+\hypertarget{class_v_r_p_ae71ef1c9462cf6d175d20abb357e8c31}{
+\index{VRP@{VRP}!unfix\_\-all@{unfix\_\-all}}
+\index{unfix\_\-all@{unfix\_\-all}!VRP@{VRP}}
+\subsubsection[{unfix\_\-all}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::unfix\_\-all (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_ae71ef1c9462cf6d175d20abb357e8c31}
+
+
+Unfixes any and all edges that may be currently fixed.
+
+
+
+Definition at line 3586 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a1f927132c4d90c5a6aa793a3cbfeb5f5}{
+\index{VRP@{VRP}!unfix\_\-edge@{unfix\_\-edge}}
+\index{unfix\_\-edge@{unfix\_\-edge}!VRP@{VRP}}
+\subsubsection[{unfix\_\-edge}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::unfix\_\-edge (
+\begin{DoxyParamCaption}
+\item[{int}]{start, }
+\item[{int}]{end}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a1f927132c4d90c5a6aa793a3cbfeb5f5}
+
+
+Unfixes an edge that is already fixed.
+
+
+
+Definition at line 3558 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a6046e20fffcbd601a1f02a42a1a92a0c}{
+\index{VRP@{VRP}!update@{update}}
+\index{update@{update}!VRP@{VRP}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::update (
+\begin{DoxyParamCaption}
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a6046e20fffcbd601a1f02a42a1a92a0c}
+
+
+Updates the solution information in terms of the move M.
+
+
+
+Definition at line 3122 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_aa5233a27a24a804a69c973247c684557}{
+\index{VRP@{VRP}!update\_\-arrival\_\-times@{update\_\-arrival\_\-times}}
+\index{update\_\-arrival\_\-times@{update\_\-arrival\_\-times}!VRP@{VRP}}
+\subsubsection[{update\_\-arrival\_\-times}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::update\_\-arrival\_\-times (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_aa5233a27a24a804a69c973247c684557}
+
+
+Computes the arrival time at all customers.
+
+
+
+Definition at line 4246 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a53c375f3acdb43efc3f2e63b40cdca01}{
+\index{VRP@{VRP}!update\_\-route@{update\_\-route}}
+\index{update\_\-route@{update\_\-route}!VRP@{VRP}}
+\subsubsection[{update\_\-route}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::update\_\-route (
+\begin{DoxyParamCaption}
+\item[{int}]{j, }
+\item[{{\bf VRPRoute} $\ast$}]{R}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a53c375f3acdb43efc3f2e63b40cdca01}
+
+
+Copies the fields of route j in the current solution to the \hyperlink{class_v_r_p_route}{VRPRoute} R, also updating the ordering, x, and y arrays. The ordering is normalized by having start$<$end.
+
+
+
+Definition at line 3301 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a4cd15e9a1a08aeb112bb60ead67f689f}{
+\index{VRP@{VRP}!update\_\-solution\_\-wh@{update\_\-solution\_\-wh}}
+\index{update\_\-solution\_\-wh@{update\_\-solution\_\-wh}!VRP@{VRP}}
+\subsubsection[{update\_\-solution\_\-wh}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::update\_\-solution\_\-wh (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a4cd15e9a1a08aeb112bb60ead67f689f}
+
+
+Attempts to add the given solution to the warehouse.
+
+
+
+Definition at line 3277 of file VRP.cpp.
+
+\hypertarget{class_v_r_p_a5e3e1361a093bd343ce5cdc51d20857d}{
+\index{VRP@{VRP}!verify\_\-routes@{verify\_\-routes}}
+\index{verify\_\-routes@{verify\_\-routes}!VRP@{VRP}}
+\subsubsection[{verify\_\-routes}]{\setlength{\rightskip}{0pt plus 5cm}bool VRP::verify\_\-routes (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{message}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a5e3e1361a093bd343ce5cdc51d20857d}
+
+
+This debugging function will manually calculate the objective function of the current solution and the route values, etc., and compare with the claimed value. Returns false if any inconsistencies are found and prints the message. Returns true with no output otherwise.
+
+
+
+Definition at line 50 of file VRPDebug.cpp.
+
+\hypertarget{class_v_r_p_a53325e48991274fa0e36efd92abbf868}{
+\index{VRP@{VRP}!write\_\-solution\_\-file@{write\_\-solution\_\-file}}
+\index{write\_\-solution\_\-file@{write\_\-solution\_\-file}!VRP@{VRP}}
+\subsubsection[{write\_\-solution\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::write\_\-solution\_\-file (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a53325e48991274fa0e36efd92abbf868}
+
+
+Exports a solution to the designated filename in canonical form. Let N be the \# of non-\/VRPH\_\-DEPOT nodes in the problem. Then the first entry in the file is N and the following N+1 entries simply traverse the solution in order where we enter a node's negative index if it is the first node in a route. The solution is put into canonical form -\/ the routes are traversed in the orientation where the start index is less than the end index, and the routes are sorted by the start index. Example: Route 1: 0-\/3-\/2-\/0, Route 2: 0-\/4-\/1-\/0 File is then: 4 -\/1 4 -\/2 3 0
+
+
+
+Definition at line 849 of file VRPIO.cpp.
+
+\hypertarget{class_v_r_p_a8db444175bfce88c819fe551ac2c2392}{
+\index{VRP@{VRP}!write\_\-solutions@{write\_\-solutions}}
+\index{write\_\-solutions@{write\_\-solutions}!VRP@{VRP}}
+\subsubsection[{write\_\-solutions}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::write\_\-solutions (
+\begin{DoxyParamCaption}
+\item[{int}]{num\_\-sols, }
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a8db444175bfce88c819fe551ac2c2392}
+
+
+Writes num\_\-sols solutions from the solution warehouse to the designated filename. The format is the same as for write\_\-solution\_\-file.
+
+
+
+Definition at line 920 of file VRPIO.cpp.
+
+\hypertarget{class_v_r_p_a5e08e9d713236b6fa098ed9ed2aeb180}{
+\index{VRP@{VRP}!write\_\-tex\_\-file@{write\_\-tex\_\-file}}
+\index{write\_\-tex\_\-file@{write\_\-tex\_\-file}!VRP@{VRP}}
+\subsubsection[{write\_\-tex\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::write\_\-tex\_\-file (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_a5e08e9d713236b6fa098ed9ed2aeb180}
+
+
+Writes the solution in a TeX tabular format using the longtable package in case the solution spans multiple pages.
+
+
+
+Definition at line 983 of file VRPIO.cpp.
+
+\hypertarget{class_v_r_p_aae4bfa00f65383453b3d86a0e63a5f78}{
+\index{VRP@{VRP}!write\_\-TSPLIB\_\-file@{write\_\-TSPLIB\_\-file}}
+\index{write\_\-TSPLIB\_\-file@{write\_\-TSPLIB\_\-file}!VRP@{VRP}}
+\subsubsection[{write\_\-TSPLIB\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}void VRP::write\_\-TSPLIB\_\-file (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{outfile}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_aae4bfa00f65383453b3d86a0e63a5f78}
+
+
+Exports the data from an already loaded instance to a CVRP outfile in TSPLIB format (using EXACT\_\-2D distance).
+
+
+
+Definition at line 793 of file VRPIO.cpp.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_v_r_p_af4ac00f95018bc06be8f4ae5e19b3357}{
+\index{VRP@{VRP}!ClarkeWright@{ClarkeWright}}
+\index{ClarkeWright@{ClarkeWright}!VRP@{VRP}}
+\subsubsection[{ClarkeWright}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf ClarkeWright}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_v_r_p_af4ac00f95018bc06be8f4ae5e19b3357}
+
+
+Definition at line 36 of file VRP.h.
+
+\hypertarget{class_v_r_p_a297dde4c15143a11faf5fbaec854461c}{
+\index{VRP@{VRP}!Concatenate@{Concatenate}}
+\index{Concatenate@{Concatenate}!VRP@{VRP}}
+\subsubsection[{Concatenate}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Concatenate}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_v_r_p_a297dde4c15143a11faf5fbaec854461c}
+
+
+Definition at line 33 of file VRP.h.
+
+\hypertarget{class_v_r_p_ab4edeb2c24ce03a58fd64a672344879d}{
+\index{VRP@{VRP}!CrossExchange@{CrossExchange}}
+\index{CrossExchange@{CrossExchange}!VRP@{VRP}}
+\subsubsection[{CrossExchange}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf CrossExchange}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_v_r_p_ab4edeb2c24ce03a58fd64a672344879d}
+
+
+Definition at line 26 of file VRP.h.
+
+\hypertarget{class_v_r_p_a01b574361116f8cdbdee667c2f0c7068}{
+\index{VRP@{VRP}!Flip@{Flip}}
+\index{Flip@{Flip}!VRP@{VRP}}
+\subsubsection[{Flip}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Flip}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_v_r_p_a01b574361116f8cdbdee667c2f0c7068}
+
+
+Definition at line 34 of file VRP.h.
+
+\hypertarget{class_v_r_p_a639ad495d8fe15a35cd86e1e1bf86864}{
+\index{VRP@{VRP}!MoveString@{MoveString}}
+\index{MoveString@{MoveString}!VRP@{VRP}}
+\subsubsection[{MoveString}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf MoveString}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_v_r_p_a639ad495d8fe15a35cd86e1e1bf86864}
+
+
+Definition at line 30 of file VRP.h.
+
+\hypertarget{class_v_r_p_a3eb7e09375cb9efb60e174576602cc2a}{
+\index{VRP@{VRP}!OnePointMove@{OnePointMove}}
+\index{OnePointMove@{OnePointMove}!VRP@{VRP}}
+\subsubsection[{OnePointMove}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf OnePointMove}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_v_r_p_a3eb7e09375cb9efb60e174576602cc2a}
+
+
+Definition at line 20 of file VRP.h.
+
+\hypertarget{class_v_r_p_aad4e90257d9562aaba2f6cb67b18b0b4}{
+\index{VRP@{VRP}!OrOpt@{OrOpt}}
+\index{OrOpt@{OrOpt}!VRP@{VRP}}
+\subsubsection[{OrOpt}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf OrOpt}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_v_r_p_aad4e90257d9562aaba2f6cb67b18b0b4}
+
+
+Definition at line 25 of file VRP.h.
+
+\hypertarget{class_v_r_p_a0db13b3e7109396073d590aa1a62d0ec}{
+\index{VRP@{VRP}!Postsert@{Postsert}}
+\index{Postsert@{Postsert}!VRP@{VRP}}
+\subsubsection[{Postsert}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Postsert}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_v_r_p_a0db13b3e7109396073d590aa1a62d0ec}
+
+
+Definition at line 28 of file VRP.h.
+
+\hypertarget{class_v_r_p_ab909d662038d19e5f8fe92828f2876c0}{
+\index{VRP@{VRP}!Presert@{Presert}}
+\index{Presert@{Presert}!VRP@{VRP}}
+\subsubsection[{Presert}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Presert}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_v_r_p_ab909d662038d19e5f8fe92828f2876c0}
+
+
+Definition at line 29 of file VRP.h.
+
+\hypertarget{class_v_r_p_a70514fe066409f0e910cf8622c6ec2fd}{
+\index{VRP@{VRP}!Swap@{Swap}}
+\index{Swap@{Swap}!VRP@{VRP}}
+\subsubsection[{Swap}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Swap}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_v_r_p_a70514fe066409f0e910cf8622c6ec2fd}
+
+
+Definition at line 31 of file VRP.h.
+
+\hypertarget{class_v_r_p_a8dcd8df53052c8616440b02c62028d2b}{
+\index{VRP@{VRP}!SwapEnds@{SwapEnds}}
+\index{SwapEnds@{SwapEnds}!VRP@{VRP}}
+\subsubsection[{SwapEnds}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf SwapEnds}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_v_r_p_a8dcd8df53052c8616440b02c62028d2b}
+
+
+Definition at line 32 of file VRP.h.
+
+\hypertarget{class_v_r_p_a908f328c298fc585c89c0ab14546aeba}{
+\index{VRP@{VRP}!Sweep@{Sweep}}
+\index{Sweep@{Sweep}!VRP@{VRP}}
+\subsubsection[{Sweep}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Sweep}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_v_r_p_a908f328c298fc585c89c0ab14546aeba}
+
+
+Definition at line 37 of file VRP.h.
+
+\hypertarget{class_v_r_p_af723275dce636f74121f91687deedc70}{
+\index{VRP@{VRP}!ThreeOpt@{ThreeOpt}}
+\index{ThreeOpt@{ThreeOpt}!VRP@{VRP}}
+\subsubsection[{ThreeOpt}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf ThreeOpt}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_v_r_p_af723275dce636f74121f91687deedc70}
+
+
+Definition at line 24 of file VRP.h.
+
+\hypertarget{class_v_r_p_af9c805ac13341028e10098c88c60b2ba}{
+\index{VRP@{VRP}!ThreePointMove@{ThreePointMove}}
+\index{ThreePointMove@{ThreePointMove}!VRP@{VRP}}
+\subsubsection[{ThreePointMove}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf ThreePointMove}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_v_r_p_af9c805ac13341028e10098c88c60b2ba}
+
+
+Definition at line 22 of file VRP.h.
+
+\hypertarget{class_v_r_p_a0c92c8936f6281af1fd5ed7eac0ebf7a}{
+\index{VRP@{VRP}!TwoOpt@{TwoOpt}}
+\index{TwoOpt@{TwoOpt}!VRP@{VRP}}
+\subsubsection[{TwoOpt}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf TwoOpt}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_v_r_p_a0c92c8936f6281af1fd5ed7eac0ebf7a}
+
+
+Definition at line 23 of file VRP.h.
+
+\hypertarget{class_v_r_p_a39ceb628e29d77c67f2f02033a2947fd}{
+\index{VRP@{VRP}!TwoPointMove@{TwoPointMove}}
+\index{TwoPointMove@{TwoPointMove}!VRP@{VRP}}
+\subsubsection[{TwoPointMove}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf TwoPointMove}\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{class_v_r_p_a39ceb628e29d77c67f2f02033a2947fd}
+
+
+Definition at line 21 of file VRP.h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_v_r_p_a90a29b6636daa9e4ada8c01069b52d07}{
+\index{VRP@{VRP}!balance\_\-parameter@{balance\_\-parameter}}
+\index{balance\_\-parameter@{balance\_\-parameter}!VRP@{VRP}}
+\subsubsection[{balance\_\-parameter}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRP::balance\_\-parameter}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a90a29b6636daa9e4ada8c01069b52d07}
+
+
+Definition at line 193 of file VRP.h.
+
+\hypertarget{class_v_r_p_a8c1aea504be581f3d44cbe809343dd59}{
+\index{VRP@{VRP}!best\_\-known@{best\_\-known}}
+\index{best\_\-known@{best\_\-known}!VRP@{VRP}}
+\subsubsection[{best\_\-known}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRP::best\_\-known}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a8c1aea504be581f3d44cbe809343dd59}
+
+
+Definition at line 176 of file VRP.h.
+
+\hypertarget{class_v_r_p_a3f3ca7d6c3a3c632c07750afa2b31b63}{
+\index{VRP@{VRP}!best\_\-sol\_\-buff@{best\_\-sol\_\-buff}}
+\index{best\_\-sol\_\-buff@{best\_\-sol\_\-buff}!VRP@{VRP}}
+\subsubsection[{best\_\-sol\_\-buff}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf VRP::best\_\-sol\_\-buff}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a3f3ca7d6c3a3c632c07750afa2b31b63}
+
+
+Definition at line 172 of file VRP.h.
+
+\hypertarget{class_v_r_p_afd48775dd53edd84340f68f704b8f9dc}{
+\index{VRP@{VRP}!best\_\-total\_\-route\_\-length@{best\_\-total\_\-route\_\-length}}
+\index{best\_\-total\_\-route\_\-length@{best\_\-total\_\-route\_\-length}!VRP@{VRP}}
+\subsubsection[{best\_\-total\_\-route\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRP::best\_\-total\_\-route\_\-length}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_afd48775dd53edd84340f68f704b8f9dc}
+
+
+Definition at line 173 of file VRP.h.
+
+\hypertarget{class_v_r_p_a22da6861faa4543f73b7a66d89a92f91}{
+\index{VRP@{VRP}!can\_\-display@{can\_\-display}}
+\index{can\_\-display@{can\_\-display}!VRP@{VRP}}
+\subsubsection[{can\_\-display}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf VRP::can\_\-display}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a22da6861faa4543f73b7a66d89a92f91}
+
+
+Definition at line 202 of file VRP.h.
+
+\hypertarget{class_v_r_p_a68589860bea9d0a278ab57bbefb3f8a0}{
+\index{VRP@{VRP}!cooling\_\-ratio@{cooling\_\-ratio}}
+\index{cooling\_\-ratio@{cooling\_\-ratio}!VRP@{VRP}}
+\subsubsection[{cooling\_\-ratio}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRP::cooling\_\-ratio}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a68589860bea9d0a278ab57bbefb3f8a0}
+
+
+Definition at line 197 of file VRP.h.
+
+\hypertarget{class_v_r_p_aa20a5dbd3e3070a63a72a76c2ff46722}{
+\index{VRP@{VRP}!coord\_\-type@{coord\_\-type}}
+\index{coord\_\-type@{coord\_\-type}!VRP@{VRP}}
+\subsubsection[{coord\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::coord\_\-type}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_aa20a5dbd3e3070a63a72a76c2ff46722}
+
+
+Definition at line 189 of file VRP.h.
+
+\hypertarget{class_v_r_p_a8117433ec924a862c615d1a4c5f89b4a}{
+\index{VRP@{VRP}!current\_\-sol\_\-buff@{current\_\-sol\_\-buff}}
+\index{current\_\-sol\_\-buff@{current\_\-sol\_\-buff}!VRP@{VRP}}
+\subsubsection[{current\_\-sol\_\-buff}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf VRP::current\_\-sol\_\-buff}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a8117433ec924a862c615d1a4c5f89b4a}
+
+
+Definition at line 239 of file VRP.h.
+
+\hypertarget{class_v_r_p_ade83b7d5a9db82ff85e730daa4caac5a}{
+\index{VRP@{VRP}!d@{d}}
+\index{d@{d}!VRP@{VRP}}
+\subsubsection[{d}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$$\ast$ {\bf VRP::d}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_ade83b7d5a9db82ff85e730daa4caac5a}
+
+
+Definition at line 204 of file VRP.h.
+
+\hypertarget{class_v_r_p_a464f8802b533b943a25e7b47e15e7cd1}{
+\index{VRP@{VRP}!depot\_\-normalized@{depot\_\-normalized}}
+\index{depot\_\-normalized@{depot\_\-normalized}!VRP@{VRP}}
+\subsubsection[{depot\_\-normalized}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf VRP::depot\_\-normalized}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a464f8802b533b943a25e7b47e15e7cd1}
+
+
+Definition at line 210 of file VRP.h.
+
+\hypertarget{class_v_r_p_a1e39d7493e674f4a22f22f21e5d0bd87}{
+\index{VRP@{VRP}!deviation@{deviation}}
+\index{deviation@{deviation}!VRP@{VRP}}
+\subsubsection[{deviation}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRP::deviation}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a1e39d7493e674f4a22f22f21e5d0bd87}
+
+
+Definition at line 234 of file VRP.h.
+
+\hypertarget{class_v_r_p_a47e17e1b022eac02504a129ba26f28b8}{
+\index{VRP@{VRP}!display\_\-type@{display\_\-type}}
+\index{display\_\-type@{display\_\-type}!VRP@{VRP}}
+\subsubsection[{display\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::display\_\-type}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a47e17e1b022eac02504a129ba26f28b8}
+
+
+Definition at line 190 of file VRP.h.
+
+\hypertarget{class_v_r_p_a8f07dd3927e226e01c2f77f380c17ac3}{
+\index{VRP@{VRP}!dummy\_\-index@{dummy\_\-index}}
+\index{dummy\_\-index@{dummy\_\-index}!VRP@{VRP}}
+\subsubsection[{dummy\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::dummy\_\-index}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a8f07dd3927e226e01c2f77f380c17ac3}
+
+
+Definition at line 194 of file VRP.h.
+
+\hypertarget{class_v_r_p_a4de4cdf0660a89b599a3d2086698a27c}{
+\index{VRP@{VRP}!edge\_\-weight\_\-format@{edge\_\-weight\_\-format}}
+\index{edge\_\-weight\_\-format@{edge\_\-weight\_\-format}!VRP@{VRP}}
+\subsubsection[{edge\_\-weight\_\-format}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::edge\_\-weight\_\-format}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a4de4cdf0660a89b599a3d2086698a27c}
+
+
+Definition at line 191 of file VRP.h.
+
+\hypertarget{class_v_r_p_aae0d4e2df1a97802b5c5f9e0c0757ef0}{
+\index{VRP@{VRP}!edge\_\-weight\_\-type@{edge\_\-weight\_\-type}}
+\index{edge\_\-weight\_\-type@{edge\_\-weight\_\-type}!VRP@{VRP}}
+\subsubsection[{edge\_\-weight\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::edge\_\-weight\_\-type}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_aae0d4e2df1a97802b5c5f9e0c0757ef0}
+
+
+Definition at line 188 of file VRP.h.
+
+\hypertarget{class_v_r_p_ab4390370cb73c51ac6ebe12aaf51f2c4}{
+\index{VRP@{VRP}!fixed@{fixed}}
+\index{fixed@{fixed}!VRP@{VRP}}
+\subsubsection[{fixed}]{\setlength{\rightskip}{0pt plus 5cm}bool$\ast$$\ast$ {\bf VRP::fixed}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_ab4390370cb73c51ac6ebe12aaf51f2c4}
+
+
+Definition at line 205 of file VRP.h.
+
+\hypertarget{class_v_r_p_a31a699aee99ab5ceb4ef1a8ac517937f}{
+\index{VRP@{VRP}!fixed\_\-service\_\-time@{fixed\_\-service\_\-time}}
+\index{fixed\_\-service\_\-time@{fixed\_\-service\_\-time}!VRP@{VRP}}
+\subsubsection[{fixed\_\-service\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRP::fixed\_\-service\_\-time}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a31a699aee99ab5ceb4ef1a8ac517937f}
+
+
+Definition at line 187 of file VRP.h.
+
+\hypertarget{class_v_r_p_a7de6d41fe877d981e8a5bf5b25a39cab}{
+\index{VRP@{VRP}!forbid\_\-tiny\_\-moves@{forbid\_\-tiny\_\-moves}}
+\index{forbid\_\-tiny\_\-moves@{forbid\_\-tiny\_\-moves}!VRP@{VRP}}
+\subsubsection[{forbid\_\-tiny\_\-moves}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf VRP::forbid\_\-tiny\_\-moves}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a7de6d41fe877d981e8a5bf5b25a39cab}
+
+
+Definition at line 213 of file VRP.h.
+
+\hypertarget{class_v_r_p_aba36cee3f7c8bdc5f97ccf8b35c2e6d5}{
+\index{VRP@{VRP}!has\_\-service\_\-times@{has\_\-service\_\-times}}
+\index{has\_\-service\_\-times@{has\_\-service\_\-times}!VRP@{VRP}}
+\subsubsection[{has\_\-service\_\-times}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf VRP::has\_\-service\_\-times}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_aba36cee3f7c8bdc5f97ccf8b35c2e6d5}
+
+
+Definition at line 186 of file VRP.h.
+
+\hypertarget{class_v_r_p_aa84ae03f2bd1c91491f270a672f8fcd1}{
+\index{VRP@{VRP}!matrix\_\-size@{matrix\_\-size}}
+\index{matrix\_\-size@{matrix\_\-size}!VRP@{VRP}}
+\subsubsection[{matrix\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::matrix\_\-size}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_aa84ae03f2bd1c91491f270a672f8fcd1}
+
+
+Definition at line 192 of file VRP.h.
+
+\hypertarget{class_v_r_p_a8884ecddc6d2592162c012b284df672a}{
+\index{VRP@{VRP}!max\_\-route\_\-length@{max\_\-route\_\-length}}
+\index{max\_\-route\_\-length@{max\_\-route\_\-length}!VRP@{VRP}}
+\subsubsection[{max\_\-route\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRP::max\_\-route\_\-length}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a8884ecddc6d2592162c012b284df672a}
+
+
+Definition at line 182 of file VRP.h.
+
+\hypertarget{class_v_r_p_a99bfad6795281816b4036ad42a900b3d}{
+\index{VRP@{VRP}!max\_\-theta@{max\_\-theta}}
+\index{max\_\-theta@{max\_\-theta}!VRP@{VRP}}
+\subsubsection[{max\_\-theta}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRP::max\_\-theta}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a99bfad6795281816b4036ad42a900b3d}
+
+
+Definition at line 237 of file VRP.h.
+
+\hypertarget{class_v_r_p_ae6557cfbba614dc5d75567a7e0abf099}{
+\index{VRP@{VRP}!max\_\-veh\_\-capacity@{max\_\-veh\_\-capacity}}
+\index{max\_\-veh\_\-capacity@{max\_\-veh\_\-capacity}!VRP@{VRP}}
+\subsubsection[{max\_\-veh\_\-capacity}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::max\_\-veh\_\-capacity}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_ae6557cfbba614dc5d75567a7e0abf099}
+
+
+Definition at line 180 of file VRP.h.
+
+\hypertarget{class_v_r_p_a4e20cf6dd60c29bd004d4160f93bdb98}{
+\index{VRP@{VRP}!min\_\-route\_\-length@{min\_\-route\_\-length}}
+\index{min\_\-route\_\-length@{min\_\-route\_\-length}!VRP@{VRP}}
+\subsubsection[{min\_\-route\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRP::min\_\-route\_\-length}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a4e20cf6dd60c29bd004d4160f93bdb98}
+
+
+Definition at line 183 of file VRP.h.
+
+\hypertarget{class_v_r_p_a3690e58ce5c9ad561b338359181203f3}{
+\index{VRP@{VRP}!min\_\-theta@{min\_\-theta}}
+\index{min\_\-theta@{min\_\-theta}!VRP@{VRP}}
+\subsubsection[{min\_\-theta}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRP::min\_\-theta}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a3690e58ce5c9ad561b338359181203f3}
+
+
+Definition at line 236 of file VRP.h.
+
+\hypertarget{class_v_r_p_ab48770e40f4f4ca52b032d6d1d33cde2}{
+\index{VRP@{VRP}!min\_\-vehicles@{min\_\-vehicles}}
+\index{min\_\-vehicles@{min\_\-vehicles}!VRP@{VRP}}
+\subsubsection[{min\_\-vehicles}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::min\_\-vehicles}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_ab48770e40f4f4ca52b032d6d1d33cde2}
+
+
+Definition at line 185 of file VRP.h.
+
+\hypertarget{class_v_r_p_af9d32e74c8941ce1ae12fdb057350dc3}{
+\index{VRP@{VRP}!name@{name}}
+\index{name@{name}!VRP@{VRP}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}char {\bf VRP::name}\mbox{[}VRPH\_\-STRING\_\-SIZE\mbox{]}}}
+\label{class_v_r_p_af9d32e74c8941ce1ae12fdb057350dc3}
+
+
+Definition at line 97 of file VRP.h.
+
+\hypertarget{class_v_r_p_ac68b2c8f1b906dcce3b32a3c308240b3}{
+\index{VRP@{VRP}!neighbor\_\-list\_\-size@{neighbor\_\-list\_\-size}}
+\index{neighbor\_\-list\_\-size@{neighbor\_\-list\_\-size}!VRP@{VRP}}
+\subsubsection[{neighbor\_\-list\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::neighbor\_\-list\_\-size}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_ac68b2c8f1b906dcce3b32a3c308240b3}
+
+
+Definition at line 195 of file VRP.h.
+
+\hypertarget{class_v_r_p_acd2b81d8d25db522d089a33b212107ce}{
+\index{VRP@{VRP}!next\_\-array@{next\_\-array}}
+\index{next\_\-array@{next\_\-array}!VRP@{VRP}}
+\subsubsection[{next\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf VRP::next\_\-array}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_acd2b81d8d25db522d089a33b212107ce}
+
+
+Definition at line 222 of file VRP.h.
+
+\hypertarget{class_v_r_p_a35f503e16fdbf0d9bd3e79d79bc70acd}{
+\index{VRP@{VRP}!nodes@{nodes}}
+\index{nodes@{nodes}!VRP@{VRP}}
+\subsubsection[{nodes}]{\setlength{\rightskip}{0pt plus 5cm}class {\bf VRPNode}$\ast$ {\bf VRP::nodes}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a35f503e16fdbf0d9bd3e79d79bc70acd}
+
+
+Definition at line 207 of file VRP.h.
+
+\hypertarget{class_v_r_p_aca4af6860b5f2e6f8b9d2d962bc08d92}{
+\index{VRP@{VRP}!num\_\-days@{num\_\-days}}
+\index{num\_\-days@{num\_\-days}!VRP@{VRP}}
+\subsubsection[{num\_\-days}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::num\_\-days}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_aca4af6860b5f2e6f8b9d2d962bc08d92}
+
+
+Definition at line 177 of file VRP.h.
+
+\hypertarget{class_v_r_p_a5adda95e03e133206d5fbcdf742954e0}{
+\index{VRP@{VRP}!num\_\-evaluations@{num\_\-evaluations}}
+\index{num\_\-evaluations@{num\_\-evaluations}!VRP@{VRP}}
+\subsubsection[{num\_\-evaluations}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::num\_\-evaluations}\mbox{[}NUM\_\-HEURISTICS\mbox{]}}}
+\label{class_v_r_p_a5adda95e03e133206d5fbcdf742954e0}
+
+
+Definition at line 163 of file VRP.h.
+
+\hypertarget{class_v_r_p_ad2c3d755cc77b47e448d0c40dedaf4f2}{
+\index{VRP@{VRP}!num\_\-moves@{num\_\-moves}}
+\index{num\_\-moves@{num\_\-moves}!VRP@{VRP}}
+\subsubsection[{num\_\-moves}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::num\_\-moves}\mbox{[}NUM\_\-HEURISTICS\mbox{]}}}
+\label{class_v_r_p_ad2c3d755cc77b47e448d0c40dedaf4f2}
+
+
+Definition at line 164 of file VRP.h.
+
+\hypertarget{class_v_r_p_a18aadb4711a9495b4f9c01d5ba839cde}{
+\index{VRP@{VRP}!num\_\-nodes@{num\_\-nodes}}
+\index{num\_\-nodes@{num\_\-nodes}!VRP@{VRP}}
+\subsubsection[{num\_\-nodes}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::num\_\-nodes}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a18aadb4711a9495b4f9c01d5ba839cde}
+
+
+Definition at line 169 of file VRP.h.
+
+\hypertarget{class_v_r_p_aba1d749c32b7c7f03b4223d4e824c67f}{
+\index{VRP@{VRP}!num\_\-original\_\-nodes@{num\_\-original\_\-nodes}}
+\index{num\_\-original\_\-nodes@{num\_\-original\_\-nodes}!VRP@{VRP}}
+\subsubsection[{num\_\-original\_\-nodes}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::num\_\-original\_\-nodes}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_aba1d749c32b7c7f03b4223d4e824c67f}
+
+
+Definition at line 175 of file VRP.h.
+
+\hypertarget{class_v_r_p_a2697a8a76a766c0fec117719f719f402}{
+\index{VRP@{VRP}!orig\_\-max\_\-route\_\-length@{orig\_\-max\_\-route\_\-length}}
+\index{orig\_\-max\_\-route\_\-length@{orig\_\-max\_\-route\_\-length}!VRP@{VRP}}
+\subsubsection[{orig\_\-max\_\-route\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRP::orig\_\-max\_\-route\_\-length}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a2697a8a76a766c0fec117719f719f402}
+
+
+Definition at line 184 of file VRP.h.
+
+\hypertarget{class_v_r_p_a23ee0d0e34908651c27f2710d08b182d}{
+\index{VRP@{VRP}!orig\_\-max\_\-veh\_\-capacity@{orig\_\-max\_\-veh\_\-capacity}}
+\index{orig\_\-max\_\-veh\_\-capacity@{orig\_\-max\_\-veh\_\-capacity}!VRP@{VRP}}
+\subsubsection[{orig\_\-max\_\-veh\_\-capacity}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::orig\_\-max\_\-veh\_\-capacity}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a23ee0d0e34908651c27f2710d08b182d}
+
+
+Definition at line 181 of file VRP.h.
+
+\hypertarget{class_v_r_p_a171c6f136ff0334141eba4f8df239f3a}{
+\index{VRP@{VRP}!pred\_\-array@{pred\_\-array}}
+\index{pred\_\-array@{pred\_\-array}!VRP@{VRP}}
+\subsubsection[{pred\_\-array}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf VRP::pred\_\-array}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a171c6f136ff0334141eba4f8df239f3a}
+
+
+Definition at line 223 of file VRP.h.
+
+\hypertarget{class_v_r_p_aa6eca2d600d3493057af43499619abf4}{
+\index{VRP@{VRP}!problem\_\-type@{problem\_\-type}}
+\index{problem\_\-type@{problem\_\-type}!VRP@{VRP}}
+\subsubsection[{problem\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::problem\_\-type}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_aa6eca2d600d3493057af43499619abf4}
+
+
+Definition at line 178 of file VRP.h.
+
+\hypertarget{class_v_r_p_a0561674f364aba302b1cc4d0f76f6837}{
+\index{VRP@{VRP}!record@{record}}
+\index{record@{record}!VRP@{VRP}}
+\subsubsection[{record}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRP::record}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a0561674f364aba302b1cc4d0f76f6837}
+
+
+Definition at line 233 of file VRP.h.
+
+\hypertarget{class_v_r_p_a031f5b20e9fcbcb5f79839444ce0bbfc}{
+\index{VRP@{VRP}!route@{route}}
+\index{route@{route}!VRP@{VRP}}
+\subsubsection[{route}]{\setlength{\rightskip}{0pt plus 5cm}class {\bf VRPRoute}$\ast$ {\bf VRP::route}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a031f5b20e9fcbcb5f79839444ce0bbfc}
+
+
+Definition at line 227 of file VRP.h.
+
+\hypertarget{class_v_r_p_aaf42240b29e2ddf0c79b3da8cd6a3087}{
+\index{VRP@{VRP}!route\_\-num@{route\_\-num}}
+\index{route\_\-num@{route\_\-num}!VRP@{VRP}}
+\subsubsection[{route\_\-num}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf VRP::route\_\-num}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_aaf42240b29e2ddf0c79b3da8cd6a3087}
+
+
+Definition at line 224 of file VRP.h.
+
+\hypertarget{class_v_r_p_a57c6657f57f74ec450a59d277706dfd6}{
+\index{VRP@{VRP}!route\_\-wh@{route\_\-wh}}
+\index{route\_\-wh@{route\_\-wh}!VRP@{VRP}}
+\subsubsection[{route\_\-wh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VRPRouteWarehouse}$\ast$ {\bf VRP::route\_\-wh}}}
+\label{class_v_r_p_a57c6657f57f74ec450a59d277706dfd6}
+
+
+Definition at line 147 of file VRP.h.
+
+\hypertarget{class_v_r_p_a49559f4098eea0527da72878fb5d5404}{
+\index{VRP@{VRP}!routed@{routed}}
+\index{routed@{routed}!VRP@{VRP}}
+\subsubsection[{routed}]{\setlength{\rightskip}{0pt plus 5cm}bool$\ast$ {\bf VRP::routed}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a49559f4098eea0527da72878fb5d5404}
+
+
+Definition at line 225 of file VRP.h.
+
+\hypertarget{class_v_r_p_a30b72e877a153354bd5d8411c4dd5971}{
+\index{VRP@{VRP}!search\_\-size@{search\_\-size}}
+\index{search\_\-size@{search\_\-size}!VRP@{VRP}}
+\subsubsection[{search\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::search\_\-size}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a30b72e877a153354bd5d8411c4dd5971}
+
+
+Definition at line 218 of file VRP.h.
+
+\hypertarget{class_v_r_p_aff4f38285d931237cc1cb7006d1d4fcd}{
+\index{VRP@{VRP}!search\_\-space@{search\_\-space}}
+\index{search\_\-space@{search\_\-space}!VRP@{VRP}}
+\subsubsection[{search\_\-space}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf VRP::search\_\-space}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_aff4f38285d931237cc1cb7006d1d4fcd}
+
+
+Definition at line 219 of file VRP.h.
+
+\hypertarget{class_v_r_p_a858342764727f7bea3c965b4e9fb3dfa}{
+\index{VRP@{VRP}!solution\_\-wh@{solution\_\-wh}}
+\index{solution\_\-wh@{solution\_\-wh}!VRP@{VRP}}
+\subsubsection[{solution\_\-wh}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VRPSolutionWarehouse}$\ast$ {\bf VRP::solution\_\-wh}}}
+\label{class_v_r_p_a858342764727f7bea3c965b4e9fb3dfa}
+
+
+Definition at line 146 of file VRP.h.
+
+\hypertarget{class_v_r_p_afaf85ef2953e205d5eae0b1355ffe973}{
+\index{VRP@{VRP}!symmetric@{symmetric}}
+\index{symmetric@{symmetric}!VRP@{VRP}}
+\subsubsection[{symmetric}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf VRP::symmetric}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_afaf85ef2953e205d5eae0b1355ffe973}
+
+
+Definition at line 199 of file VRP.h.
+
+\hypertarget{class_v_r_p_ae2febf169fbb970db5d3e4b1afdfdf2b}{
+\index{VRP@{VRP}!tabu\_\-list@{tabu\_\-list}}
+\index{tabu\_\-list@{tabu\_\-list}!VRP@{VRP}}
+\subsubsection[{tabu\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}class {\bf VRPTabuList}$\ast$ {\bf VRP::tabu\_\-list}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_ae2febf169fbb970db5d3e4b1afdfdf2b}
+
+
+Definition at line 230 of file VRP.h.
+
+\hypertarget{class_v_r_p_a328026fe60722fe6cc09a4c5aae404b8}{
+\index{VRP@{VRP}!temperature@{temperature}}
+\index{temperature@{temperature}!VRP@{VRP}}
+\subsubsection[{temperature}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRP::temperature}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a328026fe60722fe6cc09a4c5aae404b8}
+
+
+Definition at line 196 of file VRP.h.
+
+\hypertarget{class_v_r_p_a65f10da2ba558e09769475bdcbb107de}{
+\index{VRP@{VRP}!total\_\-demand@{total\_\-demand}}
+\index{total\_\-demand@{total\_\-demand}!VRP@{VRP}}
+\subsubsection[{total\_\-demand}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::total\_\-demand}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a65f10da2ba558e09769475bdcbb107de}
+
+
+Definition at line 179 of file VRP.h.
+
+\hypertarget{class_v_r_p_aaf80fa84fe5d2641ecbd125b237a69fe}{
+\index{VRP@{VRP}!total\_\-number\_\-of\_\-routes@{total\_\-number\_\-of\_\-routes}}
+\index{total\_\-number\_\-of\_\-routes@{total\_\-number\_\-of\_\-routes}!VRP@{VRP}}
+\subsubsection[{total\_\-number\_\-of\_\-routes}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRP::total\_\-number\_\-of\_\-routes}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_aaf80fa84fe5d2641ecbd125b237a69fe}
+
+
+Definition at line 174 of file VRP.h.
+
+\hypertarget{class_v_r_p_a4c206d5757a64335ad660ad03116c376}{
+\index{VRP@{VRP}!total\_\-route\_\-length@{total\_\-route\_\-length}}
+\index{total\_\-route\_\-length@{total\_\-route\_\-length}!VRP@{VRP}}
+\subsubsection[{total\_\-route\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRP::total\_\-route\_\-length}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a4c206d5757a64335ad660ad03116c376}
+
+
+Definition at line 170 of file VRP.h.
+
+\hypertarget{class_v_r_p_a8e6219158b959b07443ecee7508f820b}{
+\index{VRP@{VRP}!total\_\-service\_\-time@{total\_\-service\_\-time}}
+\index{total\_\-service\_\-time@{total\_\-service\_\-time}!VRP@{VRP}}
+\subsubsection[{total\_\-service\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRP::total\_\-service\_\-time}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a8e6219158b959b07443ecee7508f820b}
+
+
+Definition at line 171 of file VRP.h.
+
+\hypertarget{class_v_r_p_a3bd307863feb6d22fb036771d76d0f48}{
+\index{VRP@{VRP}!violation@{violation}}
+\index{violation@{violation}!VRP@{VRP}}
+\subsubsection[{violation}]{\setlength{\rightskip}{0pt plus 5cm}class {\bf VRPViolation} {\bf VRP::violation}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_v_r_p_a3bd307863feb6d22fb036771d76d0f48}
+
+
+Definition at line 246 of file VRP.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_v_r_p_8h}{VRP.h}\item 
+src/\hyperlink{_v_r_p_8cpp}{VRP.cpp}\item 
+src/\hyperlink{_v_r_p_debug_8cpp}{VRPDebug.cpp}\item 
+src/\hyperlink{_v_r_p_graphics_8cpp}{VRPGraphics.cpp}\item 
+src/\hyperlink{_v_r_p_i_o_8cpp}{VRPIO.cpp}\item 
+src/\hyperlink{_v_r_p_solvers_8cpp}{VRPSolvers.cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\hypertarget{class_swap}{
+\section{Swap Class Reference}
+\label{class_swap}\index{Swap@{Swap}}
+}
+
+
+{\ttfamily \#include $<$Swap.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_swap_ab17c4eb2f80275fb42ad8336c310cfcc}{evaluate} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int i, int j, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\item 
+bool \hyperlink{class_swap_afd9d0e054552728d34ea8a2608719a10}{move} (\hyperlink{class_v_r_p}{VRP} $\ast$V, int u, int i)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file Swap.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_swap_ab17c4eb2f80275fb42ad8336c310cfcc}{
+\index{Swap@{Swap}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!Swap@{Swap}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}bool Swap::evaluate (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)}}
+\label{class_swap_ab17c4eb2f80275fb42ad8336c310cfcc}
+
+
+Evaluates the move of swapping the positions of nodes u and i in the current For example, Current situation: t-\/u-\/v and h-\/i-\/j New situation: t-\/i-\/v and h-\/u-\/k
+
+!! 
+
+
+
+Definition at line 16 of file Swap.cpp.
+
+\hypertarget{class_swap_afd9d0e054552728d34ea8a2608719a10}{
+\index{Swap@{Swap}!move@{move}}
+\index{move@{move}!Swap@{Swap}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}bool Swap::move (
+\begin{DoxyParamCaption}
+\item[{{\bf VRP} $\ast$}]{V, }
+\item[{int}]{u, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}
+\label{class_swap_afd9d0e054552728d34ea8a2608719a10}
+
+
+This modifies the current solution information by swapping the positions of u and i in the current configuration if the proposed move meets the rules. Returns true if the move succeeds and false otherwise.
+
+
+
+Definition at line 205 of file Swap.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_swap_8h}{Swap.h}\item 
+src/\hyperlink{_swap_8cpp}{Swap.cpp}\end{DoxyCompactItemize}

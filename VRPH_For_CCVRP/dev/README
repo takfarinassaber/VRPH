@@ -1,0 +1,18 @@
+VRPH-1.0.8 :
+------------
+Version 1.0.8 du programme VRPH écrit par Groer. Cette version supporte en entrée des instances au format CCVRP.
+Elle implémente la méthode du BIG-M. 
+Le dossier VRPH-1.0.8/tests/ contient deux scripts permettant de tester les instances mises à disposition par M. Sevaux et
+des instances générées aléatoirement. Il suffira de lancer les commandes dans le répertoire VRPH-1.0.8/tests/ :
+sh tests-random-instances.sh
+sh tests-instances-sevaux.sh
+
+ccvrp_to_big_m_cvrp :
+---------------------
+Conversion d'une instance de type CCVRP en une instance CVRP au format matriciel dont les distances ont été pénalisées par 
+par la méthode du BIG-M.
+
+clustered-vrp-generator :
+-------------------------
+Programme de génération aléatoire d'instances CCVRP
+

@@ -1,0 +1,72 @@
+\hypertarget{class_swap_ends}{
+\section{SwapEnds Class Reference}
+\label{class_swap_ends}\index{SwapEnds@{SwapEnds}}
+}
+
+
+{\ttfamily \#include $<$SwapEnds.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_swap_ends_a318fcccb90d1557c2529d752bd833e7c}{evaluate} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int i, int j, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\item 
+bool \hyperlink{class_swap_ends_a11345450adcf614a80852c84564f3047}{move} (\hyperlink{class_v_r_p}{VRP} $\ast$V, int u, int i)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file SwapEnds.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_swap_ends_a318fcccb90d1557c2529d752bd833e7c}{
+\index{SwapEnds@{SwapEnds}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!SwapEnds@{SwapEnds}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}bool SwapEnds::evaluate (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)}}
+\label{class_swap_ends_a318fcccb90d1557c2529d752bd833e7c}
+
+
+This function takes the routes containing nodes a and v and evaluates the swapping of the ends of the routes following a and v respectively, subject to the provided rules. Example: VRPH\_\-DEPOT-\/i-\/a-\/j-\/k-\/l-\/VRPH\_\-DEPOT and VRPH\_\-DEPOT-\/t-\/u-\/v-\/x-\/y-\/z-\/VRPH\_\-DEPOT becomes VRPH\_\-DEPOT-\/i-\/a-\/x-\/y-\/z-\/VRPH\_\-DEPOT and VRPH\_\-DEPOT-\/t-\/u-\/v-\/j-\/k-\/l-\/VRPH\_\-DEPOT
+
+Example: ( a \& v input): VRPH\_\-DEPOT-\/i-\/a-\/b-\/j-\/k-\/l-\/VRPH\_\-DEPOT and VRPH\_\-DEPOT-\/t-\/u-\/v-\/w-\/x-\/y-\/z-\/VRPH\_\-DEPOT becomes VRPH\_\-DEPOT-\/i-\/a-\/w-\/x-\/y-\/z-\/VRPH\_\-DEPOT and VRPH\_\-DEPOT-\/t-\/u-\/v-\/b-\/j-\/k-\/l-\/VRPH\_\-DEPOT 
+
+
+
+Definition at line 15 of file SwapEnds.cpp.
+
+\hypertarget{class_swap_ends_a11345450adcf614a80852c84564f3047}{
+\index{SwapEnds@{SwapEnds}!move@{move}}
+\index{move@{move}!SwapEnds@{SwapEnds}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}bool SwapEnds::move (
+\begin{DoxyParamCaption}
+\item[{{\bf VRP} $\ast$}]{V, }
+\item[{int}]{u, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}
+\label{class_swap_ends_a11345450adcf614a80852c84564f3047}
+
+
+This function takes the routes corresponding to nodes a and v and swaps the ends of these routes following a and v respectively. Example: VRPH\_\-DEPOT-\/i-\/a-\/j-\/k-\/l-\/VRPH\_\-DEPOT and VRPH\_\-DEPOT-\/t-\/u-\/v-\/x-\/y-\/z-\/VRPH\_\-DEPOT becomes VRPH\_\-DEPOT-\/i-\/a-\/x-\/y-\/z-\/VRPH\_\-DEPOT and VRPH\_\-DEPOT-\/t-\/u-\/v-\/j-\/k-\/l-\/VRPH\_\-DEPOT. If the proposed move is feasible, all solution modifications are made, and the function returns true. Returns false if the move is infeasible.
+
+
+
+Definition at line 99 of file SwapEnds.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_swap_ends_8h}{SwapEnds.h}\item 
+src/\hyperlink{_swap_ends_8cpp}{SwapEnds.cpp}\end{DoxyCompactItemize}

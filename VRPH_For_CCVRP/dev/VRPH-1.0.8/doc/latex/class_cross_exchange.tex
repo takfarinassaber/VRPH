@@ -1,0 +1,101 @@
+\hypertarget{class_cross_exchange}{
+\section{CrossExchange Class Reference}
+\label{class_cross_exchange}\index{CrossExchange@{CrossExchange}}
+}
+
+
+{\ttfamily \#include $<$CrossExchange.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_cross_exchange_a859a07cdeb05688f0e80d14892ba4ca0}{route\_\-search} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int r1, int r2, int criteria)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_cross_exchange_afbac0c51fb4e73f0ec16791116c316f1}{evaluate} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int i1, int i2, int k1, int k2, int j1, int j2, int l1, int l2, int criteria, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\item 
+bool \hyperlink{class_cross_exchange_a9dde3890639999e28ab17ab43c1a86d0}{move} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file CrossExchange.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_cross_exchange_afbac0c51fb4e73f0ec16791116c316f1}{
+\index{CrossExchange@{CrossExchange}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!CrossExchange@{CrossExchange}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}bool CrossExchange::evaluate (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{i1, }
+\item[{int}]{i2, }
+\item[{int}]{k1, }
+\item[{int}]{k2, }
+\item[{int}]{j1, }
+\item[{int}]{j2, }
+\item[{int}]{l1, }
+\item[{int}]{l2, }
+\item[{int}]{criteria, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_cross_exchange_afbac0c51fb4e73f0ec16791116c316f1}
+
+
+Evaluate the move of removing the edges i1-\/i2 and k1-\/k2 in one route and j1-\/j2 and l1-\/l2 in another route and replacing these edges with i1-\/j2, j1-\/i2, k1-\/l2, and l1-\/k2
+
+
+
+Definition at line 238 of file CrossExchange.cpp.
+
+\hypertarget{class_cross_exchange_a9dde3890639999e28ab17ab43c1a86d0}{
+\index{CrossExchange@{CrossExchange}!move@{move}}
+\index{move@{move}!CrossExchange@{CrossExchange}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}bool CrossExchange::move (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_cross_exchange_a9dde3890639999e28ab17ab43c1a86d0}
+
+
+Make the move of removing the edges i1-\/i2 and k1-\/k2 in one route and j1-\/j2 and l1-\/l2 in another route and replacing these edges with i1-\/j2, j1-\/i2, k1-\/l2, and l1-\/k2. See
+
+
+
+Definition at line 375 of file CrossExchange.cpp.
+
+\hypertarget{class_cross_exchange_a859a07cdeb05688f0e80d14892ba4ca0}{
+\index{CrossExchange@{CrossExchange}!route\_\-search@{route\_\-search}}
+\index{route\_\-search@{route\_\-search}!CrossExchange@{CrossExchange}}
+\subsubsection[{route\_\-search}]{\setlength{\rightskip}{0pt plus 5cm}bool CrossExchange::route\_\-search (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{r1, }
+\item[{int}]{r2, }
+\item[{int}]{criteria}
+\end{DoxyParamCaption}
+)}}
+\label{class_cross_exchange_a859a07cdeb05688f0e80d14892ba4ca0}
+
+
+Attempts to find a cross exchange move between routes r1 and r2. Edges i1-\/i2 and k1-\/k2 in route r1, and edges j1-\/j2 and l1-\/l2 in route r2.
+
+
+
+Definition at line 16 of file CrossExchange.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_cross_exchange_8h}{CrossExchange.h}\item 
+src/\hyperlink{_cross_exchange_8cpp}{CrossExchange.cpp}\end{DoxyCompactItemize}

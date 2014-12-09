@@ -1,0 +1,214 @@
+\hypertarget{_v_r_p_utils_8cpp}{
+\section{src/VRPUtils.cpp File Reference}
+\label{_v_r_p_utils_8cpp}\index{src/VRPUtils.cpp@{src/VRPUtils.cpp}}
+}
+{\ttfamily \#include \char`\"{}VRPH.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{_v_r_p_utils_8cpp_ac2717a76cbac9855f5f6656a4b7f7acd}{VRPDistance} (int type, double x1, double y1, double x2, double y2)
+\item 
+int \hyperlink{_v_r_p_utils_8cpp_aa1b75386b25b44e9f4bbb98182004a18}{VRPDistanceCompare} (const void $\ast$a, const void $\ast$b)
+\item 
+int \hyperlink{_v_r_p_utils_8cpp_ae730d01332b2efd4e56f8cf3d800f5ab}{VRPIntCompare} (const void $\ast$a, const void $\ast$b)
+\item 
+int \hyperlink{_v_r_p_utils_8cpp_a6d8ff67677a594b76c248c37cad6f14d}{double\_\-int\_\-compare} (const void $\ast$a, const void $\ast$b)
+\item 
+int \hyperlink{_v_r_p_utils_8cpp_afb6acac891b707886a2234f232786ba3}{int\_\-int\_\-compare} (const void $\ast$a, const void $\ast$b)
+\item 
+int \hyperlink{_v_r_p_utils_8cpp_a617de00a5e8b854592e30979c9af8aa6}{VRPSavingsCompare} (const void $\ast$a, const void $\ast$b)
+\item 
+int \hyperlink{_v_r_p_utils_8cpp_a78ba8c9b664e3a48936a7a9bf318df35}{VRPNeighborCompare} (const void $\ast$a, const void $\ast$b)
+\item 
+int \hyperlink{_v_r_p_utils_8cpp_a23f0607362fa3e3a7bdd8a7436b1ba30}{VRPSolutionCompare} (const void $\ast$a, const void $\ast$b)
+\item 
+int \hyperlink{_v_r_p_utils_8cpp_a8d87fc05862e7a7c7e831886c19d33ba}{VRPAlphaCompare} (const void $\ast$a, const void $\ast$b)
+\item 
+int \hyperlink{_v_r_p_utils_8cpp_ad6a72d2be1332c41119696c394d5e42a}{VRPRouteCompare} (const void $\ast$a, const void $\ast$b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_v_r_p_utils_8cpp_a6d8ff67677a594b76c248c37cad6f14d}{
+\index{VRPUtils.cpp@{VRPUtils.cpp}!double\_\-int\_\-compare@{double\_\-int\_\-compare}}
+\index{double\_\-int\_\-compare@{double\_\-int\_\-compare}!VRPUtils.cpp@{VRPUtils.cpp}}
+\subsubsection[{double\_\-int\_\-compare}]{\setlength{\rightskip}{0pt plus 5cm}int double\_\-int\_\-compare (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{a, }
+\item[{const void $\ast$}]{b}
+\end{DoxyParamCaption}
+)}}
+\label{_v_r_p_utils_8cpp_a6d8ff67677a594b76c248c37cad6f14d}
+
+
+Compares two double\_\-int's using the double field.
+
+
+
+Definition at line 107 of file VRPUtils.cpp.
+
+\hypertarget{_v_r_p_utils_8cpp_afb6acac891b707886a2234f232786ba3}{
+\index{VRPUtils.cpp@{VRPUtils.cpp}!int\_\-int\_\-compare@{int\_\-int\_\-compare}}
+\index{int\_\-int\_\-compare@{int\_\-int\_\-compare}!VRPUtils.cpp@{VRPUtils.cpp}}
+\subsubsection[{int\_\-int\_\-compare}]{\setlength{\rightskip}{0pt plus 5cm}int int\_\-int\_\-compare (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{a, }
+\item[{const void $\ast$}]{b}
+\end{DoxyParamCaption}
+)}}
+\label{_v_r_p_utils_8cpp_afb6acac891b707886a2234f232786ba3}
+
+
+Compares two int\_\-int's using the j field.
+
+
+
+Definition at line 126 of file VRPUtils.cpp.
+
+\hypertarget{_v_r_p_utils_8cpp_a8d87fc05862e7a7c7e831886c19d33ba}{
+\index{VRPUtils.cpp@{VRPUtils.cpp}!VRPAlphaCompare@{VRPAlphaCompare}}
+\index{VRPAlphaCompare@{VRPAlphaCompare}!VRPUtils.cpp@{VRPUtils.cpp}}
+\subsubsection[{VRPAlphaCompare}]{\setlength{\rightskip}{0pt plus 5cm}int VRPAlphaCompare (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{a, }
+\item[{const void $\ast$}]{b}
+\end{DoxyParamCaption}
+)}}
+\label{_v_r_p_utils_8cpp_a8d87fc05862e7a7c7e831886c19d33ba}
+
+
+Compares two strings and sorts alphabetically.
+
+
+
+Definition at line 212 of file VRPUtils.cpp.
+
+\hypertarget{_v_r_p_utils_8cpp_ac2717a76cbac9855f5f6656a4b7f7acd}{
+\index{VRPUtils.cpp@{VRPUtils.cpp}!VRPDistance@{VRPDistance}}
+\index{VRPDistance@{VRPDistance}!VRPUtils.cpp@{VRPUtils.cpp}}
+\subsubsection[{VRPDistance}]{\setlength{\rightskip}{0pt plus 5cm}double VRPDistance (
+\begin{DoxyParamCaption}
+\item[{int}]{type, }
+\item[{double}]{x1, }
+\item[{double}]{y1, }
+\item[{double}]{x2, }
+\item[{double}]{y2}
+\end{DoxyParamCaption}
+)}}
+\label{_v_r_p_utils_8cpp_ac2717a76cbac9855f5f6656a4b7f7acd}
+
+
+Distance function for 2D problems.
+
+
+
+Definition at line 15 of file VRPUtils.cpp.
+
+\hypertarget{_v_r_p_utils_8cpp_aa1b75386b25b44e9f4bbb98182004a18}{
+\index{VRPUtils.cpp@{VRPUtils.cpp}!VRPDistanceCompare@{VRPDistanceCompare}}
+\index{VRPDistanceCompare@{VRPDistanceCompare}!VRPUtils.cpp@{VRPUtils.cpp}}
+\subsubsection[{VRPDistanceCompare}]{\setlength{\rightskip}{0pt plus 5cm}int VRPDistanceCompare (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{a, }
+\item[{const void $\ast$}]{b}
+\end{DoxyParamCaption}
+)}}
+\label{_v_r_p_utils_8cpp_aa1b75386b25b44e9f4bbb98182004a18}
+
+
+Compares two doubles.
+
+
+
+Definition at line 78 of file VRPUtils.cpp.
+
+\hypertarget{_v_r_p_utils_8cpp_ae730d01332b2efd4e56f8cf3d800f5ab}{
+\index{VRPUtils.cpp@{VRPUtils.cpp}!VRPIntCompare@{VRPIntCompare}}
+\index{VRPIntCompare@{VRPIntCompare}!VRPUtils.cpp@{VRPUtils.cpp}}
+\subsubsection[{VRPIntCompare}]{\setlength{\rightskip}{0pt plus 5cm}int VRPIntCompare (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{a, }
+\item[{const void $\ast$}]{b}
+\end{DoxyParamCaption}
+)}}
+\label{_v_r_p_utils_8cpp_ae730d01332b2efd4e56f8cf3d800f5ab}
+
+
+Compares two int's.
+
+
+
+Definition at line 97 of file VRPUtils.cpp.
+
+\hypertarget{_v_r_p_utils_8cpp_a78ba8c9b664e3a48936a7a9bf318df35}{
+\index{VRPUtils.cpp@{VRPUtils.cpp}!VRPNeighborCompare@{VRPNeighborCompare}}
+\index{VRPNeighborCompare@{VRPNeighborCompare}!VRPUtils.cpp@{VRPUtils.cpp}}
+\subsubsection[{VRPNeighborCompare}]{\setlength{\rightskip}{0pt plus 5cm}int VRPNeighborCompare (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{a, }
+\item[{const void $\ast$}]{b}
+\end{DoxyParamCaption}
+)}}
+\label{_v_r_p_utils_8cpp_a78ba8c9b664e3a48936a7a9bf318df35}
+
+
+Compares two VRPNeighborElements using the val field.
+
+
+
+Definition at line 168 of file VRPUtils.cpp.
+
+\hypertarget{_v_r_p_utils_8cpp_ad6a72d2be1332c41119696c394d5e42a}{
+\index{VRPUtils.cpp@{VRPUtils.cpp}!VRPRouteCompare@{VRPRouteCompare}}
+\index{VRPRouteCompare@{VRPRouteCompare}!VRPUtils.cpp@{VRPUtils.cpp}}
+\subsubsection[{VRPRouteCompare}]{\setlength{\rightskip}{0pt plus 5cm}int VRPRouteCompare (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{a, }
+\item[{const void $\ast$}]{b}
+\end{DoxyParamCaption}
+)}}
+\label{_v_r_p_utils_8cpp_ad6a72d2be1332c41119696c394d5e42a}
+
+
+Compares two VRPRoutes using the length field.
+
+
+
+Definition at line 221 of file VRPUtils.cpp.
+
+\hypertarget{_v_r_p_utils_8cpp_a617de00a5e8b854592e30979c9af8aa6}{
+\index{VRPUtils.cpp@{VRPUtils.cpp}!VRPSavingsCompare@{VRPSavingsCompare}}
+\index{VRPSavingsCompare@{VRPSavingsCompare}!VRPUtils.cpp@{VRPUtils.cpp}}
+\subsubsection[{VRPSavingsCompare}]{\setlength{\rightskip}{0pt plus 5cm}int VRPSavingsCompare (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{a, }
+\item[{const void $\ast$}]{b}
+\end{DoxyParamCaption}
+)}}
+\label{_v_r_p_utils_8cpp_a617de00a5e8b854592e30979c9af8aa6}
+
+
+Compares two VRPSavingsElement's using the savings field.
+
+
+
+Definition at line 144 of file VRPUtils.cpp.
+
+\hypertarget{_v_r_p_utils_8cpp_a23f0607362fa3e3a7bdd8a7436b1ba30}{
+\index{VRPUtils.cpp@{VRPUtils.cpp}!VRPSolutionCompare@{VRPSolutionCompare}}
+\index{VRPSolutionCompare@{VRPSolutionCompare}!VRPUtils.cpp@{VRPUtils.cpp}}
+\subsubsection[{VRPSolutionCompare}]{\setlength{\rightskip}{0pt plus 5cm}int VRPSolutionCompare (
+\begin{DoxyParamCaption}
+\item[{const void $\ast$}]{a, }
+\item[{const void $\ast$}]{b}
+\end{DoxyParamCaption}
+)}}
+\label{_v_r_p_utils_8cpp_a23f0607362fa3e3a7bdd8a7436b1ba30}
+
+
+Compares two VRPSolution's using the obj field.
+
+
+
+Definition at line 192 of file VRPUtils.cpp.
+

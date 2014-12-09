@@ -1,0 +1,70 @@
+\hypertarget{class_flip}{
+\section{Flip Class Reference}
+\label{class_flip}\index{Flip@{Flip}}
+}
+
+
+{\ttfamily \#include $<$Flip.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_flip_a38f1e57d9dc34efeb6d41deb07802742}{evaluate} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int i, int j, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\item 
+bool \hyperlink{class_flip_ada3b54b8e7f76adafb9ce2f34eb6f423}{move} (\hyperlink{class_v_r_p}{VRP} $\ast$V, int u, int i)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file Flip.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_flip_a38f1e57d9dc34efeb6d41deb07802742}{
+\index{Flip@{Flip}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!Flip@{Flip}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}bool Flip::evaluate (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)}}
+\label{class_flip_a38f1e57d9dc34efeb6d41deb07802742}
+
+
+Evaluates the move of reversing a portion of a route in between nodes start and end. Example: 0-\/a-\/b-\/start-\/d-\/e-\/f-\/g-\/h-\/end-\/x-\/y-\/z-\/0 becomes 0-\/a-\/b-\/start-\/h-\/g-\/f-\/e-\/d-\/end-\/x-\/y-\/z-\/0. If the move is feasible, the information regarding the move is stored in the \hyperlink{class_v_r_p_move}{VRPMove} data structure M. start\_\-point must be before end\_\-point in the current route orientation.
+
+
+
+Definition at line 16 of file Flip.cpp.
+
+\hypertarget{class_flip_ada3b54b8e7f76adafb9ce2f34eb6f423}{
+\index{Flip@{Flip}!move@{move}}
+\index{move@{move}!Flip@{Flip}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}bool Flip::move (
+\begin{DoxyParamCaption}
+\item[{{\bf VRP} $\ast$}]{V, }
+\item[{int}]{u, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}
+\label{class_flip_ada3b54b8e7f76adafb9ce2f34eb6f423}
+
+
+This reverses the portion of the route between start\_\-point and end\_\-point if the proposed move is feasible. Returns true and makes all relevant solution modifications if the move is made and false otherwise.
+
+
+
+Definition at line 94 of file Flip.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_flip_8h}{Flip.h}\item 
+src/\hyperlink{_flip_8cpp}{Flip.cpp}\end{DoxyCompactItemize}

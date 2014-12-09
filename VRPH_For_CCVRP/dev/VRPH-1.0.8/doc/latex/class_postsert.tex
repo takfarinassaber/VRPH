@@ -1,0 +1,70 @@
+\hypertarget{class_postsert}{
+\section{Postsert Class Reference}
+\label{class_postsert}\index{Postsert@{Postsert}}
+}
+
+
+{\ttfamily \#include $<$Postsert.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_postsert_ada2b9a89652961936c5135ecf3cfbce6}{evaluate} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int i, int j, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\item 
+bool \hyperlink{class_postsert_a44868b5b7a97c3add2b2150bc8ed7d4b}{move} (\hyperlink{class_v_r_p}{VRP} $\ast$V, int u, int i)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file Postsert.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_postsert_ada2b9a89652961936c5135ecf3cfbce6}{
+\index{Postsert@{Postsert}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!Postsert@{Postsert}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}bool Postsert::evaluate (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)}}
+\label{class_postsert_ada2b9a89652961936c5135ecf3cfbce6}
+
+
+Evaluates the move of placing u AFTER node i in whatever route node i is currently in. If a move is found, the relevant solution modification information is placed in the \hyperlink{class_v_r_p_move}{VRPMove} M
+
+
+
+Definition at line 15 of file Postsert.cpp.
+
+\hypertarget{class_postsert_a44868b5b7a97c3add2b2150bc8ed7d4b}{
+\index{Postsert@{Postsert}!move@{move}}
+\index{move@{move}!Postsert@{Postsert}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}bool Postsert::move (
+\begin{DoxyParamCaption}
+\item[{{\bf VRP} $\ast$}]{V, }
+\item[{int}]{u, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}
+\label{class_postsert_a44868b5b7a97c3add2b2150bc8ed7d4b}
+
+
+This function inserts node number u AFTER node i in whatever route node i is currently in and modifies all relevant solution information.
+
+
+
+Definition at line 184 of file Postsert.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_postsert_8h}{Postsert.h}\item 
+src/\hyperlink{_postsert_8cpp}{Postsert.cpp}\end{DoxyCompactItemize}

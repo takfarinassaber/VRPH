@@ -1,0 +1,167 @@
+\hypertarget{_v_r_p_t_s_p_lib_8cpp}{
+\section{src/VRPTSPLib.cpp File Reference}
+\label{_v_r_p_t_s_p_lib_8cpp}\index{src/VRPTSPLib.cpp@{src/VRPTSPLib.cpp}}
+}
+{\ttfamily \#include \char`\"{}VRPH.h\char`\"{}}\par
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_v_r_p_t_s_p_lib_8cpp_a7809e608e00853c1101734a3f1054625}{VRPGetDimension} (char $\ast$filename)
+\item 
+int \hyperlink{_v_r_p_t_s_p_lib_8cpp_ad75f8d242cce675aa1e11ccbb75df5d8}{VRPGetNumDays} (char $\ast$filename)
+\item 
+int \hyperlink{_v_r_p_t_s_p_lib_8cpp_a1883edd5e376a48dd3a54cf8ceaf546a}{VRPCheckTSPLIBString} (char $\ast$s)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{_v_r_p_t_s_p_lib_8cpp_a06f355b546376c666e8aa8344453f7c0}{SupportedTSPLIBStrings} \mbox{[}$\,$\mbox{]}
+\item 
+const int \hyperlink{_v_r_p_t_s_p_lib_8cpp_a30bab0ee192c1d45c9b50a9412259d5c}{SL} \mbox{[}$\,$\mbox{]}
+\item 
+const int \hyperlink{_v_r_p_t_s_p_lib_8cpp_acdf7d0e48c5e3872a3da2d2e418ae45a}{NumSupportedTSPLIBStrings} = 25
+\item 
+const char $\ast$ \hyperlink{_v_r_p_t_s_p_lib_8cpp_a9495078d430d2d32b02a4682d91586be}{UnsupportedTSPLIBStrings} \mbox{[}$\,$\mbox{]}
+\item 
+const int \hyperlink{_v_r_p_t_s_p_lib_8cpp_ae526d993c3568bcb353fb57cca171535}{NumUnsupportedTSPLIBStrings} = 20
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_v_r_p_t_s_p_lib_8cpp_a1883edd5e376a48dd3a54cf8ceaf546a}{
+\index{VRPTSPLib.cpp@{VRPTSPLib.cpp}!VRPCheckTSPLIBString@{VRPCheckTSPLIBString}}
+\index{VRPCheckTSPLIBString@{VRPCheckTSPLIBString}!VRPTSPLib.cpp@{VRPTSPLib.cpp}}
+\subsubsection[{VRPCheckTSPLIBString}]{\setlength{\rightskip}{0pt plus 5cm}int VRPCheckTSPLIBString (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}
+\label{_v_r_p_t_s_p_lib_8cpp_a1883edd5e376a48dd3a54cf8ceaf546a}
+
+
+Determines whether or not a given string in an input file is a supported TSPLIB string. Returns the reference number for the string if supported, and 0 otherwise.
+
+
+
+Definition at line 172 of file VRPTSPLib.cpp.
+
+\hypertarget{_v_r_p_t_s_p_lib_8cpp_a7809e608e00853c1101734a3f1054625}{
+\index{VRPTSPLib.cpp@{VRPTSPLib.cpp}!VRPGetDimension@{VRPGetDimension}}
+\index{VRPGetDimension@{VRPGetDimension}!VRPTSPLib.cpp@{VRPTSPLib.cpp}}
+\subsubsection[{VRPGetDimension}]{\setlength{\rightskip}{0pt plus 5cm}int VRPGetDimension (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}
+\label{_v_r_p_t_s_p_lib_8cpp_a7809e608e00853c1101734a3f1054625}
+
+
+Open up filename (assumed to be in TSPLIB format) and get the dimension of the problem, scanning for the string \char`\"{}DIMENSION\char`\"{} and makes sure that the \char`\"{}EOF\char`\"{} string is also found.
+
+
+
+Definition at line 56 of file VRPTSPLib.cpp.
+
+\hypertarget{_v_r_p_t_s_p_lib_8cpp_ad75f8d242cce675aa1e11ccbb75df5d8}{
+\index{VRPTSPLib.cpp@{VRPTSPLib.cpp}!VRPGetNumDays@{VRPGetNumDays}}
+\index{VRPGetNumDays@{VRPGetNumDays}!VRPTSPLib.cpp@{VRPTSPLib.cpp}}
+\subsubsection[{VRPGetNumDays}]{\setlength{\rightskip}{0pt plus 5cm}int VRPGetNumDays (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}
+\label{_v_r_p_t_s_p_lib_8cpp_ad75f8d242cce675aa1e11ccbb75df5d8}
+
+
+Open up filename (assumed to be in TSPLIB format) and get the dimension of the problem, scanning for the string \char`\"{}NUM\_\-DAYS\char`\"{}. If the string is not found, then we assume it is a typical 1-\/day problem.
+
+
+
+Definition at line 126 of file VRPTSPLib.cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_v_r_p_t_s_p_lib_8cpp_acdf7d0e48c5e3872a3da2d2e418ae45a}{
+\index{VRPTSPLib.cpp@{VRPTSPLib.cpp}!NumSupportedTSPLIBStrings@{NumSupportedTSPLIBStrings}}
+\index{NumSupportedTSPLIBStrings@{NumSupportedTSPLIBStrings}!VRPTSPLib.cpp@{VRPTSPLib.cpp}}
+\subsubsection[{NumSupportedTSPLIBStrings}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf NumSupportedTSPLIBStrings} = 25}}
+\label{_v_r_p_t_s_p_lib_8cpp_acdf7d0e48c5e3872a3da2d2e418ae45a}
+
+
+Definition at line 42 of file VRPTSPLib.cpp.
+
+\hypertarget{_v_r_p_t_s_p_lib_8cpp_ae526d993c3568bcb353fb57cca171535}{
+\index{VRPTSPLib.cpp@{VRPTSPLib.cpp}!NumUnsupportedTSPLIBStrings@{NumUnsupportedTSPLIBStrings}}
+\index{NumUnsupportedTSPLIBStrings@{NumUnsupportedTSPLIBStrings}!VRPTSPLib.cpp@{VRPTSPLib.cpp}}
+\subsubsection[{NumUnsupportedTSPLIBStrings}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf NumUnsupportedTSPLIBStrings} = 20}}
+\label{_v_r_p_t_s_p_lib_8cpp_ae526d993c3568bcb353fb57cca171535}
+
+
+Definition at line 54 of file VRPTSPLib.cpp.
+
+\hypertarget{_v_r_p_t_s_p_lib_8cpp_a30bab0ee192c1d45c9b50a9412259d5c}{
+\index{VRPTSPLib.cpp@{VRPTSPLib.cpp}!SL@{SL}}
+\index{SL@{SL}!VRPTSPLib.cpp@{VRPTSPLib.cpp}}
+\subsubsection[{SL}]{\setlength{\rightskip}{0pt plus 5cm}const int {\bf SL}\mbox{[}$\,$\mbox{]}}}
+\label{_v_r_p_t_s_p_lib_8cpp_a30bab0ee192c1d45c9b50a9412259d5c}
+{\bfseries Initial value:}
+\begin{DoxyCode}
+{4,4,10,9,
+                8,8,18,16,
+                14,3,18,13,
+                13,14,12,8,
+                8,16,19,7,
+                20,12,17,10,
+                13}
+\end{DoxyCode}
+
+
+Definition at line 33 of file VRPTSPLib.cpp.
+
+\hypertarget{_v_r_p_t_s_p_lib_8cpp_a06f355b546376c666e8aa8344453f7c0}{
+\index{VRPTSPLib.cpp@{VRPTSPLib.cpp}!SupportedTSPLIBStrings@{SupportedTSPLIBStrings}}
+\index{SupportedTSPLIBStrings@{SupportedTSPLIBStrings}!VRPTSPLib.cpp@{VRPTSPLib.cpp}}
+\subsubsection[{SupportedTSPLIBStrings}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf SupportedTSPLIBStrings}\mbox{[}$\,$\mbox{]}}}
+\label{_v_r_p_t_s_p_lib_8cpp_a06f355b546376c666e8aa8344453f7c0}
+{\bfseries Initial value:}
+\begin{DoxyCode}
+{
+    "NAME","TYPE","BEST_KNOWN","DIMENSION",
+    
+    "CAPACITY","DISTANCE","EDGE_WEIGHT_FORMAT","EDGE_WEIGHT_TYPE",
+    
+    "NODE_COORD_TYPE","EOF","NODE_COORD_SECTION","DEPOT_SECTION",
+    
+    "DEMAND_SECTION","EDGE_WEIGHT_SECTION","SERVICE_TIME","cxd",
+    
+    "NUM_DAYS","SVC_TIME_SECTION","TIME_WINDOW_SECTION","COMMENT",
+    
+    "DISPLAY_DATA_SECTION","TWOD_DISPLAY","DISPLAY_DATA_TYPE","NO_DISPLAY",
+    
+    "COORD_DISPLAY"}
+\end{DoxyCode}
+
+
+Definition at line 16 of file VRPTSPLib.cpp.
+
+\hypertarget{_v_r_p_t_s_p_lib_8cpp_a9495078d430d2d32b02a4682d91586be}{
+\index{VRPTSPLib.cpp@{VRPTSPLib.cpp}!UnsupportedTSPLIBStrings@{UnsupportedTSPLIBStrings}}
+\index{UnsupportedTSPLIBStrings@{UnsupportedTSPLIBStrings}!VRPTSPLib.cpp@{VRPTSPLib.cpp}}
+\subsubsection[{UnsupportedTSPLIBStrings}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ {\bf UnsupportedTSPLIBStrings}\mbox{[}$\,$\mbox{]}}}
+\label{_v_r_p_t_s_p_lib_8cpp_a9495078d430d2d32b02a4682d91586be}
+{\bfseries Initial value:}
+\begin{DoxyCode}
+    {
+    "HCP","ATSP","SOP","TOUR","ATT","XRAY1","XRAY2","SPECIAL",
+    "LOWER_ROW",
+    "LOWER_DIAG_ROW","UPPER_COL","LOWER_COL","UPPER_DIAG_COL",
+    "LOWER_DIAG_COL","EDGE_LIST","ADJ_LIST","NO_COORDS",
+    "EDGE_DATA_SECTION",
+    "TOUR_SECTION"
+}
+\end{DoxyCode}
+
+
+Definition at line 45 of file VRPTSPLib.cpp.
+

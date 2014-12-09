@@ -1,0 +1,3 @@
+rndmap is a program which generates randomly ccvrp instances.
+You can get the file format at ../VRPH.1.0.8/instances/cvrp11.pdf
+

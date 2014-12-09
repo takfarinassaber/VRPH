@@ -1,0 +1,95 @@
+\hypertarget{_r_n_g_8cpp}{
+\section{src/RNG.cpp File Reference}
+\label{_r_n_g_8cpp}\index{src/RNG.cpp@{src/RNG.cpp}}
+}
+{\ttfamily \#include \char`\"{}VRPH.h\char`\"{}}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_r_n_g_8cpp_a9bc1fe94bf8c1b9aaef3dade106b6304}{MODULUS}~2147483647
+\item 
+\#define \hyperlink{_r_n_g_8cpp_ac441f219c1d0f60b3f606e0e6f31abd2}{MULT}~16807
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{_r_n_g_8cpp_adf64b5cfab9379546056f95c7e50dbb2}{lcgrand} (int stream)
+\item 
+void \hyperlink{_r_n_g_8cpp_a1ecd1c535d09ed1659cd67e2d2c1bdc5}{random\_\-permutation} (int $\ast$perm, int n)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static long long \hyperlink{_r_n_g_8cpp_a25f98c99936f6680f83220570c602574}{zrng} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{_r_n_g_8cpp_a9bc1fe94bf8c1b9aaef3dade106b6304}{
+\index{RNG.cpp@{RNG.cpp}!MODULUS@{MODULUS}}
+\index{MODULUS@{MODULUS}!RNG.cpp@{RNG.cpp}}
+\subsubsection[{MODULUS}]{\setlength{\rightskip}{0pt plus 5cm}\#define MODULUS~2147483647}}
+\label{_r_n_g_8cpp_a9bc1fe94bf8c1b9aaef3dade106b6304}
+
+
+Definition at line 14 of file RNG.cpp.
+
+\hypertarget{_r_n_g_8cpp_ac441f219c1d0f60b3f606e0e6f31abd2}{
+\index{RNG.cpp@{RNG.cpp}!MULT@{MULT}}
+\index{MULT@{MULT}!RNG.cpp@{RNG.cpp}}
+\subsubsection[{MULT}]{\setlength{\rightskip}{0pt plus 5cm}\#define MULT~16807}}
+\label{_r_n_g_8cpp_ac441f219c1d0f60b3f606e0e6f31abd2}
+
+
+Definition at line 15 of file RNG.cpp.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_r_n_g_8cpp_adf64b5cfab9379546056f95c7e50dbb2}{
+\index{RNG.cpp@{RNG.cpp}!lcgrand@{lcgrand}}
+\index{lcgrand@{lcgrand}!RNG.cpp@{RNG.cpp}}
+\subsubsection[{lcgrand}]{\setlength{\rightskip}{0pt plus 5cm}double lcgrand (
+\begin{DoxyParamCaption}
+\item[{int}]{stream}
+\end{DoxyParamCaption}
+)}}
+\label{_r_n_g_8cpp_adf64b5cfab9379546056f95c7e50dbb2}
+
+
+A run of the mill LCG.
+
+
+
+Definition at line 79 of file RNG.cpp.
+
+\hypertarget{_r_n_g_8cpp_a1ecd1c535d09ed1659cd67e2d2c1bdc5}{
+\index{RNG.cpp@{RNG.cpp}!random\_\-permutation@{random\_\-permutation}}
+\index{random\_\-permutation@{random\_\-permutation}!RNG.cpp@{RNG.cpp}}
+\subsubsection[{random\_\-permutation}]{\setlength{\rightskip}{0pt plus 5cm}void random\_\-permutation (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{perm, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}
+\label{_r_n_g_8cpp_a1ecd1c535d09ed1659cd67e2d2c1bdc5}
+
+
+Randomly permutes the perm array of size n. Assumes that perm\mbox{[}\mbox{]} is already filled with the elements to be permuted.
+
+
+
+Definition at line 110 of file RNG.cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{_r_n_g_8cpp_a25f98c99936f6680f83220570c602574}{
+\index{RNG.cpp@{RNG.cpp}!zrng@{zrng}}
+\index{zrng@{zrng}!RNG.cpp@{RNG.cpp}}
+\subsubsection[{zrng}]{\setlength{\rightskip}{0pt plus 5cm}long long {\bf zrng}\mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{_r_n_g_8cpp_a25f98c99936f6680f83220570c602574}
+
+
+Definition at line 19 of file RNG.cpp.
+

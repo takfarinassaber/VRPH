@@ -1,0 +1,145 @@
+\hypertarget{class_clarke_wright}{
+\section{ClarkeWright Class Reference}
+\label{class_clarke_wright}\index{ClarkeWright@{ClarkeWright}}
+}
+
+
+{\ttfamily \#include $<$ClarkeWright.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_clarke_wright_af9e12768a9a93f76ab2b082b83b720ab}{ClarkeWright} (int n)
+\item 
+\hyperlink{class_clarke_wright_a156fd3e49d76865eb4653d243d5f2439}{$\sim$ClarkeWright} ()
+\item 
+bool \hyperlink{class_clarke_wright_ac99cbc055fc8f3210b0882c114858e3c}{Construct} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, double lambda, bool use\_\-neighbor\_\-list)
+\item 
+void \hyperlink{class_clarke_wright_ab8dfbbf8b0b730fa7d851eabba9da1ac}{CreateSavingsMatrix} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, double lambda, bool use\_\-neighbor\_\-list)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_v_r_p_savings_element}{VRPSavingsElement} $\ast$ \hyperlink{class_clarke_wright_a07187d146929ba5f529557d694897404}{s}
+\item 
+bool \hyperlink{class_clarke_wright_ac82ca0e8dc72b0a04a91786dcd4e6412}{has\_\-savings\_\-matrix}
+\item 
+int \hyperlink{class_clarke_wright_a9cff11194c4d3a21c589b8ff642a0e71}{savings\_\-matrix\_\-size}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 21 of file ClarkeWright.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_clarke_wright_af9e12768a9a93f76ab2b082b83b720ab}{
+\index{ClarkeWright@{ClarkeWright}!ClarkeWright@{ClarkeWright}}
+\index{ClarkeWright@{ClarkeWright}!ClarkeWright@{ClarkeWright}}
+\subsubsection[{ClarkeWright}]{\setlength{\rightskip}{0pt plus 5cm}ClarkeWright::ClarkeWright (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}
+\label{class_clarke_wright_af9e12768a9a93f76ab2b082b83b720ab}
+
+
+Sets up the data structure for the Clarke Wright savings algorithm including a matrix of size n(n-\/1)/2 for the savings values
+
+
+
+Definition at line 16 of file ClarkeWright.cpp.
+
+\hypertarget{class_clarke_wright_a156fd3e49d76865eb4653d243d5f2439}{
+\index{ClarkeWright@{ClarkeWright}!$\sim$ClarkeWright@{$\sim$ClarkeWright}}
+\index{$\sim$ClarkeWright@{$\sim$ClarkeWright}!ClarkeWright@{ClarkeWright}}
+\subsubsection[{$\sim$ClarkeWright}]{\setlength{\rightskip}{0pt plus 5cm}ClarkeWright::$\sim$ClarkeWright (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_clarke_wright_a156fd3e49d76865eb4653d243d5f2439}
+
+
+Definition at line 29 of file ClarkeWright.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_clarke_wright_ac99cbc055fc8f3210b0882c114858e3c}{
+\index{ClarkeWright@{ClarkeWright}!Construct@{Construct}}
+\index{Construct@{Construct}!ClarkeWright@{ClarkeWright}}
+\subsubsection[{Construct}]{\setlength{\rightskip}{0pt plus 5cm}bool ClarkeWright::Construct (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{double}]{lambda, }
+\item[{bool}]{use\_\-neighbor\_\-list}
+\end{DoxyParamCaption}
+)}}
+\label{class_clarke_wright_ac99cbc055fc8f3210b0882c114858e3c}
+
+
+This function constructs the routes via the Clarke Wright savings algorithm with the parameter lambda (see Yellow 19??): s\_\-\{ij\}=d\_\-\{i0\}+d\_\-\{0j\}-\/lambda$\ast$d\_\-\{ij\}.
+
+
+
+Definition at line 122 of file ClarkeWright.cpp.
+
+\hypertarget{class_clarke_wright_ab8dfbbf8b0b730fa7d851eabba9da1ac}{
+\index{ClarkeWright@{ClarkeWright}!CreateSavingsMatrix@{CreateSavingsMatrix}}
+\index{CreateSavingsMatrix@{CreateSavingsMatrix}!ClarkeWright@{ClarkeWright}}
+\subsubsection[{CreateSavingsMatrix}]{\setlength{\rightskip}{0pt plus 5cm}void ClarkeWright::CreateSavingsMatrix (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{double}]{lambda, }
+\item[{bool}]{use\_\-neighbor\_\-list}
+\end{DoxyParamCaption}
+)}}
+\label{class_clarke_wright_ab8dfbbf8b0b730fa7d851eabba9da1ac}
+
+
+This computes the savings matrix d\mbox{[}0,i\mbox{]}+d\mbox{[}0,j\mbox{]}-\/lambda$\ast$d\mbox{[}i,j\mbox{]} for all pairs (i,j) with i and j routed. Matrix is sorted and each element is of the form \mbox{[}val, i, j\mbox{]}
+
+
+
+Definition at line 35 of file ClarkeWright.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_clarke_wright_ac82ca0e8dc72b0a04a91786dcd4e6412}{
+\index{ClarkeWright@{ClarkeWright}!has\_\-savings\_\-matrix@{has\_\-savings\_\-matrix}}
+\index{has\_\-savings\_\-matrix@{has\_\-savings\_\-matrix}!ClarkeWright@{ClarkeWright}}
+\subsubsection[{has\_\-savings\_\-matrix}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf ClarkeWright::has\_\-savings\_\-matrix}}}
+\label{class_clarke_wright_ac82ca0e8dc72b0a04a91786dcd4e6412}
+
+
+Definition at line 29 of file ClarkeWright.h.
+
+\hypertarget{class_clarke_wright_a07187d146929ba5f529557d694897404}{
+\index{ClarkeWright@{ClarkeWright}!s@{s}}
+\index{s@{s}!ClarkeWright@{ClarkeWright}}
+\subsubsection[{s}]{\setlength{\rightskip}{0pt plus 5cm}class {\bf VRPSavingsElement}$\ast$ {\bf ClarkeWright::s}}}
+\label{class_clarke_wright_a07187d146929ba5f529557d694897404}
+
+
+Definition at line 27 of file ClarkeWright.h.
+
+\hypertarget{class_clarke_wright_a9cff11194c4d3a21c589b8ff642a0e71}{
+\index{ClarkeWright@{ClarkeWright}!savings\_\-matrix\_\-size@{savings\_\-matrix\_\-size}}
+\index{savings\_\-matrix\_\-size@{savings\_\-matrix\_\-size}!ClarkeWright@{ClarkeWright}}
+\subsubsection[{savings\_\-matrix\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf ClarkeWright::savings\_\-matrix\_\-size}}}
+\label{class_clarke_wright_a9cff11194c4d3a21c589b8ff642a0e71}
+
+
+Definition at line 30 of file ClarkeWright.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_clarke_wright_8h}{ClarkeWright.h}\item 
+src/\hyperlink{_clarke_wright_8cpp}{ClarkeWright.cpp}\end{DoxyCompactItemize}

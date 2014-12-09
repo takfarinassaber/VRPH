@@ -1,0 +1,116 @@
+\hypertarget{class_two_point_move}{
+\section{TwoPointMove Class Reference}
+\label{class_two_point_move}\index{TwoPointMove@{TwoPointMove}}
+}
+
+
+{\ttfamily \#include $<$TwoPointMove.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_two_point_move_a684f431858dfaf6cf3627dcc6ac8cab1}{search} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int i, int rules)
+\item 
+bool \hyperlink{class_two_point_move_a8ce6bf19877c6bd9d995916dabbf91c6}{route\_\-search} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int r1, int r2, int rules)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_two_point_move_a5351a828422a8bb9bdd6da038eafcb7d}{evaluate} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int i, int j, int rules, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\item 
+bool \hyperlink{class_two_point_move_a8de77664807eafbb8c457cb57bd64faf}{move} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file TwoPointMove.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_two_point_move_a5351a828422a8bb9bdd6da038eafcb7d}{
+\index{TwoPointMove@{TwoPointMove}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!TwoPointMove@{TwoPointMove}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}bool TwoPointMove::evaluate (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{int}]{rules, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_two_point_move_a5351a828422a8bb9bdd6da038eafcb7d}
+
+
+This function evaluates the move of swapping the positions of j and b in the current solution. If a satisfactory move is found subject to the provided rules, then the solution modification data is placed in the \hyperlink{class_v_r_p_move}{VRPMove} M and the function returns true. Returns false otherwise.
+
+
+
+Definition at line 256 of file TwoPointMove.cpp.
+
+\hypertarget{class_two_point_move_a8de77664807eafbb8c457cb57bd64faf}{
+\index{TwoPointMove@{TwoPointMove}!move@{move}}
+\index{move@{move}!TwoPointMove@{TwoPointMove}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}bool TwoPointMove::move (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_two_point_move_a8de77664807eafbb8c457cb57bd64faf}
+
+
+Performs the actual solution modification given by the move M.
+
+
+
+Definition at line 320 of file TwoPointMove.cpp.
+
+\hypertarget{class_two_point_move_a8ce6bf19877c6bd9d995916dabbf91c6}{
+\index{TwoPointMove@{TwoPointMove}!route\_\-search@{route\_\-search}}
+\index{route\_\-search@{route\_\-search}!TwoPointMove@{TwoPointMove}}
+\subsubsection[{route\_\-search}]{\setlength{\rightskip}{0pt plus 5cm}bool TwoPointMove::route\_\-search (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{r1, }
+\item[{int}]{r2, }
+\item[{int}]{rules}
+\end{DoxyParamCaption}
+)}}
+\label{class_two_point_move_a8ce6bf19877c6bd9d995916dabbf91c6}
+
+
+Searches for all TPM moves involving a node from route r1 and the other from route r2.
+
+
+
+Definition at line 162 of file TwoPointMove.cpp.
+
+\hypertarget{class_two_point_move_a684f431858dfaf6cf3627dcc6ac8cab1}{
+\index{TwoPointMove@{TwoPointMove}!search@{search}}
+\index{search@{search}!TwoPointMove@{TwoPointMove}}
+\subsubsection[{search}]{\setlength{\rightskip}{0pt plus 5cm}bool TwoPointMove::search (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{i, }
+\item[{int}]{rules}
+\end{DoxyParamCaption}
+)}}
+\label{class_two_point_move_a684f431858dfaf6cf3627dcc6ac8cab1}
+
+
+Attempts to find the best Two-\/Point move involving node j using the specified search space, and rules. If an acceptable move is found, then the move is made and all relevant solution modifications are made.
+
+
+
+Definition at line 17 of file TwoPointMove.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_two_point_move_8h}{TwoPointMove.h}\item 
+src/\hyperlink{_two_point_move_8cpp}{TwoPointMove.cpp}\end{DoxyCompactItemize}

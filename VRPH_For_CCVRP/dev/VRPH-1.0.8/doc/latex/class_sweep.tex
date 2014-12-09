@@ -1,0 +1,64 @@
+\hypertarget{class_sweep}{
+\section{Sweep Class Reference}
+\label{class_sweep}\index{Sweep@{Sweep}}
+}
+
+
+{\ttfamily \#include $<$Sweep.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sweep_a154d8154b44ffd83c26375ca8d688591}{Sweep} ()
+\item 
+bool \hyperlink{class_sweep_a8f9ff79f7790e20a6cdee7df8ed5e7c5}{Construct} (class \hyperlink{class_v_r_p}{VRP} $\ast$V)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file Sweep.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_sweep_a154d8154b44ffd83c26375ca8d688591}{
+\index{Sweep@{Sweep}!Sweep@{Sweep}}
+\index{Sweep@{Sweep}!Sweep@{Sweep}}
+\subsubsection[{Sweep}]{\setlength{\rightskip}{0pt plus 5cm}Sweep::Sweep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_sweep_a154d8154b44ffd83c26375ca8d688591}
+
+
+Definition at line 21 of file Sweep.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_sweep_a8f9ff79f7790e20a6cdee7df8ed5e7c5}{
+\index{Sweep@{Sweep}!Construct@{Construct}}
+\index{Construct@{Construct}!Sweep@{Sweep}}
+\subsubsection[{Construct}]{\setlength{\rightskip}{0pt plus 5cm}bool Sweep::Construct (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V}
+\end{DoxyParamCaption}
+)}}
+\label{class_sweep_a8f9ff79f7790e20a6cdee7df8ed5e7c5}
+
+
+Constructs an initial \hyperlink{class_v_r_p}{VRP} solution by the simple sweep method. Start by picking a random node and then sweep counterclockwise and add nodes until we reach vehicle capacity or max route length. Improve after every imp\_\-interval additions by running the provided heuristics (VRPH\_\-DOWNHILL only).
+
+
+
+Definition at line 26 of file Sweep.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_sweep_8h}{Sweep.h}\item 
+src/\hyperlink{_sweep_8cpp}{Sweep.cpp}\end{DoxyCompactItemize}

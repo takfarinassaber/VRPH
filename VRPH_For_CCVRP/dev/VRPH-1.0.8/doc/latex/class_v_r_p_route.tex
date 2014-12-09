@@ -1,0 +1,340 @@
+\hypertarget{class_v_r_p_route}{
+\section{VRPRoute Class Reference}
+\label{class_v_r_p_route}\index{VRPRoute@{VRPRoute}}
+}
+
+
+{\ttfamily \#include $<$VRPRoute.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_v_r_p_route_aab37c41341c52ddb11e7a5fb185de137}{VRPRoute} ()
+\item 
+\hyperlink{class_v_r_p_route_a4aef4ce735851f4254085e789ffe534d}{VRPRoute} (int n)
+\item 
+\hyperlink{class_v_r_p_route_ad0628e5642eda49b5206f3b66d98abf6}{$\sim$VRPRoute} ()
+\item 
+void \hyperlink{class_v_r_p_route_a1fc3727d2067d9926ece08f7a184d024}{create\_\-name} ()
+\item 
+int \hyperlink{class_v_r_p_route_a60d9e2db1eed4216f1390dd96822d484}{hash} (int salt)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_v_r_p_route_af7822965e17374753ff6da1e4d46257c}{start}
+\item 
+int \hyperlink{class_v_r_p_route_aaa07b108dcc66e0fa8cb87b910c5422c}{end}
+\item 
+double \hyperlink{class_v_r_p_route_a1b2f5196b37c6e28ded11338719b24cc}{length}
+\item 
+int \hyperlink{class_v_r_p_route_a193220e68b6e982d24b4f522138d92c1}{load}
+\item 
+int \hyperlink{class_v_r_p_route_af18e40acb0d146fca047ad56457c772f}{num\_\-customers}
+\item 
+double \hyperlink{class_v_r_p_route_ac9e01d2cf8bc40618283eaf23c3089b3}{obj\_\-val}
+\item 
+int \hyperlink{class_v_r_p_route_acae3211284130237208d1e5d4bf3bd06}{hash\_\-val}
+\item 
+int \hyperlink{class_v_r_p_route_afce4f06d2abdd94d1d89e6ff8f768d42}{hash\_\-val2}
+\item 
+double \hyperlink{class_v_r_p_route_a2e3a23496201d0974c96e187363c2110}{total\_\-service\_\-time}
+\item 
+double \hyperlink{class_v_r_p_route_a6584731816b5b2b3782159485ce647db}{time}
+\item 
+double $\ast$ \hyperlink{class_v_r_p_route_a8333174eb6fd26842408eca57b3e29c7}{x}
+\item 
+double $\ast$ \hyperlink{class_v_r_p_route_a10340585ced0af5cfc11784f628ea65c}{y}
+\item 
+char $\ast$ \hyperlink{class_v_r_p_route_a6dffc050d629bc3ab6069cd450382417}{name}
+\item 
+double \hyperlink{class_v_r_p_route_a0b775a2c29bcd2f7b254befac3d9505c}{x\_\-center}
+\item 
+double \hyperlink{class_v_r_p_route_ab4a1b843875b5bee390153e1d0970e2b}{y\_\-center}
+\item 
+double \hyperlink{class_v_r_p_route_a623d67983d2db8b6a5a66789e5d0cf13}{min\_\-theta}
+\item 
+double \hyperlink{class_v_r_p_route_adae87753adb4e3a0d68b644e52ba5f13}{max\_\-theta}
+\item 
+int \hyperlink{class_v_r_p_route_a360d284927652d9925ab2eac9dbc3ee4}{neighboring\_\-routes} \mbox{[}MAX\_\-NEIGHBORING\_\-ROUTES\mbox{]}
+\item 
+int $\ast$ \hyperlink{class_v_r_p_route_afc301079828a5849a0ce1e3e2bc9a9b2}{ordering}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 24 of file VRPRoute.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_v_r_p_route_aab37c41341c52ddb11e7a5fb185de137}{
+\index{VRPRoute@{VRPRoute}!VRPRoute@{VRPRoute}}
+\index{VRPRoute@{VRPRoute}!VRPRoute@{VRPRoute}}
+\subsubsection[{VRPRoute}]{\setlength{\rightskip}{0pt plus 5cm}VRPRoute::VRPRoute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_route_aab37c41341c52ddb11e7a5fb185de137}
+Stores information about a particular route. The ordering field is not updated during the search and is filled in only when requested. 
+
+Default constructor for the \hyperlink{class_v_r_p_route}{VRPRoute}.
+
+
+
+Definition at line 17 of file VRPRoute.cpp.
+
+\hypertarget{class_v_r_p_route_a4aef4ce735851f4254085e789ffe534d}{
+\index{VRPRoute@{VRPRoute}!VRPRoute@{VRPRoute}}
+\index{VRPRoute@{VRPRoute}!VRPRoute@{VRPRoute}}
+\subsubsection[{VRPRoute}]{\setlength{\rightskip}{0pt plus 5cm}VRPRoute::VRPRoute (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_route_a4aef4ce735851f4254085e789ffe534d}
+
+
+Allocates memory for the \hyperlink{class_v_r_p_route}{VRPRoute} fields large enough for an n node problem.
+
+
+
+Definition at line 30 of file VRPRoute.cpp.
+
+\hypertarget{class_v_r_p_route_ad0628e5642eda49b5206f3b66d98abf6}{
+\index{VRPRoute@{VRPRoute}!$\sim$VRPRoute@{$\sim$VRPRoute}}
+\index{$\sim$VRPRoute@{$\sim$VRPRoute}!VRPRoute@{VRPRoute}}
+\subsubsection[{$\sim$VRPRoute}]{\setlength{\rightskip}{0pt plus 5cm}VRPRoute::$\sim$VRPRoute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_route_ad0628e5642eda49b5206f3b66d98abf6}
+
+
+Destructor for the \hyperlink{class_v_r_p_route}{VRPRoute}.
+
+
+
+Definition at line 45 of file VRPRoute.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_v_r_p_route_a1fc3727d2067d9926ece08f7a184d024}{
+\index{VRPRoute@{VRPRoute}!create\_\-name@{create\_\-name}}
+\index{create\_\-name@{create\_\-name}!VRPRoute@{VRPRoute}}
+\subsubsection[{create\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}void VRPRoute::create\_\-name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_route_a1fc3727d2067d9926ece08f7a184d024}
+
+
+Creates a name for the route as a string. Format is hashval1\_\-hashval2\_\-ordering (delimited by \_\-)
+
+
+
+Definition at line 108 of file VRPRoute.cpp.
+
+\hypertarget{class_v_r_p_route_a60d9e2db1eed4216f1390dd96822d484}{
+\index{VRPRoute@{VRPRoute}!hash@{hash}}
+\index{hash@{hash}!VRPRoute@{VRPRoute}}
+\subsubsection[{hash}]{\setlength{\rightskip}{0pt plus 5cm}int VRPRoute::hash (
+\begin{DoxyParamCaption}
+\item[{int}]{salt}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_route_a60d9e2db1eed4216f1390dd96822d484}
+
+
+Computes a hash of the route, returning an integer in the range \mbox{[}0,HASH\_\-TABLE\_\-SIZE-\/1\mbox{]}.
+
+
+
+Definition at line 63 of file VRPRoute.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_v_r_p_route_aaa07b108dcc66e0fa8cb87b910c5422c}{
+\index{VRPRoute@{VRPRoute}!end@{end}}
+\index{end@{end}!VRPRoute@{VRPRoute}}
+\subsubsection[{end}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPRoute::end}}}
+\label{class_v_r_p_route_aaa07b108dcc66e0fa8cb87b910c5422c}
+
+
+Definition at line 38 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_acae3211284130237208d1e5d4bf3bd06}{
+\index{VRPRoute@{VRPRoute}!hash\_\-val@{hash\_\-val}}
+\index{hash\_\-val@{hash\_\-val}!VRPRoute@{VRPRoute}}
+\subsubsection[{hash\_\-val}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPRoute::hash\_\-val}}}
+\label{class_v_r_p_route_acae3211284130237208d1e5d4bf3bd06}
+
+
+Definition at line 44 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_afce4f06d2abdd94d1d89e6ff8f768d42}{
+\index{VRPRoute@{VRPRoute}!hash\_\-val2@{hash\_\-val2}}
+\index{hash\_\-val2@{hash\_\-val2}!VRPRoute@{VRPRoute}}
+\subsubsection[{hash\_\-val2}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPRoute::hash\_\-val2}}}
+\label{class_v_r_p_route_afce4f06d2abdd94d1d89e6ff8f768d42}
+
+
+Definition at line 45 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_a1b2f5196b37c6e28ded11338719b24cc}{
+\index{VRPRoute@{VRPRoute}!length@{length}}
+\index{length@{length}!VRPRoute@{VRPRoute}}
+\subsubsection[{length}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPRoute::length}}}
+\label{class_v_r_p_route_a1b2f5196b37c6e28ded11338719b24cc}
+
+
+Definition at line 39 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_a193220e68b6e982d24b4f522138d92c1}{
+\index{VRPRoute@{VRPRoute}!load@{load}}
+\index{load@{load}!VRPRoute@{VRPRoute}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPRoute::load}}}
+\label{class_v_r_p_route_a193220e68b6e982d24b4f522138d92c1}
+
+
+Definition at line 40 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_adae87753adb4e3a0d68b644e52ba5f13}{
+\index{VRPRoute@{VRPRoute}!max\_\-theta@{max\_\-theta}}
+\index{max\_\-theta@{max\_\-theta}!VRPRoute@{VRPRoute}}
+\subsubsection[{max\_\-theta}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPRoute::max\_\-theta}}}
+\label{class_v_r_p_route_adae87753adb4e3a0d68b644e52ba5f13}
+
+
+Definition at line 58 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_a623d67983d2db8b6a5a66789e5d0cf13}{
+\index{VRPRoute@{VRPRoute}!min\_\-theta@{min\_\-theta}}
+\index{min\_\-theta@{min\_\-theta}!VRPRoute@{VRPRoute}}
+\subsubsection[{min\_\-theta}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPRoute::min\_\-theta}}}
+\label{class_v_r_p_route_a623d67983d2db8b6a5a66789e5d0cf13}
+
+
+Definition at line 57 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_a6dffc050d629bc3ab6069cd450382417}{
+\index{VRPRoute@{VRPRoute}!name@{name}}
+\index{name@{name}!VRPRoute@{VRPRoute}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ {\bf VRPRoute::name}}}
+\label{class_v_r_p_route_a6dffc050d629bc3ab6069cd450382417}
+
+
+Definition at line 52 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_a360d284927652d9925ab2eac9dbc3ee4}{
+\index{VRPRoute@{VRPRoute}!neighboring\_\-routes@{neighboring\_\-routes}}
+\index{neighboring\_\-routes@{neighboring\_\-routes}!VRPRoute@{VRPRoute}}
+\subsubsection[{neighboring\_\-routes}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPRoute::neighboring\_\-routes}\mbox{[}MAX\_\-NEIGHBORING\_\-ROUTES\mbox{]}}}
+\label{class_v_r_p_route_a360d284927652d9925ab2eac9dbc3ee4}
+
+
+Definition at line 60 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_af18e40acb0d146fca047ad56457c772f}{
+\index{VRPRoute@{VRPRoute}!num\_\-customers@{num\_\-customers}}
+\index{num\_\-customers@{num\_\-customers}!VRPRoute@{VRPRoute}}
+\subsubsection[{num\_\-customers}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPRoute::num\_\-customers}}}
+\label{class_v_r_p_route_af18e40acb0d146fca047ad56457c772f}
+
+
+Definition at line 41 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_ac9e01d2cf8bc40618283eaf23c3089b3}{
+\index{VRPRoute@{VRPRoute}!obj\_\-val@{obj\_\-val}}
+\index{obj\_\-val@{obj\_\-val}!VRPRoute@{VRPRoute}}
+\subsubsection[{obj\_\-val}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPRoute::obj\_\-val}}}
+\label{class_v_r_p_route_ac9e01d2cf8bc40618283eaf23c3089b3}
+
+
+Definition at line 42 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_afc301079828a5849a0ce1e3e2bc9a9b2}{
+\index{VRPRoute@{VRPRoute}!ordering@{ordering}}
+\index{ordering@{ordering}!VRPRoute@{VRPRoute}}
+\subsubsection[{ordering}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf VRPRoute::ordering}}}
+\label{class_v_r_p_route_afc301079828a5849a0ce1e3e2bc9a9b2}
+
+
+Definition at line 62 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_af7822965e17374753ff6da1e4d46257c}{
+\index{VRPRoute@{VRPRoute}!start@{start}}
+\index{start@{start}!VRPRoute@{VRPRoute}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPRoute::start}}}
+\label{class_v_r_p_route_af7822965e17374753ff6da1e4d46257c}
+
+
+Definition at line 37 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_a6584731816b5b2b3782159485ce647db}{
+\index{VRPRoute@{VRPRoute}!time@{time}}
+\index{time@{time}!VRPRoute@{VRPRoute}}
+\subsubsection[{time}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPRoute::time}}}
+\label{class_v_r_p_route_a6584731816b5b2b3782159485ce647db}
+
+
+Definition at line 48 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_a2e3a23496201d0974c96e187363c2110}{
+\index{VRPRoute@{VRPRoute}!total\_\-service\_\-time@{total\_\-service\_\-time}}
+\index{total\_\-service\_\-time@{total\_\-service\_\-time}!VRPRoute@{VRPRoute}}
+\subsubsection[{total\_\-service\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPRoute::total\_\-service\_\-time}}}
+\label{class_v_r_p_route_a2e3a23496201d0974c96e187363c2110}
+
+
+Definition at line 47 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_a8333174eb6fd26842408eca57b3e29c7}{
+\index{VRPRoute@{VRPRoute}!x@{x}}
+\index{x@{x}!VRPRoute@{VRPRoute}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ {\bf VRPRoute::x}}}
+\label{class_v_r_p_route_a8333174eb6fd26842408eca57b3e29c7}
+
+
+Definition at line 49 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_a0b775a2c29bcd2f7b254befac3d9505c}{
+\index{VRPRoute@{VRPRoute}!x\_\-center@{x\_\-center}}
+\index{x\_\-center@{x\_\-center}!VRPRoute@{VRPRoute}}
+\subsubsection[{x\_\-center}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPRoute::x\_\-center}}}
+\label{class_v_r_p_route_a0b775a2c29bcd2f7b254befac3d9505c}
+
+
+Definition at line 54 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_a10340585ced0af5cfc11784f628ea65c}{
+\index{VRPRoute@{VRPRoute}!y@{y}}
+\index{y@{y}!VRPRoute@{VRPRoute}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ {\bf VRPRoute::y}}}
+\label{class_v_r_p_route_a10340585ced0af5cfc11784f628ea65c}
+
+
+Definition at line 50 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_ab4a1b843875b5bee390153e1d0970e2b}{
+\index{VRPRoute@{VRPRoute}!y\_\-center@{y\_\-center}}
+\index{y\_\-center@{y\_\-center}!VRPRoute@{VRPRoute}}
+\subsubsection[{y\_\-center}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPRoute::y\_\-center}}}
+\label{class_v_r_p_route_ab4a1b843875b5bee390153e1d0970e2b}
+
+
+Definition at line 55 of file VRPRoute.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_v_r_p_route_8h}{VRPRoute.h}\item 
+src/\hyperlink{_v_r_p_route_8cpp}{VRPRoute.cpp}\end{DoxyCompactItemize}

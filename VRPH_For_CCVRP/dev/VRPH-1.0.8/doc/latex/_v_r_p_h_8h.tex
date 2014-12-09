@@ -1,0 +1,805 @@
+\hypertarget{_v_r_p_h_8h}{
+\section{inc/VRPH.h File Reference}
+\label{_v_r_p_h_8h}\index{inc/VRPH.h@{inc/VRPH.h}}
+}
+{\ttfamily \#include \char`\"{}RNG.h\char`\"{}}\par
+{\ttfamily \#include $<$stdlib.h$>$}\par
+{\ttfamily \#include $<$stdio.h$>$}\par
+{\ttfamily \#include $<$math.h$>$}\par
+{\ttfamily \#include $<$time.h$>$}\par
+{\ttfamily \#include $<$string.h$>$}\par
+{\ttfamily \#include $<$memory.h$>$}\par
+{\ttfamily \#include $<$assert.h$>$}\par
+{\ttfamily \#include \char`\"{}VRPDebug.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}VRPHeuristic.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}VRPUtils.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}VRPNode.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}VRPRoute.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}VRPMove.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}VRPSolution.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}VRPTabuList.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}VRP.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}Postsert.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}Presert.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}Concatenate.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}SwapEnds.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}Flip.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}Swap.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}MoveString.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}OnePointMove.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}TwoPointMove.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}TwoOpt.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ClarkeWright.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}Sweep.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}OrOpt.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ThreeOpt.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}CrossExchange.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}VRPGenerator.h\char`\"{}}\par
+{\ttfamily \#include \char`\"{}ThreePointMove.h\char`\"{}}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a56c82ee77300a3ee2fb96dd709b33423}{VRPH\_\-TSP}~1
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a08b6994c573069132ec4b560552d54b5}{VRPH\_\-CVRP}~2
+\item 
+\#define \hyperlink{_v_r_p_h_8h_abdb58adccf26b890c0cc649a4613a886}{VRPH\_\-FUNCTION}~1
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a454d175b61c20c44e76edbec56ca6b9c}{VRPH\_\-UPPER\_\-ROW}~2
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a9bb5ac4fb56527e2090877d8de92fc8e}{VRPH\_\-FULL\_\-MATRIX}~3
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a0c2433d48e0b876c0553cc353a427b48}{VRPH\_\-LOWER\_\-ROW}~4
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a9a7d2a1877c40ba90d97a0d8049e15df}{VRPH\_\-UPPER\_\-DIAG\_\-ROW}~5
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a02705d21d0b55235bdb798738f67bec9}{VRPH\_\-LOWER\_\-DIAG\_\-ROW}~6
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a56ad4ed9fc5af036227bfae999b62529}{VRPH\_\-TWOD\_\-COORDS}~2
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a8d769525f67c4c13593f8dc653775dfb}{VRPH\_\-THREED\_\-COORDS}~3
+\item 
+\#define \hyperlink{_v_r_p_h_8h_ac699533cbc821baf6944d71323fc2907}{VRPH\_\-EXPLICIT}~0
+\item 
+\#define \hyperlink{_v_r_p_h_8h_abe42db68ce9353a6b714b7023f134d4e}{VRPH\_\-EUC\_\-2D}~1
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a3f6b55345e2c20c47a965977944dafe4}{VRPH\_\-EUC\_\-3D}~2
+\item 
+\#define \hyperlink{_v_r_p_h_8h_ae358bacb9c0d83cd458732d9fad05725}{VRPH\_\-MAX\_\-2D}~3
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a5baafc003835d107761fcd282b74991b}{VRPH\_\-MAX\_\-3D}~4
+\item 
+\#define \hyperlink{_v_r_p_h_8h_ae53a617004a80d62990744b209ef018d}{VRPH\_\-MAN\_\-2D}~5
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a9c49b08f7575760f29f9919e8bc75734}{VRPH\_\-MAN\_\-3D}~6
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a927c0bd7467c657839c120806a8c803d}{VRPH\_\-CEIL\_\-2D}~7
+\item 
+\#define \hyperlink{_v_r_p_h_8h_adc89b4fdd95f800e9aaaa7f990fdac45}{VRPH\_\-GEO}~8
+\item 
+\#define \hyperlink{_v_r_p_h_8h_aee70ebfcc63c0db404e5b04bb42d19d3}{VRPH\_\-EXACT\_\-2D}~9
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a3fe38d7b5bddb8e42b5e1e2e5d71b864}{VRPH\_\-MIN}(X, Y)~((X) $<$ (Y) ?  (X) : (Y))
+\item 
+\#define \hyperlink{_v_r_p_h_8h_ab144432fc4ad0dbc51b4c919355a8066}{VRPH\_\-MAX}(X, Y)~((X) $<$ (Y) ?  (Y) : (X))
+\item 
+\#define \hyperlink{_v_r_p_h_8h_ae97ecff2153586b59a447d14daa132dd}{VRPH\_\-ABS}(a)~(((a) $<$ 0) ? -\/(a) : (a))
+\item 
+\#define \hyperlink{_v_r_p_h_8h_ab2d36f3e6e565f56f2aaf3259db10320}{VRPH\_\-RANDOM\_\-SEARCH}~1
+\item 
+\#define \hyperlink{_v_r_p_h_8h_aa6366bb9d6c0a194f93955b43db42cb7}{VRPH\_\-REGRET\_\-SEARCH}~2
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a8bbaefc50d76fab8f83cc561dd04bc4a}{VRPH\_\-EPS\_\-EXE}~\char`\"{}epstopdf\char`\"{}
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a465e57688db7ac36b992617431e98a4f}{VRPH\_\-BLACK}~0
+\item 
+\#define \hyperlink{_v_r_p_h_8h_ac42b948fca023b98a647510575eed811}{VRPH\_\-RED}~1
+\item 
+\#define \hyperlink{_v_r_p_h_8h_aad137f2d4f1f11e29c9d98b875dca6f5}{VRPH\_\-YELLOW}~2
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a0de83d586b462f939ed63ebd33d7de33}{VRPH\_\-GREEN}~3
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a2b4402f4b0bfcc260e6baf9345072dee}{VRPH\_\-AQUA}~4
+\item 
+\#define \hyperlink{_v_r_p_h_8h_afb1ca0f185ee17a3722959dbdf8c174c}{VRPH\_\-PINK}~5
+\item 
+\#define \hyperlink{_v_r_p_h_8h_ae37ab07aa921999284acf88e13850dd9}{VRPH\_\-WHEAT}~6
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a48230c30b75f8e38433b1380c2af527b}{VRPH\_\-GRAY}~7
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a4d503b670cfc7355a6e6dfdd191c57e6}{VRPH\_\-BROWN}~8
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a995c898744a4857cf664a33f8be72f34}{VRPH\_\-BLUE}~9
+\item 
+\#define \hyperlink{_v_r_p_h_8h_accb4a40e50dd6ea6c3ccadacb4aa4a6d}{VRPH\_\-VIOLET}~10
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a298f91b0e59b3e757fe2c8fbc704318d}{VRPH\_\-CYAN}~11
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a0d2038c040c115db54c3cebf133dfd9d}{VRPH\_\-TURQUOISE}~12
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a12353b1113a8c9e28c12a4e734a20a5e}{VRPH\_\-MAGENTA}~13
+\item 
+\#define \hyperlink{_v_r_p_h_8h_aaf0e9a589a56fccbc900d59c0d025cad}{VRPH\_\-SALMON}~14
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a068a881671652cbd6fe6444209593b70}{VRPH\_\-WHITE}~15
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a33ab14ac32ff98615a9fb425bcfdaf21}{VRPH\_\-DEFAULT\_\-PLOT}~0
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a2afc10b92edc5ba92bd25a9c0a311a1a}{VRPH\_\-BLACK\_\-AND\_\-WHITE}~1
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a58f8d66fa898bd515693c048004ea462}{VRPH\_\-COLOR}~2
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a5efe82d47b972b4c21db0a624605c130}{VRPH\_\-BOXED}~4
+\item 
+\#define \hyperlink{_v_r_p_h_8h_af6ef8dbaa787219cdd47d84e4c357844}{VRPH\_\-NO\_\-TITLE}~8
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a553c44c9e158ace15a64f525fefe8096}{VRPH\_\-BARE\_\-BONES}~16
+\item 
+\#define \hyperlink{_v_r_p_h_8h_af52a7f66e242c0741b7da9daacdefe39}{VRPH\_\-NO\_\-POINTS}~32
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a8a645430865ffee9146361beb35ab2db}{VRPH\_\-NO\_\-DEPOT\_\-EDGES}~64
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a35788765f41d795192baf94c6389e471}{VRPH\_\-WEIGHTED}~128
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a396d2c112fde6fd68a0e8e2939e7d8fe}{VRPH\_\-ADD\_\-ENTROPY}~0
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a2511eaf9d28c39f766e8f92518d019e6}{VRPH\_\-FORBID\_\-TINY\_\-MOVES}~1
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a4181f9e61f9d22c5b3bb2eae2543e88e}{VRPH\_\-MAX\_\-NUM\_\-LAMBDAS}~100
+\item 
+\#define \hyperlink{_v_r_p_h_8h_aae0c5a1a0fce83d2ea89148997223333}{VRPH\_\-STRING\_\-SIZE}~200
+\item 
+\#define \hyperlink{_v_r_p_h_8h_afd9c466c15d190bac55adc4abe7f86a2}{VRPH\_\-DEPOT}~0
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a98a4c76d0d3bc2f6dc62a547fce6677a}{VRPH\_\-PI}~3.14159265358979323846264
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a84716da9676e7a5193ff540f14258536}{VRPH\_\-RRR}~6378.3888
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a76b5bbdedc1228babd432c1f1a91a5a5}{VRP\_\-INFINITY}~(1$<$$<$30)
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a585d7e45b817f6b263d7b20293ccd362}{VRP\_\-INFEASIBLE}~VRP\_\-INFINITY
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a2c191a78250bd801cf2c86872de9f43b}{VRPH\_\-EPSILON}~.00001
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a6557eed109b3fa6368a5719fe5f5e9ac}{VRPH\_\-DEFAULT\_\-DEVIATION}~.01
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a203e1f274403c662af888d3ed274e19a}{VRPH\_\-MAX\_\-NUM\_\-ROUTES}~10000
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a6198284ce1fc61f6d6b7cd84bc23f249}{VRPH\_\-LI\_\-PERTURB}~0
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a5a4dde5cd41fb76b25c34ef344a83990}{VRPH\_\-OSMAN\_\-PERTURB}~1
+\item 
+\#define \hyperlink{_v_r_p_h_8h_a591f60583c2401e547995816a6db972e}{VRPH\_\-MAX\_\-SERVICE\_\-DAYS}~10
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_v_r_p_h_8h_adb94646d80c6e5e14b223a0721ffc4a7}{VRPH\_\-version} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{_v_r_p_h_8h_a585d7e45b817f6b263d7b20293ccd362}{
+\index{VRPH.h@{VRPH.h}!VRP\_\-INFEASIBLE@{VRP\_\-INFEASIBLE}}
+\index{VRP\_\-INFEASIBLE@{VRP\_\-INFEASIBLE}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRP\_\-INFEASIBLE}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRP\_\-INFEASIBLE~VRP\_\-INFINITY}}
+\label{_v_r_p_h_8h_a585d7e45b817f6b263d7b20293ccd362}
+
+
+Definition at line 108 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a76b5bbdedc1228babd432c1f1a91a5a5}{
+\index{VRPH.h@{VRPH.h}!VRP\_\-INFINITY@{VRP\_\-INFINITY}}
+\index{VRP\_\-INFINITY@{VRP\_\-INFINITY}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRP\_\-INFINITY}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRP\_\-INFINITY~(1$<$$<$30)}}
+\label{_v_r_p_h_8h_a76b5bbdedc1228babd432c1f1a91a5a5}
+
+
+Definition at line 107 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_ae97ecff2153586b59a447d14daa132dd}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-ABS@{VRPH\_\-ABS}}
+\index{VRPH\_\-ABS@{VRPH\_\-ABS}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-ABS}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-ABS(
+\begin{DoxyParamCaption}
+\item[{}]{a}
+\end{DoxyParamCaption}
+)~(((a) $<$ 0) ? -\/(a) : (a))}}
+\label{_v_r_p_h_8h_ae97ecff2153586b59a447d14daa132dd}
+
+
+Definition at line 51 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a396d2c112fde6fd68a0e8e2939e7d8fe}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-ADD\_\-ENTROPY@{VRPH\_\-ADD\_\-ENTROPY}}
+\index{VRPH\_\-ADD\_\-ENTROPY@{VRPH\_\-ADD\_\-ENTROPY}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-ADD\_\-ENTROPY}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-ADD\_\-ENTROPY~0}}
+\label{_v_r_p_h_8h_a396d2c112fde6fd68a0e8e2939e7d8fe}
+
+
+Definition at line 98 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a2b4402f4b0bfcc260e6baf9345072dee}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-AQUA@{VRPH\_\-AQUA}}
+\index{VRPH\_\-AQUA@{VRPH\_\-AQUA}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-AQUA}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-AQUA~4}}
+\label{_v_r_p_h_8h_a2b4402f4b0bfcc260e6baf9345072dee}
+
+
+Definition at line 70 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a553c44c9e158ace15a64f525fefe8096}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-BARE\_\-BONES@{VRPH\_\-BARE\_\-BONES}}
+\index{VRPH\_\-BARE\_\-BONES@{VRPH\_\-BARE\_\-BONES}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-BARE\_\-BONES}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-BARE\_\-BONES~16}}
+\label{_v_r_p_h_8h_a553c44c9e158ace15a64f525fefe8096}
+
+
+Definition at line 89 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a465e57688db7ac36b992617431e98a4f}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-BLACK@{VRPH\_\-BLACK}}
+\index{VRPH\_\-BLACK@{VRPH\_\-BLACK}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-BLACK}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-BLACK~0}}
+\label{_v_r_p_h_8h_a465e57688db7ac36b992617431e98a4f}
+
+
+Definition at line 66 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a2afc10b92edc5ba92bd25a9c0a311a1a}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-BLACK\_\-AND\_\-WHITE@{VRPH\_\-BLACK\_\-AND\_\-WHITE}}
+\index{VRPH\_\-BLACK\_\-AND\_\-WHITE@{VRPH\_\-BLACK\_\-AND\_\-WHITE}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-BLACK\_\-AND\_\-WHITE}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-BLACK\_\-AND\_\-WHITE~1}}
+\label{_v_r_p_h_8h_a2afc10b92edc5ba92bd25a9c0a311a1a}
+
+
+Definition at line 85 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a995c898744a4857cf664a33f8be72f34}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-BLUE@{VRPH\_\-BLUE}}
+\index{VRPH\_\-BLUE@{VRPH\_\-BLUE}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-BLUE}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-BLUE~9}}
+\label{_v_r_p_h_8h_a995c898744a4857cf664a33f8be72f34}
+
+
+Definition at line 75 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a5efe82d47b972b4c21db0a624605c130}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-BOXED@{VRPH\_\-BOXED}}
+\index{VRPH\_\-BOXED@{VRPH\_\-BOXED}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-BOXED}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-BOXED~4}}
+\label{_v_r_p_h_8h_a5efe82d47b972b4c21db0a624605c130}
+
+
+Definition at line 87 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a4d503b670cfc7355a6e6dfdd191c57e6}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-BROWN@{VRPH\_\-BROWN}}
+\index{VRPH\_\-BROWN@{VRPH\_\-BROWN}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-BROWN}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-BROWN~8}}
+\label{_v_r_p_h_8h_a4d503b670cfc7355a6e6dfdd191c57e6}
+
+
+Definition at line 74 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a927c0bd7467c657839c120806a8c803d}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-CEIL\_\-2D@{VRPH\_\-CEIL\_\-2D}}
+\index{VRPH\_\-CEIL\_\-2D@{VRPH\_\-CEIL\_\-2D}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-CEIL\_\-2D}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-CEIL\_\-2D~7}}
+\label{_v_r_p_h_8h_a927c0bd7467c657839c120806a8c803d}
+
+
+Definition at line 44 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a58f8d66fa898bd515693c048004ea462}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-COLOR@{VRPH\_\-COLOR}}
+\index{VRPH\_\-COLOR@{VRPH\_\-COLOR}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-COLOR}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-COLOR~2}}
+\label{_v_r_p_h_8h_a58f8d66fa898bd515693c048004ea462}
+
+
+Definition at line 86 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a08b6994c573069132ec4b560552d54b5}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-CVRP@{VRPH\_\-CVRP}}
+\index{VRPH\_\-CVRP@{VRPH\_\-CVRP}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-CVRP}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-CVRP~2}}
+\label{_v_r_p_h_8h_a08b6994c573069132ec4b560552d54b5}
+
+
+Definition at line 22 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a298f91b0e59b3e757fe2c8fbc704318d}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-CYAN@{VRPH\_\-CYAN}}
+\index{VRPH\_\-CYAN@{VRPH\_\-CYAN}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-CYAN}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-CYAN~11}}
+\label{_v_r_p_h_8h_a298f91b0e59b3e757fe2c8fbc704318d}
+
+
+Definition at line 77 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a6557eed109b3fa6368a5719fe5f5e9ac}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-DEFAULT\_\-DEVIATION@{VRPH\_\-DEFAULT\_\-DEVIATION}}
+\index{VRPH\_\-DEFAULT\_\-DEVIATION@{VRPH\_\-DEFAULT\_\-DEVIATION}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-DEFAULT\_\-DEVIATION}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-DEFAULT\_\-DEVIATION~.01}}
+\label{_v_r_p_h_8h_a6557eed109b3fa6368a5719fe5f5e9ac}
+
+
+Definition at line 110 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a33ab14ac32ff98615a9fb425bcfdaf21}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-DEFAULT\_\-PLOT@{VRPH\_\-DEFAULT\_\-PLOT}}
+\index{VRPH\_\-DEFAULT\_\-PLOT@{VRPH\_\-DEFAULT\_\-PLOT}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-DEFAULT\_\-PLOT}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-DEFAULT\_\-PLOT~0}}
+\label{_v_r_p_h_8h_a33ab14ac32ff98615a9fb425bcfdaf21}
+
+
+Definition at line 84 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_afd9c466c15d190bac55adc4abe7f86a2}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-DEPOT@{VRPH\_\-DEPOT}}
+\index{VRPH\_\-DEPOT@{VRPH\_\-DEPOT}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-DEPOT}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-DEPOT~0}}
+\label{_v_r_p_h_8h_afd9c466c15d190bac55adc4abe7f86a2}
+
+
+Definition at line 104 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a8bbaefc50d76fab8f83cc561dd04bc4a}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-EPS\_\-EXE@{VRPH\_\-EPS\_\-EXE}}
+\index{VRPH\_\-EPS\_\-EXE@{VRPH\_\-EPS\_\-EXE}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-EPS\_\-EXE}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-EPS\_\-EXE~\char`\"{}epstopdf\char`\"{}}}
+\label{_v_r_p_h_8h_a8bbaefc50d76fab8f83cc561dd04bc4a}
+
+
+Definition at line 58 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a2c191a78250bd801cf2c86872de9f43b}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-EPSILON@{VRPH\_\-EPSILON}}
+\index{VRPH\_\-EPSILON@{VRPH\_\-EPSILON}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-EPSILON}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-EPSILON~.00001}}
+\label{_v_r_p_h_8h_a2c191a78250bd801cf2c86872de9f43b}
+
+
+Definition at line 109 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_abe42db68ce9353a6b714b7023f134d4e}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-EUC\_\-2D@{VRPH\_\-EUC\_\-2D}}
+\index{VRPH\_\-EUC\_\-2D@{VRPH\_\-EUC\_\-2D}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-EUC\_\-2D}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-EUC\_\-2D~1}}
+\label{_v_r_p_h_8h_abe42db68ce9353a6b714b7023f134d4e}
+
+
+Definition at line 38 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a3f6b55345e2c20c47a965977944dafe4}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-EUC\_\-3D@{VRPH\_\-EUC\_\-3D}}
+\index{VRPH\_\-EUC\_\-3D@{VRPH\_\-EUC\_\-3D}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-EUC\_\-3D}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-EUC\_\-3D~2}}
+\label{_v_r_p_h_8h_a3f6b55345e2c20c47a965977944dafe4}
+
+
+Definition at line 39 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_aee70ebfcc63c0db404e5b04bb42d19d3}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-EXACT\_\-2D@{VRPH\_\-EXACT\_\-2D}}
+\index{VRPH\_\-EXACT\_\-2D@{VRPH\_\-EXACT\_\-2D}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-EXACT\_\-2D}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-EXACT\_\-2D~9}}
+\label{_v_r_p_h_8h_aee70ebfcc63c0db404e5b04bb42d19d3}
+
+
+Definition at line 46 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_ac699533cbc821baf6944d71323fc2907}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-EXPLICIT@{VRPH\_\-EXPLICIT}}
+\index{VRPH\_\-EXPLICIT@{VRPH\_\-EXPLICIT}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-EXPLICIT}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-EXPLICIT~0}}
+\label{_v_r_p_h_8h_ac699533cbc821baf6944d71323fc2907}
+
+
+Definition at line 37 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a2511eaf9d28c39f766e8f92518d019e6}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-FORBID\_\-TINY\_\-MOVES@{VRPH\_\-FORBID\_\-TINY\_\-MOVES}}
+\index{VRPH\_\-FORBID\_\-TINY\_\-MOVES@{VRPH\_\-FORBID\_\-TINY\_\-MOVES}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-FORBID\_\-TINY\_\-MOVES}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-FORBID\_\-TINY\_\-MOVES~1}}
+\label{_v_r_p_h_8h_a2511eaf9d28c39f766e8f92518d019e6}
+
+
+Definition at line 101 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a9bb5ac4fb56527e2090877d8de92fc8e}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-FULL\_\-MATRIX@{VRPH\_\-FULL\_\-MATRIX}}
+\index{VRPH\_\-FULL\_\-MATRIX@{VRPH\_\-FULL\_\-MATRIX}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-FULL\_\-MATRIX}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-FULL\_\-MATRIX~3}}
+\label{_v_r_p_h_8h_a9bb5ac4fb56527e2090877d8de92fc8e}
+
+
+Definition at line 27 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_abdb58adccf26b890c0cc649a4613a886}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-FUNCTION@{VRPH\_\-FUNCTION}}
+\index{VRPH\_\-FUNCTION@{VRPH\_\-FUNCTION}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-FUNCTION}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-FUNCTION~1}}
+\label{_v_r_p_h_8h_abdb58adccf26b890c0cc649a4613a886}
+
+
+Definition at line 25 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_adc89b4fdd95f800e9aaaa7f990fdac45}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-GEO@{VRPH\_\-GEO}}
+\index{VRPH\_\-GEO@{VRPH\_\-GEO}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-GEO}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-GEO~8}}
+\label{_v_r_p_h_8h_adc89b4fdd95f800e9aaaa7f990fdac45}
+
+
+Definition at line 45 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a48230c30b75f8e38433b1380c2af527b}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-GRAY@{VRPH\_\-GRAY}}
+\index{VRPH\_\-GRAY@{VRPH\_\-GRAY}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-GRAY}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-GRAY~7}}
+\label{_v_r_p_h_8h_a48230c30b75f8e38433b1380c2af527b}
+
+
+Definition at line 73 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a0de83d586b462f939ed63ebd33d7de33}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-GREEN@{VRPH\_\-GREEN}}
+\index{VRPH\_\-GREEN@{VRPH\_\-GREEN}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-GREEN}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-GREEN~3}}
+\label{_v_r_p_h_8h_a0de83d586b462f939ed63ebd33d7de33}
+
+
+Definition at line 69 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a6198284ce1fc61f6d6b7cd84bc23f249}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-LI\_\-PERTURB@{VRPH\_\-LI\_\-PERTURB}}
+\index{VRPH\_\-LI\_\-PERTURB@{VRPH\_\-LI\_\-PERTURB}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-LI\_\-PERTURB}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-LI\_\-PERTURB~0}}
+\label{_v_r_p_h_8h_a6198284ce1fc61f6d6b7cd84bc23f249}
+
+
+Definition at line 113 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a02705d21d0b55235bdb798738f67bec9}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-LOWER\_\-DIAG\_\-ROW@{VRPH\_\-LOWER\_\-DIAG\_\-ROW}}
+\index{VRPH\_\-LOWER\_\-DIAG\_\-ROW@{VRPH\_\-LOWER\_\-DIAG\_\-ROW}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-LOWER\_\-DIAG\_\-ROW}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-LOWER\_\-DIAG\_\-ROW~6}}
+\label{_v_r_p_h_8h_a02705d21d0b55235bdb798738f67bec9}
+
+
+Definition at line 30 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a0c2433d48e0b876c0553cc353a427b48}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-LOWER\_\-ROW@{VRPH\_\-LOWER\_\-ROW}}
+\index{VRPH\_\-LOWER\_\-ROW@{VRPH\_\-LOWER\_\-ROW}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-LOWER\_\-ROW}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-LOWER\_\-ROW~4}}
+\label{_v_r_p_h_8h_a0c2433d48e0b876c0553cc353a427b48}
+
+
+Definition at line 28 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a12353b1113a8c9e28c12a4e734a20a5e}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-MAGENTA@{VRPH\_\-MAGENTA}}
+\index{VRPH\_\-MAGENTA@{VRPH\_\-MAGENTA}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-MAGENTA}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-MAGENTA~13}}
+\label{_v_r_p_h_8h_a12353b1113a8c9e28c12a4e734a20a5e}
+
+
+Definition at line 79 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_ae53a617004a80d62990744b209ef018d}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-MAN\_\-2D@{VRPH\_\-MAN\_\-2D}}
+\index{VRPH\_\-MAN\_\-2D@{VRPH\_\-MAN\_\-2D}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-MAN\_\-2D}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-MAN\_\-2D~5}}
+\label{_v_r_p_h_8h_ae53a617004a80d62990744b209ef018d}
+
+
+Definition at line 42 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a9c49b08f7575760f29f9919e8bc75734}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-MAN\_\-3D@{VRPH\_\-MAN\_\-3D}}
+\index{VRPH\_\-MAN\_\-3D@{VRPH\_\-MAN\_\-3D}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-MAN\_\-3D}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-MAN\_\-3D~6}}
+\label{_v_r_p_h_8h_a9c49b08f7575760f29f9919e8bc75734}
+
+
+Definition at line 43 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_ab144432fc4ad0dbc51b4c919355a8066}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-MAX@{VRPH\_\-MAX}}
+\index{VRPH\_\-MAX@{VRPH\_\-MAX}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-MAX}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-MAX(
+\begin{DoxyParamCaption}
+\item[{}]{X, }
+\item[{}]{Y}
+\end{DoxyParamCaption}
+)~((X) $<$ (Y) ?  (Y) : (X))}}
+\label{_v_r_p_h_8h_ab144432fc4ad0dbc51b4c919355a8066}
+
+
+Definition at line 50 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_ae358bacb9c0d83cd458732d9fad05725}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-MAX\_\-2D@{VRPH\_\-MAX\_\-2D}}
+\index{VRPH\_\-MAX\_\-2D@{VRPH\_\-MAX\_\-2D}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-MAX\_\-2D}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-MAX\_\-2D~3}}
+\label{_v_r_p_h_8h_ae358bacb9c0d83cd458732d9fad05725}
+
+
+Definition at line 40 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a5baafc003835d107761fcd282b74991b}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-MAX\_\-3D@{VRPH\_\-MAX\_\-3D}}
+\index{VRPH\_\-MAX\_\-3D@{VRPH\_\-MAX\_\-3D}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-MAX\_\-3D}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-MAX\_\-3D~4}}
+\label{_v_r_p_h_8h_a5baafc003835d107761fcd282b74991b}
+
+
+Definition at line 41 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a4181f9e61f9d22c5b3bb2eae2543e88e}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-MAX\_\-NUM\_\-LAMBDAS@{VRPH\_\-MAX\_\-NUM\_\-LAMBDAS}}
+\index{VRPH\_\-MAX\_\-NUM\_\-LAMBDAS@{VRPH\_\-MAX\_\-NUM\_\-LAMBDAS}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-MAX\_\-NUM\_\-LAMBDAS}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-MAX\_\-NUM\_\-LAMBDAS~100}}
+\label{_v_r_p_h_8h_a4181f9e61f9d22c5b3bb2eae2543e88e}
+
+
+Definition at line 102 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a203e1f274403c662af888d3ed274e19a}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-MAX\_\-NUM\_\-ROUTES@{VRPH\_\-MAX\_\-NUM\_\-ROUTES}}
+\index{VRPH\_\-MAX\_\-NUM\_\-ROUTES@{VRPH\_\-MAX\_\-NUM\_\-ROUTES}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-MAX\_\-NUM\_\-ROUTES}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-MAX\_\-NUM\_\-ROUTES~10000}}
+\label{_v_r_p_h_8h_a203e1f274403c662af888d3ed274e19a}
+
+
+Definition at line 111 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a591f60583c2401e547995816a6db972e}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-MAX\_\-SERVICE\_\-DAYS@{VRPH\_\-MAX\_\-SERVICE\_\-DAYS}}
+\index{VRPH\_\-MAX\_\-SERVICE\_\-DAYS@{VRPH\_\-MAX\_\-SERVICE\_\-DAYS}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-MAX\_\-SERVICE\_\-DAYS}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-MAX\_\-SERVICE\_\-DAYS~10}}
+\label{_v_r_p_h_8h_a591f60583c2401e547995816a6db972e}
+
+
+Definition at line 117 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a3fe38d7b5bddb8e42b5e1e2e5d71b864}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-MIN@{VRPH\_\-MIN}}
+\index{VRPH\_\-MIN@{VRPH\_\-MIN}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-MIN}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-MIN(
+\begin{DoxyParamCaption}
+\item[{}]{X, }
+\item[{}]{Y}
+\end{DoxyParamCaption}
+)~((X) $<$ (Y) ?  (X) : (Y))}}
+\label{_v_r_p_h_8h_a3fe38d7b5bddb8e42b5e1e2e5d71b864}
+
+
+Definition at line 49 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a8a645430865ffee9146361beb35ab2db}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-NO\_\-DEPOT\_\-EDGES@{VRPH\_\-NO\_\-DEPOT\_\-EDGES}}
+\index{VRPH\_\-NO\_\-DEPOT\_\-EDGES@{VRPH\_\-NO\_\-DEPOT\_\-EDGES}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-NO\_\-DEPOT\_\-EDGES}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-NO\_\-DEPOT\_\-EDGES~64}}
+\label{_v_r_p_h_8h_a8a645430865ffee9146361beb35ab2db}
+
+
+Definition at line 91 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_af52a7f66e242c0741b7da9daacdefe39}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-NO\_\-POINTS@{VRPH\_\-NO\_\-POINTS}}
+\index{VRPH\_\-NO\_\-POINTS@{VRPH\_\-NO\_\-POINTS}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-NO\_\-POINTS}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-NO\_\-POINTS~32}}
+\label{_v_r_p_h_8h_af52a7f66e242c0741b7da9daacdefe39}
+
+
+Definition at line 90 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_af6ef8dbaa787219cdd47d84e4c357844}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-NO\_\-TITLE@{VRPH\_\-NO\_\-TITLE}}
+\index{VRPH\_\-NO\_\-TITLE@{VRPH\_\-NO\_\-TITLE}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-NO\_\-TITLE}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-NO\_\-TITLE~8}}
+\label{_v_r_p_h_8h_af6ef8dbaa787219cdd47d84e4c357844}
+
+
+Definition at line 88 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a5a4dde5cd41fb76b25c34ef344a83990}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-OSMAN\_\-PERTURB@{VRPH\_\-OSMAN\_\-PERTURB}}
+\index{VRPH\_\-OSMAN\_\-PERTURB@{VRPH\_\-OSMAN\_\-PERTURB}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-OSMAN\_\-PERTURB}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-OSMAN\_\-PERTURB~1}}
+\label{_v_r_p_h_8h_a5a4dde5cd41fb76b25c34ef344a83990}
+
+
+Definition at line 115 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a98a4c76d0d3bc2f6dc62a547fce6677a}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-PI@{VRPH\_\-PI}}
+\index{VRPH\_\-PI@{VRPH\_\-PI}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-PI}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-PI~3.14159265358979323846264}}
+\label{_v_r_p_h_8h_a98a4c76d0d3bc2f6dc62a547fce6677a}
+
+
+Definition at line 105 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_afb1ca0f185ee17a3722959dbdf8c174c}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-PINK@{VRPH\_\-PINK}}
+\index{VRPH\_\-PINK@{VRPH\_\-PINK}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-PINK}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-PINK~5}}
+\label{_v_r_p_h_8h_afb1ca0f185ee17a3722959dbdf8c174c}
+
+
+Definition at line 71 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_ab2d36f3e6e565f56f2aaf3259db10320}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-RANDOM\_\-SEARCH@{VRPH\_\-RANDOM\_\-SEARCH}}
+\index{VRPH\_\-RANDOM\_\-SEARCH@{VRPH\_\-RANDOM\_\-SEARCH}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-RANDOM\_\-SEARCH}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-RANDOM\_\-SEARCH~1}}
+\label{_v_r_p_h_8h_ab2d36f3e6e565f56f2aaf3259db10320}
+
+
+Definition at line 54 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_ac42b948fca023b98a647510575eed811}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-RED@{VRPH\_\-RED}}
+\index{VRPH\_\-RED@{VRPH\_\-RED}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-RED}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-RED~1}}
+\label{_v_r_p_h_8h_ac42b948fca023b98a647510575eed811}
+
+
+Definition at line 67 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_aa6366bb9d6c0a194f93955b43db42cb7}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-REGRET\_\-SEARCH@{VRPH\_\-REGRET\_\-SEARCH}}
+\index{VRPH\_\-REGRET\_\-SEARCH@{VRPH\_\-REGRET\_\-SEARCH}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-REGRET\_\-SEARCH}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-REGRET\_\-SEARCH~2}}
+\label{_v_r_p_h_8h_aa6366bb9d6c0a194f93955b43db42cb7}
+
+
+Definition at line 55 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a84716da9676e7a5193ff540f14258536}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-RRR@{VRPH\_\-RRR}}
+\index{VRPH\_\-RRR@{VRPH\_\-RRR}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-RRR}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-RRR~6378.3888}}
+\label{_v_r_p_h_8h_a84716da9676e7a5193ff540f14258536}
+
+
+Definition at line 106 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_aaf0e9a589a56fccbc900d59c0d025cad}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-SALMON@{VRPH\_\-SALMON}}
+\index{VRPH\_\-SALMON@{VRPH\_\-SALMON}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-SALMON}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-SALMON~14}}
+\label{_v_r_p_h_8h_aaf0e9a589a56fccbc900d59c0d025cad}
+
+
+Definition at line 80 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_aae0c5a1a0fce83d2ea89148997223333}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-STRING\_\-SIZE@{VRPH\_\-STRING\_\-SIZE}}
+\index{VRPH\_\-STRING\_\-SIZE@{VRPH\_\-STRING\_\-SIZE}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-STRING\_\-SIZE}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-STRING\_\-SIZE~200}}
+\label{_v_r_p_h_8h_aae0c5a1a0fce83d2ea89148997223333}
+
+
+Definition at line 103 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a8d769525f67c4c13593f8dc653775dfb}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-THREED\_\-COORDS@{VRPH\_\-THREED\_\-COORDS}}
+\index{VRPH\_\-THREED\_\-COORDS@{VRPH\_\-THREED\_\-COORDS}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-THREED\_\-COORDS}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-THREED\_\-COORDS~3}}
+\label{_v_r_p_h_8h_a8d769525f67c4c13593f8dc653775dfb}
+
+
+Definition at line 34 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a56c82ee77300a3ee2fb96dd709b33423}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-TSP@{VRPH\_\-TSP}}
+\index{VRPH\_\-TSP@{VRPH\_\-TSP}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-TSP}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-TSP~1}}
+\label{_v_r_p_h_8h_a56c82ee77300a3ee2fb96dd709b33423}
+
+
+Definition at line 21 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a0d2038c040c115db54c3cebf133dfd9d}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-TURQUOISE@{VRPH\_\-TURQUOISE}}
+\index{VRPH\_\-TURQUOISE@{VRPH\_\-TURQUOISE}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-TURQUOISE}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-TURQUOISE~12}}
+\label{_v_r_p_h_8h_a0d2038c040c115db54c3cebf133dfd9d}
+
+
+Definition at line 78 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a56ad4ed9fc5af036227bfae999b62529}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-TWOD\_\-COORDS@{VRPH\_\-TWOD\_\-COORDS}}
+\index{VRPH\_\-TWOD\_\-COORDS@{VRPH\_\-TWOD\_\-COORDS}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-TWOD\_\-COORDS}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-TWOD\_\-COORDS~2}}
+\label{_v_r_p_h_8h_a56ad4ed9fc5af036227bfae999b62529}
+
+
+Definition at line 33 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a9a7d2a1877c40ba90d97a0d8049e15df}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-UPPER\_\-DIAG\_\-ROW@{VRPH\_\-UPPER\_\-DIAG\_\-ROW}}
+\index{VRPH\_\-UPPER\_\-DIAG\_\-ROW@{VRPH\_\-UPPER\_\-DIAG\_\-ROW}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-UPPER\_\-DIAG\_\-ROW}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-UPPER\_\-DIAG\_\-ROW~5}}
+\label{_v_r_p_h_8h_a9a7d2a1877c40ba90d97a0d8049e15df}
+
+
+Definition at line 29 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a454d175b61c20c44e76edbec56ca6b9c}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-UPPER\_\-ROW@{VRPH\_\-UPPER\_\-ROW}}
+\index{VRPH\_\-UPPER\_\-ROW@{VRPH\_\-UPPER\_\-ROW}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-UPPER\_\-ROW}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-UPPER\_\-ROW~2}}
+\label{_v_r_p_h_8h_a454d175b61c20c44e76edbec56ca6b9c}
+
+
+Definition at line 26 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_accb4a40e50dd6ea6c3ccadacb4aa4a6d}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-VIOLET@{VRPH\_\-VIOLET}}
+\index{VRPH\_\-VIOLET@{VRPH\_\-VIOLET}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-VIOLET}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-VIOLET~10}}
+\label{_v_r_p_h_8h_accb4a40e50dd6ea6c3ccadacb4aa4a6d}
+
+
+Definition at line 76 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a35788765f41d795192baf94c6389e471}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-WEIGHTED@{VRPH\_\-WEIGHTED}}
+\index{VRPH\_\-WEIGHTED@{VRPH\_\-WEIGHTED}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-WEIGHTED}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-WEIGHTED~128}}
+\label{_v_r_p_h_8h_a35788765f41d795192baf94c6389e471}
+
+
+Definition at line 92 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_ae37ab07aa921999284acf88e13850dd9}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-WHEAT@{VRPH\_\-WHEAT}}
+\index{VRPH\_\-WHEAT@{VRPH\_\-WHEAT}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-WHEAT}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-WHEAT~6}}
+\label{_v_r_p_h_8h_ae37ab07aa921999284acf88e13850dd9}
+
+
+Definition at line 72 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_a068a881671652cbd6fe6444209593b70}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-WHITE@{VRPH\_\-WHITE}}
+\index{VRPH\_\-WHITE@{VRPH\_\-WHITE}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-WHITE}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-WHITE~15}}
+\label{_v_r_p_h_8h_a068a881671652cbd6fe6444209593b70}
+
+
+Definition at line 81 of file VRPH.h.
+
+\hypertarget{_v_r_p_h_8h_aad137f2d4f1f11e29c9d98b875dca6f5}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-YELLOW@{VRPH\_\-YELLOW}}
+\index{VRPH\_\-YELLOW@{VRPH\_\-YELLOW}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-YELLOW}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-YELLOW~2}}
+\label{_v_r_p_h_8h_aad137f2d4f1f11e29c9d98b875dca6f5}
+
+
+Definition at line 68 of file VRPH.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_v_r_p_h_8h_adb94646d80c6e5e14b223a0721ffc4a7}{
+\index{VRPH.h@{VRPH.h}!VRPH\_\-version@{VRPH\_\-version}}
+\index{VRPH\_\-version@{VRPH\_\-version}!VRPH.h@{VRPH.h}}
+\subsubsection[{VRPH\_\-version}]{\setlength{\rightskip}{0pt plus 5cm}void VRPH\_\-version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{_v_r_p_h_8h_adb94646d80c6e5e14b223a0721ffc4a7}
+
+
+Definition at line 16 of file VRP.cpp.
+

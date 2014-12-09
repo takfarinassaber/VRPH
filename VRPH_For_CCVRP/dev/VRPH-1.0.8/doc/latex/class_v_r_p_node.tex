@@ -1,0 +1,272 @@
+\hypertarget{class_v_r_p_node}{
+\section{VRPNode Class Reference}
+\label{class_v_r_p_node}\index{VRPNode@{VRPNode}}
+}
+
+
+{\ttfamily \#include $<$VRPNode.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_v_r_p_node_a7f4f1d4221cf958a36aa5190ad602e8a}{VRPNode} ()
+\item 
+\hyperlink{class_v_r_p_node_a8e7685da26e9cd23f2109b5665cccb1e}{VRPNode} (int d)
+\item 
+\hyperlink{class_v_r_p_node_a6eb14de9dd05216bbefcab0b71f11bc2}{$\sim$VRPNode} ()
+\item 
+void \hyperlink{class_v_r_p_node_abf9104e61c21ae9b104ad63c3e9ecfdc}{duplicate} (\hyperlink{class_v_r_p_node}{VRPNode} $\ast$N)
+\item 
+void \hyperlink{class_v_r_p_node_afe32de78fd5625870f25ddb5ae6350e4}{show} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{class_v_r_p_node_a7a6f7729d65b17532ba940c0f5ac9d84}{x}
+\item 
+double \hyperlink{class_v_r_p_node_ab3a03e6bbe9fb324759428fa457b38dd}{y}
+\item 
+double \hyperlink{class_v_r_p_node_ac70ecfc9bd16dbc8814305eea16df1ed}{r}
+\item 
+double \hyperlink{class_v_r_p_node_a67007952897382052c524555c04ad57a}{theta}
+\item 
+int \hyperlink{class_v_r_p_node_a326a7068d690791bf8bc92587845efe8}{id}
+\item 
+int \hyperlink{class_v_r_p_node_a87e5e877816902bb1e21698ff0be26ac}{demand}
+\item 
+int $\ast$ \hyperlink{class_v_r_p_node_a0ccb1affe2876d292a7a64246a29a803}{daily\_\-demands}
+\item 
+int \hyperlink{class_v_r_p_node_afff481f6b2897843ddc0b51f335b0553}{cluster}
+\item 
+\hyperlink{class_v_r_p_neighbor_element}{VRPNeighborElement} \hyperlink{class_v_r_p_node_a549274ca67660efc1ce57f88c2e81646}{neighbor\_\-list} \mbox{[}MAX\_\-NEIGHBORLIST\_\-SIZE\mbox{]}
+\item 
+double \hyperlink{class_v_r_p_node_aec6d87eb84084a6392893af499212ec4}{service\_\-time}
+\item 
+double $\ast$ \hyperlink{class_v_r_p_node_a73ee95bbf4e7c5378e26fa473b568627}{daily\_\-service\_\-times}
+\item 
+double \hyperlink{class_v_r_p_node_a20d7890f8140b36b015d719df83d0ce3}{arrival\_\-time}
+\item 
+double \hyperlink{class_v_r_p_node_aa04306e567bc57da1a4d2002ab27af77}{start\_\-tw}
+\item 
+double \hyperlink{class_v_r_p_node_a2ffafc22b3e6315d8796f3bbed964b19}{end\_\-tw}
+\item 
+int \hyperlink{class_v_r_p_node_a7227a60538a6ce18325bc3ce9db0e70b}{num\_\-days}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file VRPNode.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_v_r_p_node_a7f4f1d4221cf958a36aa5190ad602e8a}{
+\index{VRPNode@{VRPNode}!VRPNode@{VRPNode}}
+\index{VRPNode@{VRPNode}!VRPNode@{VRPNode}}
+\subsubsection[{VRPNode}]{\setlength{\rightskip}{0pt plus 5cm}VRPNode::VRPNode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_node_a7f4f1d4221cf958a36aa5190ad602e8a}
+
+
+Default constructor for the \hyperlink{class_v_r_p_node}{VRPNode} class. Allocates an array of MAX\_\-NEIGHBORLIST\_\-SIZE VRPNeighborElements for the node.
+
+
+
+Definition at line 15 of file VRPNode.cpp.
+
+\hypertarget{class_v_r_p_node_a8e7685da26e9cd23f2109b5665cccb1e}{
+\index{VRPNode@{VRPNode}!VRPNode@{VRPNode}}
+\index{VRPNode@{VRPNode}!VRPNode@{VRPNode}}
+\subsubsection[{VRPNode}]{\setlength{\rightskip}{0pt plus 5cm}VRPNode::VRPNode (
+\begin{DoxyParamCaption}
+\item[{int}]{d}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_node_a8e7685da26e9cd23f2109b5665cccb1e}
+\hypertarget{class_v_r_p_node_a6eb14de9dd05216bbefcab0b71f11bc2}{
+\index{VRPNode@{VRPNode}!$\sim$VRPNode@{$\sim$VRPNode}}
+\index{$\sim$VRPNode@{$\sim$VRPNode}!VRPNode@{VRPNode}}
+\subsubsection[{$\sim$VRPNode}]{\setlength{\rightskip}{0pt plus 5cm}VRPNode::$\sim$VRPNode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_node_a6eb14de9dd05216bbefcab0b71f11bc2}
+
+
+\hyperlink{class_v_r_p_node}{VRPNode} destructor.
+
+
+
+Definition at line 43 of file VRPNode.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_v_r_p_node_abf9104e61c21ae9b104ad63c3e9ecfdc}{
+\index{VRPNode@{VRPNode}!duplicate@{duplicate}}
+\index{duplicate@{duplicate}!VRPNode@{VRPNode}}
+\subsubsection[{duplicate}]{\setlength{\rightskip}{0pt plus 5cm}void VRPNode::duplicate (
+\begin{DoxyParamCaption}
+\item[{{\bf VRPNode} $\ast$}]{N}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_node_abf9104e61c21ae9b104ad63c3e9ecfdc}
+\hypertarget{class_v_r_p_node_afe32de78fd5625870f25ddb5ae6350e4}{
+\index{VRPNode@{VRPNode}!show@{show}}
+\index{show@{show}!VRPNode@{VRPNode}}
+\subsubsection[{show}]{\setlength{\rightskip}{0pt plus 5cm}void VRPNode::show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_node_afe32de78fd5625870f25ddb5ae6350e4}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_v_r_p_node_a20d7890f8140b36b015d719df83d0ce3}{
+\index{VRPNode@{VRPNode}!arrival\_\-time@{arrival\_\-time}}
+\index{arrival\_\-time@{arrival\_\-time}!VRPNode@{VRPNode}}
+\subsubsection[{arrival\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPNode::arrival\_\-time}}}
+\label{class_v_r_p_node_a20d7890f8140b36b015d719df83d0ce3}
+
+
+Definition at line 37 of file VRPNode.h.
+
+\hypertarget{class_v_r_p_node_afff481f6b2897843ddc0b51f335b0553}{
+\index{VRPNode@{VRPNode}!cluster@{cluster}}
+\index{cluster@{cluster}!VRPNode@{VRPNode}}
+\subsubsection[{cluster}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPNode::cluster}}}
+\label{class_v_r_p_node_afff481f6b2897843ddc0b51f335b0553}
+
+
+Definition at line 30 of file VRPNode.h.
+
+\hypertarget{class_v_r_p_node_a0ccb1affe2876d292a7a64246a29a803}{
+\index{VRPNode@{VRPNode}!daily\_\-demands@{daily\_\-demands}}
+\index{daily\_\-demands@{daily\_\-demands}!VRPNode@{VRPNode}}
+\subsubsection[{daily\_\-demands}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf VRPNode::daily\_\-demands}}}
+\label{class_v_r_p_node_a0ccb1affe2876d292a7a64246a29a803}
+
+
+Definition at line 29 of file VRPNode.h.
+
+\hypertarget{class_v_r_p_node_a73ee95bbf4e7c5378e26fa473b568627}{
+\index{VRPNode@{VRPNode}!daily\_\-service\_\-times@{daily\_\-service\_\-times}}
+\index{daily\_\-service\_\-times@{daily\_\-service\_\-times}!VRPNode@{VRPNode}}
+\subsubsection[{daily\_\-service\_\-times}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ {\bf VRPNode::daily\_\-service\_\-times}}}
+\label{class_v_r_p_node_a73ee95bbf4e7c5378e26fa473b568627}
+
+
+Definition at line 35 of file VRPNode.h.
+
+\hypertarget{class_v_r_p_node_a87e5e877816902bb1e21698ff0be26ac}{
+\index{VRPNode@{VRPNode}!demand@{demand}}
+\index{demand@{demand}!VRPNode@{VRPNode}}
+\subsubsection[{demand}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPNode::demand}}}
+\label{class_v_r_p_node_a87e5e877816902bb1e21698ff0be26ac}
+
+
+Definition at line 28 of file VRPNode.h.
+
+\hypertarget{class_v_r_p_node_a2ffafc22b3e6315d8796f3bbed964b19}{
+\index{VRPNode@{VRPNode}!end\_\-tw@{end\_\-tw}}
+\index{end\_\-tw@{end\_\-tw}!VRPNode@{VRPNode}}
+\subsubsection[{end\_\-tw}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPNode::end\_\-tw}}}
+\label{class_v_r_p_node_a2ffafc22b3e6315d8796f3bbed964b19}
+
+
+Definition at line 39 of file VRPNode.h.
+
+\hypertarget{class_v_r_p_node_a326a7068d690791bf8bc92587845efe8}{
+\index{VRPNode@{VRPNode}!id@{id}}
+\index{id@{id}!VRPNode@{VRPNode}}
+\subsubsection[{id}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPNode::id}}}
+\label{class_v_r_p_node_a326a7068d690791bf8bc92587845efe8}
+
+
+Definition at line 27 of file VRPNode.h.
+
+\hypertarget{class_v_r_p_node_a549274ca67660efc1ce57f88c2e81646}{
+\index{VRPNode@{VRPNode}!neighbor\_\-list@{neighbor\_\-list}}
+\index{neighbor\_\-list@{neighbor\_\-list}!VRPNode@{VRPNode}}
+\subsubsection[{neighbor\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VRPNeighborElement} {\bf VRPNode::neighbor\_\-list}\mbox{[}MAX\_\-NEIGHBORLIST\_\-SIZE\mbox{]}}}
+\label{class_v_r_p_node_a549274ca67660efc1ce57f88c2e81646}
+
+
+Definition at line 31 of file VRPNode.h.
+
+\hypertarget{class_v_r_p_node_a7227a60538a6ce18325bc3ce9db0e70b}{
+\index{VRPNode@{VRPNode}!num\_\-days@{num\_\-days}}
+\index{num\_\-days@{num\_\-days}!VRPNode@{VRPNode}}
+\subsubsection[{num\_\-days}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPNode::num\_\-days}}}
+\label{class_v_r_p_node_a7227a60538a6ce18325bc3ce9db0e70b}
+
+
+Definition at line 41 of file VRPNode.h.
+
+\hypertarget{class_v_r_p_node_ac70ecfc9bd16dbc8814305eea16df1ed}{
+\index{VRPNode@{VRPNode}!r@{r}}
+\index{r@{r}!VRPNode@{VRPNode}}
+\subsubsection[{r}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPNode::r}}}
+\label{class_v_r_p_node_ac70ecfc9bd16dbc8814305eea16df1ed}
+
+
+Definition at line 25 of file VRPNode.h.
+
+\hypertarget{class_v_r_p_node_aec6d87eb84084a6392893af499212ec4}{
+\index{VRPNode@{VRPNode}!service\_\-time@{service\_\-time}}
+\index{service\_\-time@{service\_\-time}!VRPNode@{VRPNode}}
+\subsubsection[{service\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPNode::service\_\-time}}}
+\label{class_v_r_p_node_aec6d87eb84084a6392893af499212ec4}
+
+
+Definition at line 33 of file VRPNode.h.
+
+\hypertarget{class_v_r_p_node_aa04306e567bc57da1a4d2002ab27af77}{
+\index{VRPNode@{VRPNode}!start\_\-tw@{start\_\-tw}}
+\index{start\_\-tw@{start\_\-tw}!VRPNode@{VRPNode}}
+\subsubsection[{start\_\-tw}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPNode::start\_\-tw}}}
+\label{class_v_r_p_node_aa04306e567bc57da1a4d2002ab27af77}
+
+
+Definition at line 38 of file VRPNode.h.
+
+\hypertarget{class_v_r_p_node_a67007952897382052c524555c04ad57a}{
+\index{VRPNode@{VRPNode}!theta@{theta}}
+\index{theta@{theta}!VRPNode@{VRPNode}}
+\subsubsection[{theta}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPNode::theta}}}
+\label{class_v_r_p_node_a67007952897382052c524555c04ad57a}
+
+
+Definition at line 26 of file VRPNode.h.
+
+\hypertarget{class_v_r_p_node_a7a6f7729d65b17532ba940c0f5ac9d84}{
+\index{VRPNode@{VRPNode}!x@{x}}
+\index{x@{x}!VRPNode@{VRPNode}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPNode::x}}}
+\label{class_v_r_p_node_a7a6f7729d65b17532ba940c0f5ac9d84}
+
+
+Definition at line 23 of file VRPNode.h.
+
+\hypertarget{class_v_r_p_node_ab3a03e6bbe9fb324759428fa457b38dd}{
+\index{VRPNode@{VRPNode}!y@{y}}
+\index{y@{y}!VRPNode@{VRPNode}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPNode::y}}}
+\label{class_v_r_p_node_ab3a03e6bbe9fb324759428fa457b38dd}
+
+
+Definition at line 24 of file VRPNode.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_v_r_p_node_8h}{VRPNode.h}\item 
+src/\hyperlink{_v_r_p_node_8cpp}{VRPNode.cpp}\end{DoxyCompactItemize}

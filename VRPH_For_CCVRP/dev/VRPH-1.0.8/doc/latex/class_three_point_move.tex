@@ -1,0 +1,117 @@
+\hypertarget{class_three_point_move}{
+\section{ThreePointMove Class Reference}
+\label{class_three_point_move}\index{ThreePointMove@{ThreePointMove}}
+}
+
+
+{\ttfamily \#include $<$ThreePointMove.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_three_point_move_a8d4a8933908802a1011a241c6a95656f}{search} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int b, int criteria)
+\item 
+bool \hyperlink{class_three_point_move_af7b3c78be14368797995f90ab19f8975}{route\_\-search} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int r1, int r2, int criteria)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_three_point_move_ab60463d57ff0cb5cb1fc113063221b86}{evaluate} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int a, int j, int k, int criteria, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\item 
+bool \hyperlink{class_three_point_move_a0dd8bbb3ff4ff38fc1459e021f52d072}{move} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file ThreePointMove.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_three_point_move_ab60463d57ff0cb5cb1fc113063221b86}{
+\index{ThreePointMove@{ThreePointMove}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!ThreePointMove@{ThreePointMove}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}bool ThreePointMove::evaluate (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{a, }
+\item[{int}]{j, }
+\item[{int}]{k, }
+\item[{int}]{criteria, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_three_point_move_ab60463d57ff0cb5cb1fc113063221b86}
+
+
+Evaluates the move of exchanging node b with the position of edge i-\/j. subject to the given rules. Details of move placed in the \hyperlink{class_v_r_p_move}{VRPMove} M if it meets rules.
+
+
+
+Definition at line 309 of file ThreePointMove.cpp.
+
+\hypertarget{class_three_point_move_a0dd8bbb3ff4ff38fc1459e021f52d072}{
+\index{ThreePointMove@{ThreePointMove}!move@{move}}
+\index{move@{move}!ThreePointMove@{ThreePointMove}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}bool ThreePointMove::move (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}
+\label{class_three_point_move_a0dd8bbb3ff4ff38fc1459e021f52d072}
+
+
+Makes the \hyperlink{class_three_point_move}{ThreePointMove} specified by M.
+
+
+
+Definition at line 464 of file ThreePointMove.cpp.
+
+\hypertarget{class_three_point_move_af7b3c78be14368797995f90ab19f8975}{
+\index{ThreePointMove@{ThreePointMove}!route\_\-search@{route\_\-search}}
+\index{route\_\-search@{route\_\-search}!ThreePointMove@{ThreePointMove}}
+\subsubsection[{route\_\-search}]{\setlength{\rightskip}{0pt plus 5cm}bool ThreePointMove::route\_\-search (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{r1, }
+\item[{int}]{r2, }
+\item[{int}]{criteria}
+\end{DoxyParamCaption}
+)}}
+\label{class_three_point_move_af7b3c78be14368797995f90ab19f8975}
+
+
+Searches for all ThreePointMoves involving two nodes from route r1 and one node from route r2.
+
+
+
+Definition at line 185 of file ThreePointMove.cpp.
+
+\hypertarget{class_three_point_move_a8d4a8933908802a1011a241c6a95656f}{
+\index{ThreePointMove@{ThreePointMove}!search@{search}}
+\index{search@{search}!ThreePointMove@{ThreePointMove}}
+\subsubsection[{search}]{\setlength{\rightskip}{0pt plus 5cm}bool ThreePointMove::search (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{b, }
+\item[{int}]{criteria}
+\end{DoxyParamCaption}
+)}}
+\label{class_three_point_move_a8d4a8933908802a1011a241c6a95656f}
+
+
+Searches for ThreePointMoves involving node b. In this move, the position of node b is exchanged with two other nodes in an existing edge.
+
+
+
+Definition at line 15 of file ThreePointMove.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_three_point_move_8h}{ThreePointMove.h}\item 
+src/\hyperlink{_three_point_move_8cpp}{ThreePointMove.cpp}\end{DoxyCompactItemize}

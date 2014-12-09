@@ -1,0 +1,173 @@
+\hypertarget{vrp__glpk__sp_8cpp}{
+\section{src/apps/vrp\_\-glpk\_\-sp.cpp File Reference}
+\label{vrp__glpk__sp_8cpp}\index{src/apps/vrp\_\-glpk\_\-sp.cpp@{src/apps/vrp\_\-glpk\_\-sp.cpp}}
+}
+{\ttfamily \#include \char`\"{}OsiGlpkSolverInterface.hpp\char`\"{}}\par
+{\ttfamily \#include \char`\"{}CoinPackedMatrix.hpp\char`\"{}}\par
+{\ttfamily \#include \char`\"{}CoinPackedVector.hpp\char`\"{}}\par
+{\ttfamily \#include \char`\"{}VRPH.h\char`\"{}}\par
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{vrp__glpk__sp_8cpp_af40843a876a06522a44e5e8a362b0e66}{MAX\_\-ROUTES}~50000
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{vrp__glpk__sp_8cpp_af04523d45c21e7e7a28ad3e35e57cb52}{OSI\_\-recover\_\-route} (int id, int $\ast$$\ast$orderings, \hyperlink{class_v_r_p_route}{VRPRoute} $\ast$r)
+\item 
+void \hyperlink{vrp__glpk__sp_8cpp_a6943292646818ff419230503457a6779}{OSI\_\-recover\_\-solution} (OsiSolverInterface $\ast$si, int $\ast$$\ast$orderings, int $\ast$sol\_\-buff)
+\item 
+void \hyperlink{vrp__glpk__sp_8cpp_a63505dfa9e80e716a3c29859afccde65}{OSI\_\-add\_\-route} (OsiSolverInterface $\ast$si, \hyperlink{class_v_r_p}{VRP} $\ast$V, \hyperlink{class_v_r_p_route}{VRPRoute} $\ast$r, int id, int $\ast$$\ast$orderings)
+\item 
+int \hyperlink{vrp__glpk__sp_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{vrp__glpk__sp_8cpp_a9da6e9066e7d3e173442a8cc09536b1c}{max\_\-columns}
+\item 
+int \hyperlink{vrp__glpk__sp_8cpp_aea5607fb0bbbfc0fe3d5c5e9672c2981}{num\_\-cols\_\-to\_\-delete}
+\item 
+bool \hyperlink{vrp__glpk__sp_8cpp_ab3f078684998b83967d507d0f453f454}{verbose}
+\item 
+time\_\-t \hyperlink{vrp__glpk__sp_8cpp_af3d7fafd8ecde119f9849206174a38f3}{heur\_\-time}
+\item 
+time\_\-t \hyperlink{vrp__glpk__sp_8cpp_adf9d6df7a4727b4e143d8b15b4ca99f1}{mip\_\-time}
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{vrp__glpk__sp_8cpp_af40843a876a06522a44e5e8a362b0e66}{
+\index{vrp\_\-glpk\_\-sp.cpp@{vrp\_\-glpk\_\-sp.cpp}!MAX\_\-ROUTES@{MAX\_\-ROUTES}}
+\index{MAX\_\-ROUTES@{MAX\_\-ROUTES}!vrp_glpk_sp.cpp@{vrp\_\-glpk\_\-sp.cpp}}
+\subsubsection[{MAX\_\-ROUTES}]{\setlength{\rightskip}{0pt plus 5cm}\#define MAX\_\-ROUTES~50000}}
+\label{vrp__glpk__sp_8cpp_af40843a876a06522a44e5e8a362b0e66}
+
+
+Definition at line 23 of file vrp\_\-glpk\_\-sp.cpp.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{vrp__glpk__sp_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{
+\index{vrp\_\-glpk\_\-sp.cpp@{vrp\_\-glpk\_\-sp.cpp}!main@{main}}
+\index{main@{main}!vrp_glpk_sp.cpp@{vrp\_\-glpk\_\-sp.cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}}
+\label{vrp__glpk__sp_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Definition at line 225 of file vrp\_\-glpk\_\-sp.cpp.
+
+\hypertarget{vrp__glpk__sp_8cpp_a63505dfa9e80e716a3c29859afccde65}{
+\index{vrp\_\-glpk\_\-sp.cpp@{vrp\_\-glpk\_\-sp.cpp}!OSI\_\-add\_\-route@{OSI\_\-add\_\-route}}
+\index{OSI\_\-add\_\-route@{OSI\_\-add\_\-route}!vrp_glpk_sp.cpp@{vrp\_\-glpk\_\-sp.cpp}}
+\subsubsection[{OSI\_\-add\_\-route}]{\setlength{\rightskip}{0pt plus 5cm}void OSI\_\-add\_\-route (
+\begin{DoxyParamCaption}
+\item[{OsiSolverInterface $\ast$}]{si, }
+\item[{{\bf VRP} $\ast$}]{V, }
+\item[{{\bf VRPRoute} $\ast$}]{r, }
+\item[{int}]{id, }
+\item[{int $\ast$$\ast$}]{orderings}
+\end{DoxyParamCaption}
+)}}
+\label{vrp__glpk__sp_8cpp_a63505dfa9e80e716a3c29859afccde65}
+
+
+Adds a column/route to the current set partitioning problem. The column is assigned the name of id, which is converted to a string.
+
+
+
+Definition at line 108 of file vrp\_\-glpk\_\-sp.cpp.
+
+\hypertarget{vrp__glpk__sp_8cpp_af04523d45c21e7e7a28ad3e35e57cb52}{
+\index{vrp\_\-glpk\_\-sp.cpp@{vrp\_\-glpk\_\-sp.cpp}!OSI\_\-recover\_\-route@{OSI\_\-recover\_\-route}}
+\index{OSI\_\-recover\_\-route@{OSI\_\-recover\_\-route}!vrp_glpk_sp.cpp@{vrp\_\-glpk\_\-sp.cpp}}
+\subsubsection[{OSI\_\-recover\_\-route}]{\setlength{\rightskip}{0pt plus 5cm}void OSI\_\-recover\_\-route (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int $\ast$$\ast$}]{orderings, }
+\item[{{\bf VRPRoute} $\ast$}]{r}
+\end{DoxyParamCaption}
+)}}
+\label{vrp__glpk__sp_8cpp_af04523d45c21e7e7a28ad3e35e57cb52}
+
+
+Populates the route r with the information from orderings\mbox{[}i\mbox{]}. Computes the number of customers and the hash values of the route.
+
+
+
+Definition at line 38 of file vrp\_\-glpk\_\-sp.cpp.
+
+\hypertarget{vrp__glpk__sp_8cpp_a6943292646818ff419230503457a6779}{
+\index{vrp\_\-glpk\_\-sp.cpp@{vrp\_\-glpk\_\-sp.cpp}!OSI\_\-recover\_\-solution@{OSI\_\-recover\_\-solution}}
+\index{OSI\_\-recover\_\-solution@{OSI\_\-recover\_\-solution}!vrp_glpk_sp.cpp@{vrp\_\-glpk\_\-sp.cpp}}
+\subsubsection[{OSI\_\-recover\_\-solution}]{\setlength{\rightskip}{0pt plus 5cm}void OSI\_\-recover\_\-solution (
+\begin{DoxyParamCaption}
+\item[{OsiSolverInterface $\ast$}]{si, }
+\item[{int $\ast$$\ast$}]{orderings, }
+\item[{int $\ast$}]{sol\_\-buff}
+\end{DoxyParamCaption}
+)}}
+\label{vrp__glpk__sp_8cpp_a6943292646818ff419230503457a6779}
+
+
+Extracts the solution from the current set partitioning instance and places it in sol\_\-buff\mbox{[}\mbox{]}. We need to access the column/variable names since these hold the orderings of the routes.
+
+
+
+Definition at line 64 of file vrp\_\-glpk\_\-sp.cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{vrp__glpk__sp_8cpp_af3d7fafd8ecde119f9849206174a38f3}{
+\index{vrp\_\-glpk\_\-sp.cpp@{vrp\_\-glpk\_\-sp.cpp}!heur\_\-time@{heur\_\-time}}
+\index{heur\_\-time@{heur\_\-time}!vrp_glpk_sp.cpp@{vrp\_\-glpk\_\-sp.cpp}}
+\subsubsection[{heur\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}time\_\-t {\bf heur\_\-time}}}
+\label{vrp__glpk__sp_8cpp_af3d7fafd8ecde119f9849206174a38f3}
+
+
+Definition at line 36 of file vrp\_\-glpk\_\-sp.cpp.
+
+\hypertarget{vrp__glpk__sp_8cpp_a9da6e9066e7d3e173442a8cc09536b1c}{
+\index{vrp\_\-glpk\_\-sp.cpp@{vrp\_\-glpk\_\-sp.cpp}!max\_\-columns@{max\_\-columns}}
+\index{max\_\-columns@{max\_\-columns}!vrp_glpk_sp.cpp@{vrp\_\-glpk\_\-sp.cpp}}
+\subsubsection[{max\_\-columns}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf max\_\-columns}}}
+\label{vrp__glpk__sp_8cpp_a9da6e9066e7d3e173442a8cc09536b1c}
+
+
+Definition at line 32 of file vrp\_\-glpk\_\-sp.cpp.
+
+\hypertarget{vrp__glpk__sp_8cpp_adf9d6df7a4727b4e143d8b15b4ca99f1}{
+\index{vrp\_\-glpk\_\-sp.cpp@{vrp\_\-glpk\_\-sp.cpp}!mip\_\-time@{mip\_\-time}}
+\index{mip\_\-time@{mip\_\-time}!vrp_glpk_sp.cpp@{vrp\_\-glpk\_\-sp.cpp}}
+\subsubsection[{mip\_\-time}]{\setlength{\rightskip}{0pt plus 5cm}time\_\-t {\bf mip\_\-time}}}
+\label{vrp__glpk__sp_8cpp_adf9d6df7a4727b4e143d8b15b4ca99f1}
+
+
+Definition at line 36 of file vrp\_\-glpk\_\-sp.cpp.
+
+\hypertarget{vrp__glpk__sp_8cpp_aea5607fb0bbbfc0fe3d5c5e9672c2981}{
+\index{vrp\_\-glpk\_\-sp.cpp@{vrp\_\-glpk\_\-sp.cpp}!num\_\-cols\_\-to\_\-delete@{num\_\-cols\_\-to\_\-delete}}
+\index{num\_\-cols\_\-to\_\-delete@{num\_\-cols\_\-to\_\-delete}!vrp_glpk_sp.cpp@{vrp\_\-glpk\_\-sp.cpp}}
+\subsubsection[{num\_\-cols\_\-to\_\-delete}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf num\_\-cols\_\-to\_\-delete}}}
+\label{vrp__glpk__sp_8cpp_aea5607fb0bbbfc0fe3d5c5e9672c2981}
+
+
+Definition at line 33 of file vrp\_\-glpk\_\-sp.cpp.
+
+\hypertarget{vrp__glpk__sp_8cpp_ab3f078684998b83967d507d0f453f454}{
+\index{vrp\_\-glpk\_\-sp.cpp@{vrp\_\-glpk\_\-sp.cpp}!verbose@{verbose}}
+\index{verbose@{verbose}!vrp_glpk_sp.cpp@{vrp\_\-glpk\_\-sp.cpp}}
+\subsubsection[{verbose}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf verbose}}}
+\label{vrp__glpk__sp_8cpp_ab3f078684998b83967d507d0f453f454}
+
+
+Definition at line 35 of file vrp\_\-glpk\_\-sp.cpp.
+

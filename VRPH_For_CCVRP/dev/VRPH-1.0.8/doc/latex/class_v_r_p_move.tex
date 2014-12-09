@@ -1,0 +1,267 @@
+\hypertarget{class_v_r_p_move}{
+\section{VRPMove Class Reference}
+\label{class_v_r_p_move}\index{VRPMove@{VRPMove}}
+}
+
+
+{\ttfamily \#include $<$VRPMove.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_v_r_p_move_a75e3a502aea77df087ea9766b1591c9a}{VRPMove} ()
+\item 
+\hyperlink{class_v_r_p_move_a02ac2c77fd4e7e788d7282c7846a099b}{VRPMove} (int n)
+\item 
+\hyperlink{class_v_r_p_move_ad85aad2aaee02d4321236e20e44ea630}{$\sim$VRPMove} ()
+\item 
+bool \hyperlink{class_v_r_p_move_ae3f9dea631ef3fc35e314994c30dc96b}{is\_\-better} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M2, int \hyperlink{class_v_r_p_move_a964ab5cd85cfcccc2acc8b8088980d5d}{criteria})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_v_r_p_move_a964ab5cd85cfcccc2acc8b8088980d5d}{criteria}
+\item 
+int \hyperlink{class_v_r_p_move_abf5a4ac08176a9fb85bd5ebf7ef1e1ee}{num\_\-affected\_\-routes}
+\item 
+int \hyperlink{class_v_r_p_move_ad806f6cdca7081fc5ae7d087a8d4180f}{route\_\-nums} \mbox{[}MAX\_\-AFFECTED\_\-ROUTES\mbox{]}
+\item 
+double \hyperlink{class_v_r_p_move_aea86fc574c4e56c9b1ae0564d0de2ea6}{route\_\-lens} \mbox{[}MAX\_\-AFFECTED\_\-ROUTES\mbox{]}
+\item 
+int \hyperlink{class_v_r_p_move_a4761d4ac82fb507e7afa8196b3f9a288}{route\_\-loads} \mbox{[}MAX\_\-AFFECTED\_\-ROUTES\mbox{]}
+\item 
+int \hyperlink{class_v_r_p_move_abba2be357b8d777d3f72119b87839c55}{route\_\-custs} \mbox{[}MAX\_\-AFFECTED\_\-ROUTES\mbox{]}
+\item 
+double $\ast$ \hyperlink{class_v_r_p_move_aba411d099643f23e20f32d3ab2858438}{arrival\_\-times}
+\item 
+double \hyperlink{class_v_r_p_move_a824d4dbc2ba2328d6d6f9a361dc979d7}{savings}
+\item 
+int \hyperlink{class_v_r_p_move_a37f85cb82daea77577c4ed1583c758df}{total\_\-number\_\-of\_\-routes}
+\item 
+double \hyperlink{class_v_r_p_move_a4000655bc1ea3c24788b8a3aa1a33153}{new\_\-total\_\-route\_\-length}
+\item 
+int \hyperlink{class_v_r_p_move_aceb961e33e98ba0060b48a9f9c8a77e6}{move\_\-type}
+\item 
+int \hyperlink{class_v_r_p_move_a2873c7ab303640f54785f8d9d705df98}{num\_\-arguments}
+\item 
+int \hyperlink{class_v_r_p_move_a1a900aa1d2953581afb639b6d899d59c}{move\_\-arguments} \mbox{[}MAX\_\-ARGUMENTS\mbox{]}
+\item 
+int \hyperlink{class_v_r_p_move_a4328a652db3307d16e8a0a09df47c3bb}{eval\_\-arguments} \mbox{[}MAX\_\-ARGUMENTS\mbox{]}
+\item 
+bool \hyperlink{class_v_r_p_move_ad6a7403e76e701bde510f50afecfa50e}{evaluated\_\-savings}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file VRPMove.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_v_r_p_move_a75e3a502aea77df087ea9766b1591c9a}{
+\index{VRPMove@{VRPMove}!VRPMove@{VRPMove}}
+\index{VRPMove@{VRPMove}!VRPMove@{VRPMove}}
+\subsubsection[{VRPMove}]{\setlength{\rightskip}{0pt plus 5cm}VRPMove::VRPMove (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_move_a75e3a502aea77df087ea9766b1591c9a}
+Contains data regarding a particular \char`\"{}move\char`\"{} or solution modification. 
+
+Definition at line 15 of file VRPMove.cpp.
+
+\hypertarget{class_v_r_p_move_a02ac2c77fd4e7e788d7282c7846a099b}{
+\index{VRPMove@{VRPMove}!VRPMove@{VRPMove}}
+\index{VRPMove@{VRPMove}!VRPMove@{VRPMove}}
+\subsubsection[{VRPMove}]{\setlength{\rightskip}{0pt plus 5cm}VRPMove::VRPMove (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_move_a02ac2c77fd4e7e788d7282c7846a099b}
+
+
+Definition at line 29 of file VRPMove.cpp.
+
+\hypertarget{class_v_r_p_move_ad85aad2aaee02d4321236e20e44ea630}{
+\index{VRPMove@{VRPMove}!$\sim$VRPMove@{$\sim$VRPMove}}
+\index{$\sim$VRPMove@{$\sim$VRPMove}!VRPMove@{VRPMove}}
+\subsubsection[{$\sim$VRPMove}]{\setlength{\rightskip}{0pt plus 5cm}VRPMove::$\sim$VRPMove (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_move_ad85aad2aaee02d4321236e20e44ea630}
+
+
+Definition at line 42 of file VRPMove.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_v_r_p_move_ae3f9dea631ef3fc35e314994c30dc96b}{
+\index{VRPMove@{VRPMove}!is\_\-better@{is\_\-better}}
+\index{is\_\-better@{is\_\-better}!VRPMove@{VRPMove}}
+\subsubsection[{is\_\-better}]{\setlength{\rightskip}{0pt plus 5cm}bool VRPMove::is\_\-better (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{{\bf VRPMove} $\ast$}]{M2, }
+\item[{int}]{criteria}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_move_ae3f9dea631ef3fc35e314994c30dc96b}
+
+
+Evaluates this move versus M2 in terms of the provided rules. Returns true of this move is superior to M2 and false otherwise.
+
+
+
+Definition at line 49 of file VRPMove.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_v_r_p_move_aba411d099643f23e20f32d3ab2858438}{
+\index{VRPMove@{VRPMove}!arrival\_\-times@{arrival\_\-times}}
+\index{arrival\_\-times@{arrival\_\-times}!VRPMove@{VRPMove}}
+\subsubsection[{arrival\_\-times}]{\setlength{\rightskip}{0pt plus 5cm}double$\ast$ {\bf VRPMove::arrival\_\-times}}}
+\label{class_v_r_p_move_aba411d099643f23e20f32d3ab2858438}
+
+
+Definition at line 40 of file VRPMove.h.
+
+\hypertarget{class_v_r_p_move_a964ab5cd85cfcccc2acc8b8088980d5d}{
+\index{VRPMove@{VRPMove}!criteria@{criteria}}
+\index{criteria@{criteria}!VRPMove@{VRPMove}}
+\subsubsection[{criteria}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPMove::criteria}}}
+\label{class_v_r_p_move_a964ab5cd85cfcccc2acc8b8088980d5d}
+
+
+Definition at line 33 of file VRPMove.h.
+
+\hypertarget{class_v_r_p_move_a4328a652db3307d16e8a0a09df47c3bb}{
+\index{VRPMove@{VRPMove}!eval\_\-arguments@{eval\_\-arguments}}
+\index{eval\_\-arguments@{eval\_\-arguments}!VRPMove@{VRPMove}}
+\subsubsection[{eval\_\-arguments}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPMove::eval\_\-arguments}\mbox{[}MAX\_\-ARGUMENTS\mbox{]}}}
+\label{class_v_r_p_move_a4328a652db3307d16e8a0a09df47c3bb}
+
+
+Definition at line 48 of file VRPMove.h.
+
+\hypertarget{class_v_r_p_move_ad6a7403e76e701bde510f50afecfa50e}{
+\index{VRPMove@{VRPMove}!evaluated\_\-savings@{evaluated\_\-savings}}
+\index{evaluated\_\-savings@{evaluated\_\-savings}!VRPMove@{VRPMove}}
+\subsubsection[{evaluated\_\-savings}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf VRPMove::evaluated\_\-savings}}}
+\label{class_v_r_p_move_ad6a7403e76e701bde510f50afecfa50e}
+
+
+Definition at line 50 of file VRPMove.h.
+
+\hypertarget{class_v_r_p_move_a1a900aa1d2953581afb639b6d899d59c}{
+\index{VRPMove@{VRPMove}!move\_\-arguments@{move\_\-arguments}}
+\index{move\_\-arguments@{move\_\-arguments}!VRPMove@{VRPMove}}
+\subsubsection[{move\_\-arguments}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPMove::move\_\-arguments}\mbox{[}MAX\_\-ARGUMENTS\mbox{]}}}
+\label{class_v_r_p_move_a1a900aa1d2953581afb639b6d899d59c}
+
+
+Definition at line 47 of file VRPMove.h.
+
+\hypertarget{class_v_r_p_move_aceb961e33e98ba0060b48a9f9c8a77e6}{
+\index{VRPMove@{VRPMove}!move\_\-type@{move\_\-type}}
+\index{move\_\-type@{move\_\-type}!VRPMove@{VRPMove}}
+\subsubsection[{move\_\-type}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPMove::move\_\-type}}}
+\label{class_v_r_p_move_aceb961e33e98ba0060b48a9f9c8a77e6}
+
+
+Definition at line 45 of file VRPMove.h.
+
+\hypertarget{class_v_r_p_move_a4000655bc1ea3c24788b8a3aa1a33153}{
+\index{VRPMove@{VRPMove}!new\_\-total\_\-route\_\-length@{new\_\-total\_\-route\_\-length}}
+\index{new\_\-total\_\-route\_\-length@{new\_\-total\_\-route\_\-length}!VRPMove@{VRPMove}}
+\subsubsection[{new\_\-total\_\-route\_\-length}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPMove::new\_\-total\_\-route\_\-length}}}
+\label{class_v_r_p_move_a4000655bc1ea3c24788b8a3aa1a33153}
+
+
+Definition at line 44 of file VRPMove.h.
+
+\hypertarget{class_v_r_p_move_abf5a4ac08176a9fb85bd5ebf7ef1e1ee}{
+\index{VRPMove@{VRPMove}!num\_\-affected\_\-routes@{num\_\-affected\_\-routes}}
+\index{num\_\-affected\_\-routes@{num\_\-affected\_\-routes}!VRPMove@{VRPMove}}
+\subsubsection[{num\_\-affected\_\-routes}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPMove::num\_\-affected\_\-routes}}}
+\label{class_v_r_p_move_abf5a4ac08176a9fb85bd5ebf7ef1e1ee}
+
+
+Definition at line 34 of file VRPMove.h.
+
+\hypertarget{class_v_r_p_move_a2873c7ab303640f54785f8d9d705df98}{
+\index{VRPMove@{VRPMove}!num\_\-arguments@{num\_\-arguments}}
+\index{num\_\-arguments@{num\_\-arguments}!VRPMove@{VRPMove}}
+\subsubsection[{num\_\-arguments}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPMove::num\_\-arguments}}}
+\label{class_v_r_p_move_a2873c7ab303640f54785f8d9d705df98}
+
+
+Definition at line 46 of file VRPMove.h.
+
+\hypertarget{class_v_r_p_move_abba2be357b8d777d3f72119b87839c55}{
+\index{VRPMove@{VRPMove}!route\_\-custs@{route\_\-custs}}
+\index{route\_\-custs@{route\_\-custs}!VRPMove@{VRPMove}}
+\subsubsection[{route\_\-custs}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPMove::route\_\-custs}\mbox{[}MAX\_\-AFFECTED\_\-ROUTES\mbox{]}}}
+\label{class_v_r_p_move_abba2be357b8d777d3f72119b87839c55}
+
+
+Definition at line 38 of file VRPMove.h.
+
+\hypertarget{class_v_r_p_move_aea86fc574c4e56c9b1ae0564d0de2ea6}{
+\index{VRPMove@{VRPMove}!route\_\-lens@{route\_\-lens}}
+\index{route\_\-lens@{route\_\-lens}!VRPMove@{VRPMove}}
+\subsubsection[{route\_\-lens}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPMove::route\_\-lens}\mbox{[}MAX\_\-AFFECTED\_\-ROUTES\mbox{]}}}
+\label{class_v_r_p_move_aea86fc574c4e56c9b1ae0564d0de2ea6}
+
+
+Definition at line 36 of file VRPMove.h.
+
+\hypertarget{class_v_r_p_move_a4761d4ac82fb507e7afa8196b3f9a288}{
+\index{VRPMove@{VRPMove}!route\_\-loads@{route\_\-loads}}
+\index{route\_\-loads@{route\_\-loads}!VRPMove@{VRPMove}}
+\subsubsection[{route\_\-loads}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPMove::route\_\-loads}\mbox{[}MAX\_\-AFFECTED\_\-ROUTES\mbox{]}}}
+\label{class_v_r_p_move_a4761d4ac82fb507e7afa8196b3f9a288}
+
+
+Definition at line 37 of file VRPMove.h.
+
+\hypertarget{class_v_r_p_move_ad806f6cdca7081fc5ae7d087a8d4180f}{
+\index{VRPMove@{VRPMove}!route\_\-nums@{route\_\-nums}}
+\index{route\_\-nums@{route\_\-nums}!VRPMove@{VRPMove}}
+\subsubsection[{route\_\-nums}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPMove::route\_\-nums}\mbox{[}MAX\_\-AFFECTED\_\-ROUTES\mbox{]}}}
+\label{class_v_r_p_move_ad806f6cdca7081fc5ae7d087a8d4180f}
+
+
+Definition at line 35 of file VRPMove.h.
+
+\hypertarget{class_v_r_p_move_a824d4dbc2ba2328d6d6f9a361dc979d7}{
+\index{VRPMove@{VRPMove}!savings@{savings}}
+\index{savings@{savings}!VRPMove@{VRPMove}}
+\subsubsection[{savings}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPMove::savings}}}
+\label{class_v_r_p_move_a824d4dbc2ba2328d6d6f9a361dc979d7}
+
+
+Definition at line 42 of file VRPMove.h.
+
+\hypertarget{class_v_r_p_move_a37f85cb82daea77577c4ed1583c758df}{
+\index{VRPMove@{VRPMove}!total\_\-number\_\-of\_\-routes@{total\_\-number\_\-of\_\-routes}}
+\index{total\_\-number\_\-of\_\-routes@{total\_\-number\_\-of\_\-routes}!VRPMove@{VRPMove}}
+\subsubsection[{total\_\-number\_\-of\_\-routes}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPMove::total\_\-number\_\-of\_\-routes}}}
+\label{class_v_r_p_move_a37f85cb82daea77577c4ed1583c758df}
+
+
+Definition at line 43 of file VRPMove.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_v_r_p_move_8h}{VRPMove.h}\item 
+src/\hyperlink{_v_r_p_move_8cpp}{VRPMove.cpp}\end{DoxyCompactItemize}

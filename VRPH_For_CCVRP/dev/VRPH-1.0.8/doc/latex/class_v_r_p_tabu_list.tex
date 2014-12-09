@@ -1,0 +1,216 @@
+\hypertarget{class_v_r_p_tabu_list}{
+\section{VRPTabuList Class Reference}
+\label{class_v_r_p_tabu_list}\index{VRPTabuList@{VRPTabuList}}
+}
+
+
+{\ttfamily \#include $<$VRPTabuList.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_v_r_p_tabu_list_a65e5b79cb68f953aeb388b5fb49a92ea}{VRPTabuList} ()
+\item 
+\hyperlink{class_v_r_p_tabu_list_aedd06d0ad1530d923920aa9a0a1429b4}{VRPTabuList} (int t)
+\item 
+\hyperlink{class_v_r_p_tabu_list_a04382257eb05860430d826987fd571be}{$\sim$VRPTabuList} ()
+\item 
+void \hyperlink{class_v_r_p_tabu_list_aedc1f335f43a324bcd04167407cbfb8e}{update\_\-list} (\hyperlink{class_v_r_p_route}{VRPRoute} $\ast$r)
+\item 
+void \hyperlink{class_v_r_p_tabu_list_a8379e2849413468965d9df8301dd398f}{show} ()
+\item 
+void \hyperlink{class_v_r_p_tabu_list_a3b445856bb38f763eb8f23159b488f04}{empty} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_v_r_p_tabu_list_aa799c64c2debc36aa4b9f75556683041}{max\_\-entries}
+\item 
+int \hyperlink{class_v_r_p_tabu_list_aeb64bb8470793cd64c5ea9036fb1763b}{num\_\-entries}
+\item 
+int \hyperlink{class_v_r_p_tabu_list_ad6970eb53ab71e79bb6ec7230d505d5d}{start\_\-index}
+\item 
+int $\ast$ \hyperlink{class_v_r_p_tabu_list_a75db2b708942566d2150a969642c688a}{hash\_\-vals1}
+\item 
+int $\ast$ \hyperlink{class_v_r_p_tabu_list_a060190495a6a0e1487f28407cee844b4}{hash\_\-vals2}
+\item 
+bool \hyperlink{class_v_r_p_tabu_list_af6fe31640c8f09894386aa0b175adac2}{full}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file VRPTabuList.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_v_r_p_tabu_list_a65e5b79cb68f953aeb388b5fb49a92ea}{
+\index{VRPTabuList@{VRPTabuList}!VRPTabuList@{VRPTabuList}}
+\index{VRPTabuList@{VRPTabuList}!VRPTabuList@{VRPTabuList}}
+\subsubsection[{VRPTabuList}]{\setlength{\rightskip}{0pt plus 5cm}VRPTabuList::VRPTabuList (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_tabu_list_a65e5b79cb68f953aeb388b5fb49a92ea}
+
+
+Default constructor for the \hyperlink{class_v_r_p_tabu_list}{VRPTabuList}.
+
+
+
+Definition at line 15 of file VRPTabuList.cpp.
+
+\hypertarget{class_v_r_p_tabu_list_aedd06d0ad1530d923920aa9a0a1429b4}{
+\index{VRPTabuList@{VRPTabuList}!VRPTabuList@{VRPTabuList}}
+\index{VRPTabuList@{VRPTabuList}!VRPTabuList@{VRPTabuList}}
+\subsubsection[{VRPTabuList}]{\setlength{\rightskip}{0pt plus 5cm}VRPTabuList::VRPTabuList (
+\begin{DoxyParamCaption}
+\item[{int}]{t}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_tabu_list_aedd06d0ad1530d923920aa9a0a1429b4}
+
+
+Constructor for the \hyperlink{class_v_r_p_tabu_list}{VRPTabuList} with t tabu routes.
+
+
+
+Definition at line 31 of file VRPTabuList.cpp.
+
+\hypertarget{class_v_r_p_tabu_list_a04382257eb05860430d826987fd571be}{
+\index{VRPTabuList@{VRPTabuList}!$\sim$VRPTabuList@{$\sim$VRPTabuList}}
+\index{$\sim$VRPTabuList@{$\sim$VRPTabuList}!VRPTabuList@{VRPTabuList}}
+\subsubsection[{$\sim$VRPTabuList}]{\setlength{\rightskip}{0pt plus 5cm}VRPTabuList::$\sim$VRPTabuList (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_tabu_list_a04382257eb05860430d826987fd571be}
+
+
+Destructor for the \hyperlink{class_v_r_p_tabu_list}{VRPTabuList}.
+
+
+
+Definition at line 54 of file VRPTabuList.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_v_r_p_tabu_list_a3b445856bb38f763eb8f23159b488f04}{
+\index{VRPTabuList@{VRPTabuList}!empty@{empty}}
+\index{empty@{empty}!VRPTabuList@{VRPTabuList}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}void VRPTabuList::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_tabu_list_a3b445856bb38f763eb8f23159b488f04}
+
+
+Removes all entries from the tabu list.
+
+
+
+Definition at line 113 of file VRPTabuList.cpp.
+
+\hypertarget{class_v_r_p_tabu_list_a8379e2849413468965d9df8301dd398f}{
+\index{VRPTabuList@{VRPTabuList}!show@{show}}
+\index{show@{show}!VRPTabuList@{VRPTabuList}}
+\subsubsection[{show}]{\setlength{\rightskip}{0pt plus 5cm}void VRPTabuList::show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_tabu_list_a8379e2849413468965d9df8301dd398f}
+
+
+Shows the hash values of the current tabu list, starting with start\_\-index and listing all current entries.
+
+
+
+Definition at line 137 of file VRPTabuList.cpp.
+
+\hypertarget{class_v_r_p_tabu_list_aedc1f335f43a324bcd04167407cbfb8e}{
+\index{VRPTabuList@{VRPTabuList}!update\_\-list@{update\_\-list}}
+\index{update\_\-list@{update\_\-list}!VRPTabuList@{VRPTabuList}}
+\subsubsection[{update\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}void VRPTabuList::update\_\-list (
+\begin{DoxyParamCaption}
+\item[{{\bf VRPRoute} $\ast$}]{r}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_tabu_list_aedc1f335f43a324bcd04167407cbfb8e}
+
+
+Updates the tabu list by adding the route r.
+
+
+
+Definition at line 67 of file VRPTabuList.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_v_r_p_tabu_list_af6fe31640c8f09894386aa0b175adac2}{
+\index{VRPTabuList@{VRPTabuList}!full@{full}}
+\index{full@{full}!VRPTabuList@{VRPTabuList}}
+\subsubsection[{full}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf VRPTabuList::full}}}
+\label{class_v_r_p_tabu_list_af6fe31640c8f09894386aa0b175adac2}
+
+
+Definition at line 34 of file VRPTabuList.h.
+
+\hypertarget{class_v_r_p_tabu_list_a75db2b708942566d2150a969642c688a}{
+\index{VRPTabuList@{VRPTabuList}!hash\_\-vals1@{hash\_\-vals1}}
+\index{hash\_\-vals1@{hash\_\-vals1}!VRPTabuList@{VRPTabuList}}
+\subsubsection[{hash\_\-vals1}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf VRPTabuList::hash\_\-vals1}}}
+\label{class_v_r_p_tabu_list_a75db2b708942566d2150a969642c688a}
+
+
+Definition at line 31 of file VRPTabuList.h.
+
+\hypertarget{class_v_r_p_tabu_list_a060190495a6a0e1487f28407cee844b4}{
+\index{VRPTabuList@{VRPTabuList}!hash\_\-vals2@{hash\_\-vals2}}
+\index{hash\_\-vals2@{hash\_\-vals2}!VRPTabuList@{VRPTabuList}}
+\subsubsection[{hash\_\-vals2}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf VRPTabuList::hash\_\-vals2}}}
+\label{class_v_r_p_tabu_list_a060190495a6a0e1487f28407cee844b4}
+
+
+Definition at line 32 of file VRPTabuList.h.
+
+\hypertarget{class_v_r_p_tabu_list_aa799c64c2debc36aa4b9f75556683041}{
+\index{VRPTabuList@{VRPTabuList}!max\_\-entries@{max\_\-entries}}
+\index{max\_\-entries@{max\_\-entries}!VRPTabuList@{VRPTabuList}}
+\subsubsection[{max\_\-entries}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPTabuList::max\_\-entries}}}
+\label{class_v_r_p_tabu_list_aa799c64c2debc36aa4b9f75556683041}
+
+
+Definition at line 28 of file VRPTabuList.h.
+
+\hypertarget{class_v_r_p_tabu_list_aeb64bb8470793cd64c5ea9036fb1763b}{
+\index{VRPTabuList@{VRPTabuList}!num\_\-entries@{num\_\-entries}}
+\index{num\_\-entries@{num\_\-entries}!VRPTabuList@{VRPTabuList}}
+\subsubsection[{num\_\-entries}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPTabuList::num\_\-entries}}}
+\label{class_v_r_p_tabu_list_aeb64bb8470793cd64c5ea9036fb1763b}
+
+
+Definition at line 29 of file VRPTabuList.h.
+
+\hypertarget{class_v_r_p_tabu_list_ad6970eb53ab71e79bb6ec7230d505d5d}{
+\index{VRPTabuList@{VRPTabuList}!start\_\-index@{start\_\-index}}
+\index{start\_\-index@{start\_\-index}!VRPTabuList@{VRPTabuList}}
+\subsubsection[{start\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPTabuList::start\_\-index}}}
+\label{class_v_r_p_tabu_list_ad6970eb53ab71e79bb6ec7230d505d5d}
+
+
+Definition at line 30 of file VRPTabuList.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_v_r_p_tabu_list_8h}{VRPTabuList.h}\item 
+src/\hyperlink{_v_r_p_tabu_list_8cpp}{VRPTabuList.cpp}\end{DoxyCompactItemize}

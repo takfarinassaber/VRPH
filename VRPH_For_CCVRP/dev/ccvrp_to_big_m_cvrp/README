@@ -1,0 +1,28 @@
+/* CISSE Mohamed
+   SABER Takfarinas*/
+
+compilation :
+-------------
+make
+execution :
+-----------
+./test <input> <output>
+
+Ce programme permet de convertir un fichier de type clustered vrp (TSPLIB) en 
+un fichier vrp dont les distances entre noeuds de clusters différents ont été
+pénalisées.
+
+Les champs EDGE_WIEGHT_TYPE et EDGE_WEIGHT_FORMAT sont obligatoires. Les tokens
+acceptés sont ceux acceptés par vrph.
+
+
+Dans ce répertoire, les résultats graphiques de deux instances (explicit_full_sans_cluster.vrp et a-n14-c4.ccvrp) ont été générés à partir de vrph
+avec et sans clustering.
+L'instance explicit_full_sans_cluster.vrp a été modifiée pour supporter les clusters. Cette modification a produit le fichier explicit_full_avec_cluster.vrp.
+Linstance a-n14-c4.ccvrp a été légèremment modifiée pour être prise en charge par le programme et par VRPH.
+Nous comptons étendre le programme pour supporter le format TSPLIB que vous nous avez envoyé.
+Les résultats graphiques nous donnent un apperçu des résultats que nous génére VRPH.
+On s'apperçoit d'une part que, les instances "explicit_full_sans_cluster.vrp" et "explicit_full_avec_cluster.vrp" nous générent deux graphiques distincts.
+On a vérifié manuellement l'exactitude du résultat. D'autre part, "a-n14-c4.ccvp" et une instance artificielle de "a-n14-c4.ccvp" ne suppotant pas les clusters
+génèrent deux graphiques identiques. La solution sans cluster coincide avec la solution supportant les clusters.
+

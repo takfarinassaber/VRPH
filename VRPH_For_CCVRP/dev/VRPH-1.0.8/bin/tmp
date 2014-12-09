@@ -1,0 +1,1 @@
+./vrp_rtr -f ../instances/ccvrp-instance/d-n14-c4.ccvrp    -plot tmp.plot -pdf tmp.pdf -v -k 1000 -h KITCHEN_SINK

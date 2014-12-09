@@ -1,0 +1,494 @@
+\hypertarget{_v_r_p_heuristic_8h}{
+\section{inc/VRPHeuristic.h File Reference}
+\label{_v_r_p_heuristic_8h}\index{inc/VRPHeuristic.h@{inc/VRPHeuristic.h}}
+}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a07903d607ed24000997de2cac0fb854a}{VRPH\_\-DOWNHILL}~1
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_aa35a4c1303fa21cdbd57999a74eb4d38}{VRPH\_\-RECORD\_\-TO\_\-RECORD}~(1$<$$<$1)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_ae20553f5dae38f2b640a1205412cd580}{VRPH\_\-SIMULATED\_\-ANNEALING}~(1$<$$<$2)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a3ca759f76b404e44358503c228bd5730}{VRPH\_\-FIRST\_\-ACCEPT}~(1$<$$<$3)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_aa40c806bb5fd8e9b5d89123dc10319bd}{VRPH\_\-BEST\_\-ACCEPT}~(1$<$$<$4)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a9fd8061776182c55e87cc61d99b40bad}{VRPH\_\-LI\_\-ACCEPT}~(1$<$$<$5)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a2b6a64515c912003076e329594e729ec}{VRPH\_\-INTER\_\-ROUTE\_\-ONLY}~(1$<$$<$6)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a62b23c46baa30024c2657a9d3a5c0723}{VRPH\_\-INTRA\_\-ROUTE\_\-ONLY}~(1$<$$<$7)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a17fa43157974e837b530ac2379f8ee37}{VRPH\_\-USE\_\-NEIGHBOR\_\-LIST}~(1$<$$<$8)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a2ba5a744885a738ff294d8f42f042c9f}{VRPH\_\-FREE}~(1$<$$<$9)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a26fdcdeb200bf41d7da528f62e53a72e}{VRPH\_\-BALANCED}~(1$<$$<$10)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a8bddb7ca7698fdcdad76a6ca31710dfb}{VRPH\_\-FORWARD}~(1$<$$<$11)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_aeb890d0f09944ab4d744a1d929052fb9}{VRPH\_\-BACKWARD}~(1$<$$<$12)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a2ea0e2db1d269f8da42eb0186e39e357}{VRPH\_\-RANDOMIZED}~(1$<$$<$13)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a728dc1eb042f40cb2745dba2ac65bb50}{VRPH\_\-SAVINGS\_\-ONLY}~(1$<$$<$14)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a5a3a46ac6db4be8495af970787cf15aa}{VRPH\_\-MINIMIZE\_\-NUM\_\-ROUTES}~(1$<$$<$15)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a991a3da796662ac5da9da2e9c17abad0}{VRPH\_\-FIXED\_\-EDGES}~(1$<$$<$17)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a7f52fbc7543e5df44fff62f7bb8a7e1b}{VRPH\_\-ALLOW\_\-INFEASIBLE}~(1$<$$<$18)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_ae1b6d3a33cf1fba8e2f68367937e9f23}{VRPH\_\-NO\_\-NEW\_\-ROUTE}~(1$<$$<$19)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a74a9d1a65f0cba29f5dc2637c0755e06}{VRPH\_\-TABU}~(1$<$$<$20)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_afdacc57053f1f401a59f3ed38f3fe414}{ONE\_\-POINT\_\-MOVE}~(1$<$$<$21)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_abbda4de60b7f32a85f9e06cc8f6c81b7}{TWO\_\-POINT\_\-MOVE}~(1$<$$<$22)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a20df46ee9f21800c6e3a2f3a67632d39}{TWO\_\-OPT}~(1$<$$<$23)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_aec43e28025dc01e2fa938e97bf3d0748}{OR\_\-OPT}~(1$<$$<$24)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a8c875748b7a11ae5572c9491682ee0fc}{THREE\_\-OPT}~(1$<$$<$25)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_aabf30aa8116093bd3a47592f14de56af}{CROSS\_\-EXCHANGE}~(1$<$$<$26)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a16be8a55e67aa9c51ba6e18ce2e04921}{THREE\_\-POINT\_\-MOVE}~(1$<$$<$27)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a1f9c7e0c8d41c294d0e1165719f251d4}{KITCHEN\_\-SINK}~(1$<$$<$28)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a65fa6ef9c8bb87faa310b88d2f0724f2}{ALL\_\-HEURISTICS}~(1$<$$<$20)$|$(1$<$$<$21)$|$(1$<$$<$22)$|$(1$<$$<$23)$|$(1$<$$<$24)$|$(1$<$$<$25)$|$(1$<$$<$26)$|$(1$<$$<$27)
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a4e7cc3d3a524e089c5730b0c8623b880}{NUM\_\-HEURISTICS}~7
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a01963bdb934a64459fe8f129446d2fbc}{ONE\_\-POINT\_\-MOVE\_\-INDEX}~0
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_aaadacf917005a13d7b012f82547bda54}{TWO\_\-POINT\_\-MOVE\_\-INDEX}~1
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a463e40572401f9b47cf37b0efdfb2bcb}{TWO\_\-OPT\_\-INDEX}~2
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_ad3b51842dafb89f2610af0f0f927c48c}{OR\_\-OPT\_\-INDEX}~3
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_ab3171fbc6be8dff43f03156afb23d9d8}{THREE\_\-OPT\_\-INDEX}~4
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_ac9895c76df24a1d568341cb47d6eee10}{CROSS\_\-EXCHANGE\_\-INDEX}~5
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_aef11a6b3490a691aab3c60ff364b537c}{THREE\_\-POINT\_\-MOVE\_\-INDEX}~6
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a1799fc496d531f40b270afa362b8f7f3}{PRESERT}~1
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a3270d35b52fdcbcfcb01c5964d38d10d}{POSTSERT}~2
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a04dcd476fcce6a05df30c83784a9ca8d}{CONCATENATE}~3
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a6bf86b72471de98ab53dcb8ae8d9d6cc}{SWAP\_\-ENDS}~4
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a6913edbcb0c881679fd7dd121c10af3e}{FLIP}~5
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_a1511dc17d5ae4d3d7f5116cb8c99c819}{MOVE\_\-STRING}~6
+\item 
+\#define \hyperlink{_v_r_p_heuristic_8h_aac9b57651bcead0a7564efe6460e5310}{SWAP}~7
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{_v_r_p_heuristic_8h_a65fa6ef9c8bb87faa310b88d2f0724f2}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!ALL\_\-HEURISTICS@{ALL\_\-HEURISTICS}}
+\index{ALL\_\-HEURISTICS@{ALL\_\-HEURISTICS}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{ALL\_\-HEURISTICS}]{\setlength{\rightskip}{0pt plus 5cm}\#define ALL\_\-HEURISTICS~(1$<$$<$20)$|$(1$<$$<$21)$|$(1$<$$<$22)$|$(1$<$$<$23)$|$(1$<$$<$24)$|$(1$<$$<$25)$|$(1$<$$<$26)$|$(1$<$$<$27)}}
+\label{_v_r_p_heuristic_8h_a65fa6ef9c8bb87faa310b88d2f0724f2}
+
+
+Definition at line 48 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a04dcd476fcce6a05df30c83784a9ca8d}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!CONCATENATE@{CONCATENATE}}
+\index{CONCATENATE@{CONCATENATE}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{CONCATENATE}]{\setlength{\rightskip}{0pt plus 5cm}\#define CONCATENATE~3}}
+\label{_v_r_p_heuristic_8h_a04dcd476fcce6a05df30c83784a9ca8d}
+
+
+Definition at line 68 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_aabf30aa8116093bd3a47592f14de56af}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!CROSS\_\-EXCHANGE@{CROSS\_\-EXCHANGE}}
+\index{CROSS\_\-EXCHANGE@{CROSS\_\-EXCHANGE}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{CROSS\_\-EXCHANGE}]{\setlength{\rightskip}{0pt plus 5cm}\#define CROSS\_\-EXCHANGE~(1$<$$<$26)}}
+\label{_v_r_p_heuristic_8h_aabf30aa8116093bd3a47592f14de56af}
+
+
+Definition at line 44 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_ac9895c76df24a1d568341cb47d6eee10}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!CROSS\_\-EXCHANGE\_\-INDEX@{CROSS\_\-EXCHANGE\_\-INDEX}}
+\index{CROSS\_\-EXCHANGE\_\-INDEX@{CROSS\_\-EXCHANGE\_\-INDEX}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{CROSS\_\-EXCHANGE\_\-INDEX}]{\setlength{\rightskip}{0pt plus 5cm}\#define CROSS\_\-EXCHANGE\_\-INDEX~5}}
+\label{_v_r_p_heuristic_8h_ac9895c76df24a1d568341cb47d6eee10}
+
+
+Definition at line 60 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a6913edbcb0c881679fd7dd121c10af3e}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!FLIP@{FLIP}}
+\index{FLIP@{FLIP}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{FLIP}]{\setlength{\rightskip}{0pt plus 5cm}\#define FLIP~5}}
+\label{_v_r_p_heuristic_8h_a6913edbcb0c881679fd7dd121c10af3e}
+
+
+Definition at line 70 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a1f9c7e0c8d41c294d0e1165719f251d4}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!KITCHEN\_\-SINK@{KITCHEN\_\-SINK}}
+\index{KITCHEN\_\-SINK@{KITCHEN\_\-SINK}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{KITCHEN\_\-SINK}]{\setlength{\rightskip}{0pt plus 5cm}\#define KITCHEN\_\-SINK~(1$<$$<$28)}}
+\label{_v_r_p_heuristic_8h_a1f9c7e0c8d41c294d0e1165719f251d4}
+
+
+Definition at line 46 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a1511dc17d5ae4d3d7f5116cb8c99c819}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!MOVE\_\-STRING@{MOVE\_\-STRING}}
+\index{MOVE\_\-STRING@{MOVE\_\-STRING}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{MOVE\_\-STRING}]{\setlength{\rightskip}{0pt plus 5cm}\#define MOVE\_\-STRING~6}}
+\label{_v_r_p_heuristic_8h_a1511dc17d5ae4d3d7f5116cb8c99c819}
+
+
+Definition at line 71 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a4e7cc3d3a524e089c5730b0c8623b880}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!NUM\_\-HEURISTICS@{NUM\_\-HEURISTICS}}
+\index{NUM\_\-HEURISTICS@{NUM\_\-HEURISTICS}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{NUM\_\-HEURISTICS}]{\setlength{\rightskip}{0pt plus 5cm}\#define NUM\_\-HEURISTICS~7}}
+\label{_v_r_p_heuristic_8h_a4e7cc3d3a524e089c5730b0c8623b880}
+
+
+Definition at line 53 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_afdacc57053f1f401a59f3ed38f3fe414}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!ONE\_\-POINT\_\-MOVE@{ONE\_\-POINT\_\-MOVE}}
+\index{ONE\_\-POINT\_\-MOVE@{ONE\_\-POINT\_\-MOVE}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{ONE\_\-POINT\_\-MOVE}]{\setlength{\rightskip}{0pt plus 5cm}\#define ONE\_\-POINT\_\-MOVE~(1$<$$<$21)}}
+\label{_v_r_p_heuristic_8h_afdacc57053f1f401a59f3ed38f3fe414}
+
+
+Definition at line 39 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a01963bdb934a64459fe8f129446d2fbc}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!ONE\_\-POINT\_\-MOVE\_\-INDEX@{ONE\_\-POINT\_\-MOVE\_\-INDEX}}
+\index{ONE\_\-POINT\_\-MOVE\_\-INDEX@{ONE\_\-POINT\_\-MOVE\_\-INDEX}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{ONE\_\-POINT\_\-MOVE\_\-INDEX}]{\setlength{\rightskip}{0pt plus 5cm}\#define ONE\_\-POINT\_\-MOVE\_\-INDEX~0}}
+\label{_v_r_p_heuristic_8h_a01963bdb934a64459fe8f129446d2fbc}
+
+
+Definition at line 55 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_aec43e28025dc01e2fa938e97bf3d0748}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!OR\_\-OPT@{OR\_\-OPT}}
+\index{OR\_\-OPT@{OR\_\-OPT}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{OR\_\-OPT}]{\setlength{\rightskip}{0pt plus 5cm}\#define OR\_\-OPT~(1$<$$<$24)}}
+\label{_v_r_p_heuristic_8h_aec43e28025dc01e2fa938e97bf3d0748}
+
+
+Definition at line 42 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_ad3b51842dafb89f2610af0f0f927c48c}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!OR\_\-OPT\_\-INDEX@{OR\_\-OPT\_\-INDEX}}
+\index{OR\_\-OPT\_\-INDEX@{OR\_\-OPT\_\-INDEX}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{OR\_\-OPT\_\-INDEX}]{\setlength{\rightskip}{0pt plus 5cm}\#define OR\_\-OPT\_\-INDEX~3}}
+\label{_v_r_p_heuristic_8h_ad3b51842dafb89f2610af0f0f927c48c}
+
+
+Definition at line 58 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a3270d35b52fdcbcfcb01c5964d38d10d}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!POSTSERT@{POSTSERT}}
+\index{POSTSERT@{POSTSERT}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{POSTSERT}]{\setlength{\rightskip}{0pt plus 5cm}\#define POSTSERT~2}}
+\label{_v_r_p_heuristic_8h_a3270d35b52fdcbcfcb01c5964d38d10d}
+
+
+Definition at line 67 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a1799fc496d531f40b270afa362b8f7f3}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!PRESERT@{PRESERT}}
+\index{PRESERT@{PRESERT}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{PRESERT}]{\setlength{\rightskip}{0pt plus 5cm}\#define PRESERT~1}}
+\label{_v_r_p_heuristic_8h_a1799fc496d531f40b270afa362b8f7f3}
+
+
+Definition at line 66 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_aac9b57651bcead0a7564efe6460e5310}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!SWAP@{SWAP}}
+\index{SWAP@{SWAP}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{SWAP}]{\setlength{\rightskip}{0pt plus 5cm}\#define SWAP~7}}
+\label{_v_r_p_heuristic_8h_aac9b57651bcead0a7564efe6460e5310}
+
+
+Definition at line 72 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a6bf86b72471de98ab53dcb8ae8d9d6cc}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!SWAP\_\-ENDS@{SWAP\_\-ENDS}}
+\index{SWAP\_\-ENDS@{SWAP\_\-ENDS}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{SWAP\_\-ENDS}]{\setlength{\rightskip}{0pt plus 5cm}\#define SWAP\_\-ENDS~4}}
+\label{_v_r_p_heuristic_8h_a6bf86b72471de98ab53dcb8ae8d9d6cc}
+
+
+Definition at line 69 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a8c875748b7a11ae5572c9491682ee0fc}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!THREE\_\-OPT@{THREE\_\-OPT}}
+\index{THREE\_\-OPT@{THREE\_\-OPT}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{THREE\_\-OPT}]{\setlength{\rightskip}{0pt plus 5cm}\#define THREE\_\-OPT~(1$<$$<$25)}}
+\label{_v_r_p_heuristic_8h_a8c875748b7a11ae5572c9491682ee0fc}
+
+
+Definition at line 43 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_ab3171fbc6be8dff43f03156afb23d9d8}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!THREE\_\-OPT\_\-INDEX@{THREE\_\-OPT\_\-INDEX}}
+\index{THREE\_\-OPT\_\-INDEX@{THREE\_\-OPT\_\-INDEX}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{THREE\_\-OPT\_\-INDEX}]{\setlength{\rightskip}{0pt plus 5cm}\#define THREE\_\-OPT\_\-INDEX~4}}
+\label{_v_r_p_heuristic_8h_ab3171fbc6be8dff43f03156afb23d9d8}
+
+
+Definition at line 59 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a16be8a55e67aa9c51ba6e18ce2e04921}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!THREE\_\-POINT\_\-MOVE@{THREE\_\-POINT\_\-MOVE}}
+\index{THREE\_\-POINT\_\-MOVE@{THREE\_\-POINT\_\-MOVE}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{THREE\_\-POINT\_\-MOVE}]{\setlength{\rightskip}{0pt plus 5cm}\#define THREE\_\-POINT\_\-MOVE~(1$<$$<$27)}}
+\label{_v_r_p_heuristic_8h_a16be8a55e67aa9c51ba6e18ce2e04921}
+
+
+Definition at line 45 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_aef11a6b3490a691aab3c60ff364b537c}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!THREE\_\-POINT\_\-MOVE\_\-INDEX@{THREE\_\-POINT\_\-MOVE\_\-INDEX}}
+\index{THREE\_\-POINT\_\-MOVE\_\-INDEX@{THREE\_\-POINT\_\-MOVE\_\-INDEX}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{THREE\_\-POINT\_\-MOVE\_\-INDEX}]{\setlength{\rightskip}{0pt plus 5cm}\#define THREE\_\-POINT\_\-MOVE\_\-INDEX~6}}
+\label{_v_r_p_heuristic_8h_aef11a6b3490a691aab3c60ff364b537c}
+
+
+Definition at line 61 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a20df46ee9f21800c6e3a2f3a67632d39}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!TWO\_\-OPT@{TWO\_\-OPT}}
+\index{TWO\_\-OPT@{TWO\_\-OPT}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{TWO\_\-OPT}]{\setlength{\rightskip}{0pt plus 5cm}\#define TWO\_\-OPT~(1$<$$<$23)}}
+\label{_v_r_p_heuristic_8h_a20df46ee9f21800c6e3a2f3a67632d39}
+
+
+Definition at line 41 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a463e40572401f9b47cf37b0efdfb2bcb}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!TWO\_\-OPT\_\-INDEX@{TWO\_\-OPT\_\-INDEX}}
+\index{TWO\_\-OPT\_\-INDEX@{TWO\_\-OPT\_\-INDEX}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{TWO\_\-OPT\_\-INDEX}]{\setlength{\rightskip}{0pt plus 5cm}\#define TWO\_\-OPT\_\-INDEX~2}}
+\label{_v_r_p_heuristic_8h_a463e40572401f9b47cf37b0efdfb2bcb}
+
+
+Definition at line 57 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_abbda4de60b7f32a85f9e06cc8f6c81b7}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!TWO\_\-POINT\_\-MOVE@{TWO\_\-POINT\_\-MOVE}}
+\index{TWO\_\-POINT\_\-MOVE@{TWO\_\-POINT\_\-MOVE}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{TWO\_\-POINT\_\-MOVE}]{\setlength{\rightskip}{0pt plus 5cm}\#define TWO\_\-POINT\_\-MOVE~(1$<$$<$22)}}
+\label{_v_r_p_heuristic_8h_abbda4de60b7f32a85f9e06cc8f6c81b7}
+
+
+Definition at line 40 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_aaadacf917005a13d7b012f82547bda54}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!TWO\_\-POINT\_\-MOVE\_\-INDEX@{TWO\_\-POINT\_\-MOVE\_\-INDEX}}
+\index{TWO\_\-POINT\_\-MOVE\_\-INDEX@{TWO\_\-POINT\_\-MOVE\_\-INDEX}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{TWO\_\-POINT\_\-MOVE\_\-INDEX}]{\setlength{\rightskip}{0pt plus 5cm}\#define TWO\_\-POINT\_\-MOVE\_\-INDEX~1}}
+\label{_v_r_p_heuristic_8h_aaadacf917005a13d7b012f82547bda54}
+
+
+Definition at line 56 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a7f52fbc7543e5df44fff62f7bb8a7e1b}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-ALLOW\_\-INFEASIBLE@{VRPH\_\-ALLOW\_\-INFEASIBLE}}
+\index{VRPH\_\-ALLOW\_\-INFEASIBLE@{VRPH\_\-ALLOW\_\-INFEASIBLE}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-ALLOW\_\-INFEASIBLE}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-ALLOW\_\-INFEASIBLE~(1$<$$<$18)}}
+\label{_v_r_p_heuristic_8h_a7f52fbc7543e5df44fff62f7bb8a7e1b}
+
+
+Definition at line 34 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_aeb890d0f09944ab4d744a1d929052fb9}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-BACKWARD@{VRPH\_\-BACKWARD}}
+\index{VRPH\_\-BACKWARD@{VRPH\_\-BACKWARD}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-BACKWARD}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-BACKWARD~(1$<$$<$12)}}
+\label{_v_r_p_heuristic_8h_aeb890d0f09944ab4d744a1d929052fb9}
+
+
+Definition at line 29 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a26fdcdeb200bf41d7da528f62e53a72e}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-BALANCED@{VRPH\_\-BALANCED}}
+\index{VRPH\_\-BALANCED@{VRPH\_\-BALANCED}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-BALANCED}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-BALANCED~(1$<$$<$10)}}
+\label{_v_r_p_heuristic_8h_a26fdcdeb200bf41d7da528f62e53a72e}
+
+
+Definition at line 27 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_aa40c806bb5fd8e9b5d89123dc10319bd}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-BEST\_\-ACCEPT@{VRPH\_\-BEST\_\-ACCEPT}}
+\index{VRPH\_\-BEST\_\-ACCEPT@{VRPH\_\-BEST\_\-ACCEPT}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-BEST\_\-ACCEPT}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-BEST\_\-ACCEPT~(1$<$$<$4)}}
+\label{_v_r_p_heuristic_8h_aa40c806bb5fd8e9b5d89123dc10319bd}
+
+
+Definition at line 21 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a07903d607ed24000997de2cac0fb854a}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-DOWNHILL@{VRPH\_\-DOWNHILL}}
+\index{VRPH\_\-DOWNHILL@{VRPH\_\-DOWNHILL}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-DOWNHILL}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-DOWNHILL~1}}
+\label{_v_r_p_heuristic_8h_a07903d607ed24000997de2cac0fb854a}
+
+
+Definition at line 17 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a3ca759f76b404e44358503c228bd5730}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-FIRST\_\-ACCEPT@{VRPH\_\-FIRST\_\-ACCEPT}}
+\index{VRPH\_\-FIRST\_\-ACCEPT@{VRPH\_\-FIRST\_\-ACCEPT}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-FIRST\_\-ACCEPT}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-FIRST\_\-ACCEPT~(1$<$$<$3)}}
+\label{_v_r_p_heuristic_8h_a3ca759f76b404e44358503c228bd5730}
+
+
+Definition at line 20 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a991a3da796662ac5da9da2e9c17abad0}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-FIXED\_\-EDGES@{VRPH\_\-FIXED\_\-EDGES}}
+\index{VRPH\_\-FIXED\_\-EDGES@{VRPH\_\-FIXED\_\-EDGES}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-FIXED\_\-EDGES}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-FIXED\_\-EDGES~(1$<$$<$17)}}
+\label{_v_r_p_heuristic_8h_a991a3da796662ac5da9da2e9c17abad0}
+
+
+Definition at line 33 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a8bddb7ca7698fdcdad76a6ca31710dfb}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-FORWARD@{VRPH\_\-FORWARD}}
+\index{VRPH\_\-FORWARD@{VRPH\_\-FORWARD}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-FORWARD}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-FORWARD~(1$<$$<$11)}}
+\label{_v_r_p_heuristic_8h_a8bddb7ca7698fdcdad76a6ca31710dfb}
+
+
+Definition at line 28 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a2ba5a744885a738ff294d8f42f042c9f}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-FREE@{VRPH\_\-FREE}}
+\index{VRPH\_\-FREE@{VRPH\_\-FREE}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-FREE}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-FREE~(1$<$$<$9)}}
+\label{_v_r_p_heuristic_8h_a2ba5a744885a738ff294d8f42f042c9f}
+
+
+Definition at line 26 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a2b6a64515c912003076e329594e729ec}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-INTER\_\-ROUTE\_\-ONLY@{VRPH\_\-INTER\_\-ROUTE\_\-ONLY}}
+\index{VRPH\_\-INTER\_\-ROUTE\_\-ONLY@{VRPH\_\-INTER\_\-ROUTE\_\-ONLY}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-INTER\_\-ROUTE\_\-ONLY}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-INTER\_\-ROUTE\_\-ONLY~(1$<$$<$6)}}
+\label{_v_r_p_heuristic_8h_a2b6a64515c912003076e329594e729ec}
+
+
+Definition at line 23 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a62b23c46baa30024c2657a9d3a5c0723}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-INTRA\_\-ROUTE\_\-ONLY@{VRPH\_\-INTRA\_\-ROUTE\_\-ONLY}}
+\index{VRPH\_\-INTRA\_\-ROUTE\_\-ONLY@{VRPH\_\-INTRA\_\-ROUTE\_\-ONLY}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-INTRA\_\-ROUTE\_\-ONLY}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-INTRA\_\-ROUTE\_\-ONLY~(1$<$$<$7)}}
+\label{_v_r_p_heuristic_8h_a62b23c46baa30024c2657a9d3a5c0723}
+
+
+Definition at line 24 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a9fd8061776182c55e87cc61d99b40bad}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-LI\_\-ACCEPT@{VRPH\_\-LI\_\-ACCEPT}}
+\index{VRPH\_\-LI\_\-ACCEPT@{VRPH\_\-LI\_\-ACCEPT}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-LI\_\-ACCEPT}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-LI\_\-ACCEPT~(1$<$$<$5)}}
+\label{_v_r_p_heuristic_8h_a9fd8061776182c55e87cc61d99b40bad}
+
+
+Definition at line 22 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a5a3a46ac6db4be8495af970787cf15aa}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-MINIMIZE\_\-NUM\_\-ROUTES@{VRPH\_\-MINIMIZE\_\-NUM\_\-ROUTES}}
+\index{VRPH\_\-MINIMIZE\_\-NUM\_\-ROUTES@{VRPH\_\-MINIMIZE\_\-NUM\_\-ROUTES}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-MINIMIZE\_\-NUM\_\-ROUTES}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-MINIMIZE\_\-NUM\_\-ROUTES~(1$<$$<$15)}}
+\label{_v_r_p_heuristic_8h_a5a3a46ac6db4be8495af970787cf15aa}
+
+
+Definition at line 32 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_ae1b6d3a33cf1fba8e2f68367937e9f23}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-NO\_\-NEW\_\-ROUTE@{VRPH\_\-NO\_\-NEW\_\-ROUTE}}
+\index{VRPH\_\-NO\_\-NEW\_\-ROUTE@{VRPH\_\-NO\_\-NEW\_\-ROUTE}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-NO\_\-NEW\_\-ROUTE}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-NO\_\-NEW\_\-ROUTE~(1$<$$<$19)}}
+\label{_v_r_p_heuristic_8h_ae1b6d3a33cf1fba8e2f68367937e9f23}
+
+
+Definition at line 35 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a2ea0e2db1d269f8da42eb0186e39e357}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-RANDOMIZED@{VRPH\_\-RANDOMIZED}}
+\index{VRPH\_\-RANDOMIZED@{VRPH\_\-RANDOMIZED}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-RANDOMIZED}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-RANDOMIZED~(1$<$$<$13)}}
+\label{_v_r_p_heuristic_8h_a2ea0e2db1d269f8da42eb0186e39e357}
+
+
+Definition at line 30 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_aa35a4c1303fa21cdbd57999a74eb4d38}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-RECORD\_\-TO\_\-RECORD@{VRPH\_\-RECORD\_\-TO\_\-RECORD}}
+\index{VRPH\_\-RECORD\_\-TO\_\-RECORD@{VRPH\_\-RECORD\_\-TO\_\-RECORD}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-RECORD\_\-TO\_\-RECORD}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-RECORD\_\-TO\_\-RECORD~(1$<$$<$1)}}
+\label{_v_r_p_heuristic_8h_aa35a4c1303fa21cdbd57999a74eb4d38}
+
+
+Definition at line 18 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a728dc1eb042f40cb2745dba2ac65bb50}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-SAVINGS\_\-ONLY@{VRPH\_\-SAVINGS\_\-ONLY}}
+\index{VRPH\_\-SAVINGS\_\-ONLY@{VRPH\_\-SAVINGS\_\-ONLY}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-SAVINGS\_\-ONLY}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-SAVINGS\_\-ONLY~(1$<$$<$14)}}
+\label{_v_r_p_heuristic_8h_a728dc1eb042f40cb2745dba2ac65bb50}
+
+
+Definition at line 31 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_ae20553f5dae38f2b640a1205412cd580}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-SIMULATED\_\-ANNEALING@{VRPH\_\-SIMULATED\_\-ANNEALING}}
+\index{VRPH\_\-SIMULATED\_\-ANNEALING@{VRPH\_\-SIMULATED\_\-ANNEALING}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-SIMULATED\_\-ANNEALING}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-SIMULATED\_\-ANNEALING~(1$<$$<$2)}}
+\label{_v_r_p_heuristic_8h_ae20553f5dae38f2b640a1205412cd580}
+
+
+Definition at line 19 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a74a9d1a65f0cba29f5dc2637c0755e06}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-TABU@{VRPH\_\-TABU}}
+\index{VRPH\_\-TABU@{VRPH\_\-TABU}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-TABU}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-TABU~(1$<$$<$20)}}
+\label{_v_r_p_heuristic_8h_a74a9d1a65f0cba29f5dc2637c0755e06}
+
+
+Definition at line 36 of file VRPHeuristic.h.
+
+\hypertarget{_v_r_p_heuristic_8h_a17fa43157974e837b530ac2379f8ee37}{
+\index{VRPHeuristic.h@{VRPHeuristic.h}!VRPH\_\-USE\_\-NEIGHBOR\_\-LIST@{VRPH\_\-USE\_\-NEIGHBOR\_\-LIST}}
+\index{VRPH\_\-USE\_\-NEIGHBOR\_\-LIST@{VRPH\_\-USE\_\-NEIGHBOR\_\-LIST}!VRPHeuristic.h@{VRPHeuristic.h}}
+\subsubsection[{VRPH\_\-USE\_\-NEIGHBOR\_\-LIST}]{\setlength{\rightskip}{0pt plus 5cm}\#define VRPH\_\-USE\_\-NEIGHBOR\_\-LIST~(1$<$$<$8)}}
+\label{_v_r_p_heuristic_8h_a17fa43157974e837b530ac2379f8ee37}
+
+
+Definition at line 25 of file VRPHeuristic.h.
+

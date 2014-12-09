@@ -1,0 +1,167 @@
+\hypertarget{class_v_r_p_solution}{
+\section{VRPSolution Class Reference}
+\label{class_v_r_p_solution}\index{VRPSolution@{VRPSolution}}
+}
+
+
+{\ttfamily \#include $<$VRPSolution.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_v_r_p_solution_af92ad6d17d3a11b1aa09b501628ad2bd}{VRPSolution} ()
+\item 
+\hyperlink{class_v_r_p_solution_a5b230f557251ae1cb72a37a6e6d8cc42}{VRPSolution} (int \hyperlink{class_v_r_p_solution_ae382a6737684c2589a4c196d6d405691}{n})
+\item 
+\hyperlink{class_v_r_p_solution_a23f939376cb0f3b7a0fbc149213d5328}{$\sim$VRPSolution} ()
+\item 
+int \hyperlink{class_v_r_p_solution_a7db9f2a4319008ebea6c3dcc8fab3d21}{hash} (int salt)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_v_r_p_solution_a382d5191cd5fac7c0d8463ecfd42b486}{in\_\-IP}
+\item 
+double \hyperlink{class_v_r_p_solution_a1c007774a32dd2973cba3d2d52fccb90}{obj}
+\item 
+int \hyperlink{class_v_r_p_solution_ae382a6737684c2589a4c196d6d405691}{n}
+\item 
+int $\ast$ \hyperlink{class_v_r_p_solution_a1ef22fb6b5f13044ee9fc84e3fc5c2c2}{sol}
+\item 
+double \hyperlink{class_v_r_p_solution_ac6eba85ad901fbe6b53bd0e046adebf3}{time}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file VRPSolution.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_v_r_p_solution_af92ad6d17d3a11b1aa09b501628ad2bd}{
+\index{VRPSolution@{VRPSolution}!VRPSolution@{VRPSolution}}
+\index{VRPSolution@{VRPSolution}!VRPSolution@{VRPSolution}}
+\subsubsection[{VRPSolution}]{\setlength{\rightskip}{0pt plus 5cm}VRPSolution::VRPSolution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_solution_af92ad6d17d3a11b1aa09b501628ad2bd}
+Contains fields and methods to process solutions to the \hyperlink{class_v_r_p}{VRP}. 
+
+Default constructor for the \hyperlink{class_v_r_p_solution}{VRPSolution}.
+
+
+
+Definition at line 293 of file VRPSolution.cpp.
+
+\hypertarget{class_v_r_p_solution_a5b230f557251ae1cb72a37a6e6d8cc42}{
+\index{VRPSolution@{VRPSolution}!VRPSolution@{VRPSolution}}
+\index{VRPSolution@{VRPSolution}!VRPSolution@{VRPSolution}}
+\subsubsection[{VRPSolution}]{\setlength{\rightskip}{0pt plus 5cm}VRPSolution::VRPSolution (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_solution_a5b230f557251ae1cb72a37a6e6d8cc42}
+
+
+Constructor for an n-\/node \hyperlink{class_v_r_p_solution}{VRPSolution}.
+
+
+
+Definition at line 277 of file VRPSolution.cpp.
+
+\hypertarget{class_v_r_p_solution_a23f939376cb0f3b7a0fbc149213d5328}{
+\index{VRPSolution@{VRPSolution}!$\sim$VRPSolution@{$\sim$VRPSolution}}
+\index{$\sim$VRPSolution@{$\sim$VRPSolution}!VRPSolution@{VRPSolution}}
+\subsubsection[{$\sim$VRPSolution}]{\setlength{\rightskip}{0pt plus 5cm}VRPSolution::$\sim$VRPSolution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_solution_a23f939376cb0f3b7a0fbc149213d5328}
+
+
+Destructor for the \hyperlink{class_v_r_p_solution}{VRPSolution}.
+
+
+
+Definition at line 307 of file VRPSolution.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_v_r_p_solution_a7db9f2a4319008ebea6c3dcc8fab3d21}{
+\index{VRPSolution@{VRPSolution}!hash@{hash}}
+\index{hash@{hash}!VRPSolution@{VRPSolution}}
+\subsubsection[{hash}]{\setlength{\rightskip}{0pt plus 5cm}int VRPSolution::hash (
+\begin{DoxyParamCaption}
+\item[{int}]{salt}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_solution_a7db9f2a4319008ebea6c3dcc8fab3d21}
+
+
+Computes a hash of the solution, returning an integer in the range \mbox{[}0,n-\/1\mbox{]}. The solution buffer should be in canonical form so that the hash value is in terms of the ordering.
+
+
+
+Definition at line 255 of file VRPSolution.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_v_r_p_solution_a382d5191cd5fac7c0d8463ecfd42b486}{
+\index{VRPSolution@{VRPSolution}!in\_\-IP@{in\_\-IP}}
+\index{in\_\-IP@{in\_\-IP}!VRPSolution@{VRPSolution}}
+\subsubsection[{in\_\-IP}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf VRPSolution::in\_\-IP}}}
+\label{class_v_r_p_solution_a382d5191cd5fac7c0d8463ecfd42b486}
+
+
+Definition at line 27 of file VRPSolution.h.
+
+\hypertarget{class_v_r_p_solution_ae382a6737684c2589a4c196d6d405691}{
+\index{VRPSolution@{VRPSolution}!n@{n}}
+\index{n@{n}!VRPSolution@{VRPSolution}}
+\subsubsection[{n}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPSolution::n}}}
+\label{class_v_r_p_solution_ae382a6737684c2589a4c196d6d405691}
+
+
+Definition at line 29 of file VRPSolution.h.
+
+\hypertarget{class_v_r_p_solution_a1c007774a32dd2973cba3d2d52fccb90}{
+\index{VRPSolution@{VRPSolution}!obj@{obj}}
+\index{obj@{obj}!VRPSolution@{VRPSolution}}
+\subsubsection[{obj}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPSolution::obj}}}
+\label{class_v_r_p_solution_a1c007774a32dd2973cba3d2d52fccb90}
+
+
+Definition at line 28 of file VRPSolution.h.
+
+\hypertarget{class_v_r_p_solution_a1ef22fb6b5f13044ee9fc84e3fc5c2c2}{
+\index{VRPSolution@{VRPSolution}!sol@{sol}}
+\index{sol@{sol}!VRPSolution@{VRPSolution}}
+\subsubsection[{sol}]{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ {\bf VRPSolution::sol}}}
+\label{class_v_r_p_solution_a1ef22fb6b5f13044ee9fc84e3fc5c2c2}
+
+
+Definition at line 30 of file VRPSolution.h.
+
+\hypertarget{class_v_r_p_solution_ac6eba85ad901fbe6b53bd0e046adebf3}{
+\index{VRPSolution@{VRPSolution}!time@{time}}
+\index{time@{time}!VRPSolution@{VRPSolution}}
+\subsubsection[{time}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPSolution::time}}}
+\label{class_v_r_p_solution_ac6eba85ad901fbe6b53bd0e046adebf3}
+
+
+Definition at line 31 of file VRPSolution.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_v_r_p_solution_8h}{VRPSolution.h}\item 
+src/\hyperlink{_v_r_p_solution_8cpp}{VRPSolution.cpp}\end{DoxyCompactItemize}

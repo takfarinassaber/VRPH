@@ -1,0 +1,226 @@
+\hypertarget{class_v_r_p_solution_warehouse}{
+\section{VRPSolutionWarehouse Class Reference}
+\label{class_v_r_p_solution_warehouse}\index{VRPSolutionWarehouse@{VRPSolutionWarehouse}}
+}
+
+
+{\ttfamily \#include $<$VRPSolution.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_v_r_p_solution_warehouse_acf0e882c607001692d41cd49f8c5c01e}{VRPSolutionWarehouse} ()
+\item 
+\hyperlink{class_v_r_p_solution_warehouse_a67467b433b51320a18f509a9411ddcab}{$\sim$VRPSolutionWarehouse} ()
+\item 
+\hyperlink{class_v_r_p_solution_warehouse_af0487090ceba8fa90367d441b4e0c14a}{VRPSolutionWarehouse} (int \hyperlink{class_v_r_p_solution_warehouse_a3272c6071c468bee74e5a1c00c7704fe}{num\_\-sols}, int n)
+\item 
+int \hyperlink{class_v_r_p_solution_warehouse_a5b2e90a55b7928081b8a3f338fa8ebd8}{add\_\-sol} (\hyperlink{class_v_r_p_solution}{VRPSolution} $\ast$new\_\-sol, int start\_\-index)
+\item 
+bool \hyperlink{class_v_r_p_solution_warehouse_a94c005c32fc180a251c886a4c74db155}{liquidate} ()
+\item 
+void \hyperlink{class_v_r_p_solution_warehouse_a797b51d9424d05e742bbc8824d2ba3b4}{sort\_\-sols} ()
+\item 
+void \hyperlink{class_v_r_p_solution_warehouse_ac4005cc639daa9e11093bd763ac7e094}{show} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_v_r_p_solution_warehouse_a3272c6071c468bee74e5a1c00c7704fe}{num\_\-sols}
+\item 
+int \hyperlink{class_v_r_p_solution_warehouse_a6d4e647d02412160016f2077cc797e70}{max\_\-size}
+\item 
+double \hyperlink{class_v_r_p_solution_warehouse_a999b6c14614396ca2fc47a00d8d95a55}{worst\_\-obj}
+\item 
+\hyperlink{class_v_r_p_solution}{VRPSolution} $\ast$ \hyperlink{class_v_r_p_solution_warehouse_a509d78c5ebfba34d1354c09fdaaebeac}{sols}
+\item 
+struct \hyperlink{structhtable__entry}{htable\_\-entry} $\ast$ \hyperlink{class_v_r_p_solution_warehouse_a74c6f15c63291c409e6fc928c2e0e904}{hash\_\-table}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 36 of file VRPSolution.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_v_r_p_solution_warehouse_acf0e882c607001692d41cd49f8c5c01e}{
+\index{VRPSolutionWarehouse@{VRPSolutionWarehouse}!VRPSolutionWarehouse@{VRPSolutionWarehouse}}
+\index{VRPSolutionWarehouse@{VRPSolutionWarehouse}!VRPSolutionWarehouse@{VRPSolutionWarehouse}}
+\subsubsection[{VRPSolutionWarehouse}]{\setlength{\rightskip}{0pt plus 5cm}VRPSolutionWarehouse::VRPSolutionWarehouse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_solution_warehouse_acf0e882c607001692d41cd49f8c5c01e}
+
+
+Default constructor for the solution warehouse.
+
+
+
+Definition at line 16 of file VRPSolution.cpp.
+
+\hypertarget{class_v_r_p_solution_warehouse_a67467b433b51320a18f509a9411ddcab}{
+\index{VRPSolutionWarehouse@{VRPSolutionWarehouse}!$\sim$VRPSolutionWarehouse@{$\sim$VRPSolutionWarehouse}}
+\index{$\sim$VRPSolutionWarehouse@{$\sim$VRPSolutionWarehouse}!VRPSolutionWarehouse@{VRPSolutionWarehouse}}
+\subsubsection[{$\sim$VRPSolutionWarehouse}]{\setlength{\rightskip}{0pt plus 5cm}VRPSolutionWarehouse::$\sim$VRPSolutionWarehouse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_solution_warehouse_a67467b433b51320a18f509a9411ddcab}
+
+
+Destructor for the solution warehouse.
+
+
+
+Definition at line 53 of file VRPSolution.cpp.
+
+\hypertarget{class_v_r_p_solution_warehouse_af0487090ceba8fa90367d441b4e0c14a}{
+\index{VRPSolutionWarehouse@{VRPSolutionWarehouse}!VRPSolutionWarehouse@{VRPSolutionWarehouse}}
+\index{VRPSolutionWarehouse@{VRPSolutionWarehouse}!VRPSolutionWarehouse@{VRPSolutionWarehouse}}
+\subsubsection[{VRPSolutionWarehouse}]{\setlength{\rightskip}{0pt plus 5cm}VRPSolutionWarehouse::VRPSolutionWarehouse (
+\begin{DoxyParamCaption}
+\item[{int}]{num\_\-sols, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_solution_warehouse_af0487090ceba8fa90367d441b4e0c14a}
+
+
+Constructs a warehouse of max\_\-sols solutions, with sufficient memory for an n-\/node problem.
+
+
+
+Definition at line 29 of file VRPSolution.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_v_r_p_solution_warehouse_a5b2e90a55b7928081b8a3f338fa8ebd8}{
+\index{VRPSolutionWarehouse@{VRPSolutionWarehouse}!add\_\-sol@{add\_\-sol}}
+\index{add\_\-sol@{add\_\-sol}!VRPSolutionWarehouse@{VRPSolutionWarehouse}}
+\subsubsection[{add\_\-sol}]{\setlength{\rightskip}{0pt plus 5cm}int VRPSolutionWarehouse::add\_\-sol (
+\begin{DoxyParamCaption}
+\item[{{\bf VRPSolution} $\ast$}]{new\_\-sol, }
+\item[{int}]{start\_\-index}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_solution_warehouse_a5b2e90a55b7928081b8a3f338fa8ebd8}
+
+
+Attempts to add a solution to the warehouse. Returns the index that the new solution was placed at. Returns -\/1 if the solution was not placed in the warehouse. The start\_\-index provides a place to begin the search -\/-\/ useful when inserting multiple solutions whose order is already known. Use start\_\-index=0 if no information about the solution's position is known. The \hyperlink{class_v_r_p_solution}{VRPSolution} being passed in should be in \char`\"{}canonical form\char`\"{} for the hash function to work properly!!
+
+
+
+Definition at line 70 of file VRPSolution.cpp.
+
+\hypertarget{class_v_r_p_solution_warehouse_a94c005c32fc180a251c886a4c74db155}{
+\index{VRPSolutionWarehouse@{VRPSolutionWarehouse}!liquidate@{liquidate}}
+\index{liquidate@{liquidate}!VRPSolutionWarehouse@{VRPSolutionWarehouse}}
+\subsubsection[{liquidate}]{\setlength{\rightskip}{0pt plus 5cm}bool VRPSolutionWarehouse::liquidate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_solution_warehouse_a94c005c32fc180a251c886a4c74db155}
+
+
+Removes all solutions from the warehouse.
+
+
+
+Definition at line 211 of file VRPSolution.cpp.
+
+\hypertarget{class_v_r_p_solution_warehouse_ac4005cc639daa9e11093bd763ac7e094}{
+\index{VRPSolutionWarehouse@{VRPSolutionWarehouse}!show@{show}}
+\index{show@{show}!VRPSolutionWarehouse@{VRPSolutionWarehouse}}
+\subsubsection[{show}]{\setlength{\rightskip}{0pt plus 5cm}void VRPSolutionWarehouse::show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_solution_warehouse_ac4005cc639daa9e11093bd763ac7e094}
+
+
+Debugging function to show the current solutions in the warehouse.
+
+
+
+Definition at line 189 of file VRPSolution.cpp.
+
+\hypertarget{class_v_r_p_solution_warehouse_a797b51d9424d05e742bbc8824d2ba3b4}{
+\index{VRPSolutionWarehouse@{VRPSolutionWarehouse}!sort\_\-sols@{sort\_\-sols}}
+\index{sort\_\-sols@{sort\_\-sols}!VRPSolutionWarehouse@{VRPSolutionWarehouse}}
+\subsubsection[{sort\_\-sols}]{\setlength{\rightskip}{0pt plus 5cm}void VRPSolutionWarehouse::sort\_\-sols (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_solution_warehouse_a797b51d9424d05e742bbc8824d2ba3b4}
+
+
+Sorts the solutions in the warehouse in increasing order of the objective function value.
+
+
+
+Definition at line 244 of file VRPSolution.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_v_r_p_solution_warehouse_a74c6f15c63291c409e6fc928c2e0e904}{
+\index{VRPSolutionWarehouse@{VRPSolutionWarehouse}!hash\_\-table@{hash\_\-table}}
+\index{hash\_\-table@{hash\_\-table}!VRPSolutionWarehouse@{VRPSolutionWarehouse}}
+\subsubsection[{hash\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf htable\_\-entry}$\ast$ {\bf VRPSolutionWarehouse::hash\_\-table}}}
+\label{class_v_r_p_solution_warehouse_a74c6f15c63291c409e6fc928c2e0e904}
+
+
+Definition at line 50 of file VRPSolution.h.
+
+\hypertarget{class_v_r_p_solution_warehouse_a6d4e647d02412160016f2077cc797e70}{
+\index{VRPSolutionWarehouse@{VRPSolutionWarehouse}!max\_\-size@{max\_\-size}}
+\index{max\_\-size@{max\_\-size}!VRPSolutionWarehouse@{VRPSolutionWarehouse}}
+\subsubsection[{max\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPSolutionWarehouse::max\_\-size}}}
+\label{class_v_r_p_solution_warehouse_a6d4e647d02412160016f2077cc797e70}
+
+
+Definition at line 47 of file VRPSolution.h.
+
+\hypertarget{class_v_r_p_solution_warehouse_a3272c6071c468bee74e5a1c00c7704fe}{
+\index{VRPSolutionWarehouse@{VRPSolutionWarehouse}!num\_\-sols@{num\_\-sols}}
+\index{num\_\-sols@{num\_\-sols}!VRPSolutionWarehouse@{VRPSolutionWarehouse}}
+\subsubsection[{num\_\-sols}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPSolutionWarehouse::num\_\-sols}}}
+\label{class_v_r_p_solution_warehouse_a3272c6071c468bee74e5a1c00c7704fe}
+
+
+Definition at line 46 of file VRPSolution.h.
+
+\hypertarget{class_v_r_p_solution_warehouse_a509d78c5ebfba34d1354c09fdaaebeac}{
+\index{VRPSolutionWarehouse@{VRPSolutionWarehouse}!sols@{sols}}
+\index{sols@{sols}!VRPSolutionWarehouse@{VRPSolutionWarehouse}}
+\subsubsection[{sols}]{\setlength{\rightskip}{0pt plus 5cm}{\bf VRPSolution}$\ast$ {\bf VRPSolutionWarehouse::sols}}}
+\label{class_v_r_p_solution_warehouse_a509d78c5ebfba34d1354c09fdaaebeac}
+
+
+Definition at line 49 of file VRPSolution.h.
+
+\hypertarget{class_v_r_p_solution_warehouse_a999b6c14614396ca2fc47a00d8d95a55}{
+\index{VRPSolutionWarehouse@{VRPSolutionWarehouse}!worst\_\-obj@{worst\_\-obj}}
+\index{worst\_\-obj@{worst\_\-obj}!VRPSolutionWarehouse@{VRPSolutionWarehouse}}
+\subsubsection[{worst\_\-obj}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf VRPSolutionWarehouse::worst\_\-obj}}}
+\label{class_v_r_p_solution_warehouse_a999b6c14614396ca2fc47a00d8d95a55}
+
+
+Definition at line 48 of file VRPSolution.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_v_r_p_solution_8h}{VRPSolution.h}\item 
+src/\hyperlink{_v_r_p_solution_8cpp}{VRPSolution.cpp}\end{DoxyCompactItemize}

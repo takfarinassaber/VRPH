@@ -1,0 +1,184 @@
+\hypertarget{class_v_r_p_route_warehouse}{
+\section{VRPRouteWarehouse Class Reference}
+\label{class_v_r_p_route_warehouse}\index{VRPRouteWarehouse@{VRPRouteWarehouse}}
+}
+
+
+{\ttfamily \#include $<$VRPRoute.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_v_r_p_route_warehouse_ac478d98e35034dc954c1d08ea19f1084}{VRPRouteWarehouse} ()
+\item 
+\hyperlink{class_v_r_p_route_warehouse_ab0c6e50d4c3c0ddc3dd78a90441b26e1}{VRPRouteWarehouse} (int h\_\-size)
+\item 
+\hyperlink{class_v_r_p_route_warehouse_a8c7beebd2a1becb6a243084a07db312d}{$\sim$VRPRouteWarehouse} ()
+\item 
+void \hyperlink{class_v_r_p_route_warehouse_ab6b1e322a098158aac9adc823cd77160}{remove\_\-route} (int hash\_\-val, int hash\_\-val2)
+\item 
+int \hyperlink{class_v_r_p_route_warehouse_a0660d0618b8ad9eab3599d50bb1971d0}{add\_\-route} (\hyperlink{class_v_r_p_route}{VRPRoute} $\ast$R)
+\item 
+void \hyperlink{class_v_r_p_route_warehouse_a0ff6f41a119c1355bd66ae1368b29669}{liquidate} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_v_r_p_route_warehouse_a3e8178b420c9564630ef7a22cb373d52}{hash\_\-table\_\-size}
+\item 
+int \hyperlink{class_v_r_p_route_warehouse_a5af11f134bc36342b2c90e594e76e368}{num\_\-unique\_\-routes}
+\item 
+struct \hyperlink{structhtable__entry}{htable\_\-entry} $\ast$ \hyperlink{class_v_r_p_route_warehouse_a6d689a2027fb915283aaf683e8fad29e}{hash\_\-table}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 71 of file VRPRoute.h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_v_r_p_route_warehouse_ac478d98e35034dc954c1d08ea19f1084}{
+\index{VRPRouteWarehouse@{VRPRouteWarehouse}!VRPRouteWarehouse@{VRPRouteWarehouse}}
+\index{VRPRouteWarehouse@{VRPRouteWarehouse}!VRPRouteWarehouse@{VRPRouteWarehouse}}
+\subsubsection[{VRPRouteWarehouse}]{\setlength{\rightskip}{0pt plus 5cm}VRPRouteWarehouse::VRPRouteWarehouse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_route_warehouse_ac478d98e35034dc954c1d08ea19f1084}
+
+
+Default constructor for the route warehouse.
+
+
+
+Definition at line 141 of file VRPRoute.cpp.
+
+\hypertarget{class_v_r_p_route_warehouse_ab0c6e50d4c3c0ddc3dd78a90441b26e1}{
+\index{VRPRouteWarehouse@{VRPRouteWarehouse}!VRPRouteWarehouse@{VRPRouteWarehouse}}
+\index{VRPRouteWarehouse@{VRPRouteWarehouse}!VRPRouteWarehouse@{VRPRouteWarehouse}}
+\subsubsection[{VRPRouteWarehouse}]{\setlength{\rightskip}{0pt plus 5cm}VRPRouteWarehouse::VRPRouteWarehouse (
+\begin{DoxyParamCaption}
+\item[{int}]{h\_\-size}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_route_warehouse_ab0c6e50d4c3c0ddc3dd78a90441b26e1}
+
+
+Constructor for the rote warehouse with h\_\-size entries in the hash table. Best if h\_\-size is a power of 2.
+
+
+
+Definition at line 152 of file VRPRoute.cpp.
+
+\hypertarget{class_v_r_p_route_warehouse_a8c7beebd2a1becb6a243084a07db312d}{
+\index{VRPRouteWarehouse@{VRPRouteWarehouse}!$\sim$VRPRouteWarehouse@{$\sim$VRPRouteWarehouse}}
+\index{$\sim$VRPRouteWarehouse@{$\sim$VRPRouteWarehouse}!VRPRouteWarehouse@{VRPRouteWarehouse}}
+\subsubsection[{$\sim$VRPRouteWarehouse}]{\setlength{\rightskip}{0pt plus 5cm}VRPRouteWarehouse::$\sim$VRPRouteWarehouse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_route_warehouse_a8c7beebd2a1becb6a243084a07db312d}
+
+
+Destructor for the route warehouse.
+
+
+
+Definition at line 171 of file VRPRoute.cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_v_r_p_route_warehouse_a0660d0618b8ad9eab3599d50bb1971d0}{
+\index{VRPRouteWarehouse@{VRPRouteWarehouse}!add\_\-route@{add\_\-route}}
+\index{add\_\-route@{add\_\-route}!VRPRouteWarehouse@{VRPRouteWarehouse}}
+\subsubsection[{add\_\-route}]{\setlength{\rightskip}{0pt plus 5cm}int VRPRouteWarehouse::add\_\-route (
+\begin{DoxyParamCaption}
+\item[{{\bf VRPRoute} $\ast$}]{R}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_route_warehouse_a0660d0618b8ad9eab3599d50bb1971d0}
+
+
+Adds the given route R to the warehouse, returning true if the addition is made and false otherwise.
+
+
+
+Definition at line 248 of file VRPRoute.cpp.
+
+\hypertarget{class_v_r_p_route_warehouse_a0ff6f41a119c1355bd66ae1368b29669}{
+\index{VRPRouteWarehouse@{VRPRouteWarehouse}!liquidate@{liquidate}}
+\index{liquidate@{liquidate}!VRPRouteWarehouse@{VRPRouteWarehouse}}
+\subsubsection[{liquidate}]{\setlength{\rightskip}{0pt plus 5cm}void VRPRouteWarehouse::liquidate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_route_warehouse_a0ff6f41a119c1355bd66ae1368b29669}
+
+
+Clears the hash table, removing all routes from the WH.
+
+
+
+Definition at line 181 of file VRPRoute.cpp.
+
+\hypertarget{class_v_r_p_route_warehouse_ab6b1e322a098158aac9adc823cd77160}{
+\index{VRPRouteWarehouse@{VRPRouteWarehouse}!remove\_\-route@{remove\_\-route}}
+\index{remove\_\-route@{remove\_\-route}!VRPRouteWarehouse@{VRPRouteWarehouse}}
+\subsubsection[{remove\_\-route}]{\setlength{\rightskip}{0pt plus 5cm}void VRPRouteWarehouse::remove\_\-route (
+\begin{DoxyParamCaption}
+\item[{int}]{hash\_\-val, }
+\item[{int}]{hash\_\-val2}
+\end{DoxyParamCaption}
+)}}
+\label{class_v_r_p_route_warehouse_ab6b1e322a098158aac9adc823cd77160}
+
+
+Removes a particular route from the hash table, using the second hash value to remove the correct entry if we have duplicates at the same location in the table.
+
+
+
+Definition at line 194 of file VRPRoute.cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_v_r_p_route_warehouse_a6d689a2027fb915283aaf683e8fad29e}{
+\index{VRPRouteWarehouse@{VRPRouteWarehouse}!hash\_\-table@{hash\_\-table}}
+\index{hash\_\-table@{hash\_\-table}!VRPRouteWarehouse@{VRPRouteWarehouse}}
+\subsubsection[{hash\_\-table}]{\setlength{\rightskip}{0pt plus 5cm}struct {\bf htable\_\-entry}$\ast$ {\bf VRPRouteWarehouse::hash\_\-table}}}
+\label{class_v_r_p_route_warehouse_a6d689a2027fb915283aaf683e8fad29e}
+
+
+Definition at line 80 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_warehouse_a3e8178b420c9564630ef7a22cb373d52}{
+\index{VRPRouteWarehouse@{VRPRouteWarehouse}!hash\_\-table\_\-size@{hash\_\-table\_\-size}}
+\index{hash\_\-table\_\-size@{hash\_\-table\_\-size}!VRPRouteWarehouse@{VRPRouteWarehouse}}
+\subsubsection[{hash\_\-table\_\-size}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPRouteWarehouse::hash\_\-table\_\-size}}}
+\label{class_v_r_p_route_warehouse_a3e8178b420c9564630ef7a22cb373d52}
+
+
+Definition at line 78 of file VRPRoute.h.
+
+\hypertarget{class_v_r_p_route_warehouse_a5af11f134bc36342b2c90e594e76e368}{
+\index{VRPRouteWarehouse@{VRPRouteWarehouse}!num\_\-unique\_\-routes@{num\_\-unique\_\-routes}}
+\index{num\_\-unique\_\-routes@{num\_\-unique\_\-routes}!VRPRouteWarehouse@{VRPRouteWarehouse}}
+\subsubsection[{num\_\-unique\_\-routes}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf VRPRouteWarehouse::num\_\-unique\_\-routes}}}
+\label{class_v_r_p_route_warehouse_a5af11f134bc36342b2c90e594e76e368}
+
+
+Definition at line 79 of file VRPRoute.h.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_v_r_p_route_8h}{VRPRoute.h}\item 
+src/\hyperlink{_v_r_p_route_8cpp}{VRPRoute.cpp}\end{DoxyCompactItemize}

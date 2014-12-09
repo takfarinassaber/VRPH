@@ -1,0 +1,74 @@
+\hypertarget{class_move_string}{
+\section{MoveString Class Reference}
+\label{class_move_string}\index{MoveString@{MoveString}}
+}
+
+
+{\ttfamily \#include $<$MoveString.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_move_string_ae57ff8fa3f10c666000fb665ee889ca6}{evaluate} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int a, int b, int u, int v, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\item 
+bool \hyperlink{class_move_string_a6ebfa552e22fad0705645522625fd44c}{move} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int a, int b, int u, int v)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 16 of file MoveString.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_move_string_ae57ff8fa3f10c666000fb665ee889ca6}{
+\index{MoveString@{MoveString}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!MoveString@{MoveString}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}bool MoveString::evaluate (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{a, }
+\item[{int}]{b, }
+\item[{int}]{u, }
+\item[{int}]{v, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)}}
+\label{class_move_string_ae57ff8fa3f10c666000fb665ee889ca6}
+
+
+Evaluates the move of taking the string between u and v (i.e. t-\/u-\/j-\/k-\/l-\/m-\/v-\/w) and inserting between a and b (assumed to currently be an existing edge), yielding t-\/w \& a-\/u-\/j-\/k-\/l-\/m-\/b
+
+
+
+Definition at line 14 of file MoveString.cpp.
+
+\hypertarget{class_move_string_a6ebfa552e22fad0705645522625fd44c}{
+\index{MoveString@{MoveString}!move@{move}}
+\index{move@{move}!MoveString@{MoveString}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}bool MoveString::move (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{a, }
+\item[{int}]{b, }
+\item[{int}]{u, }
+\item[{int}]{v}
+\end{DoxyParamCaption}
+)}}
+\label{class_move_string_a6ebfa552e22fad0705645522625fd44c}
+
+
+Takes the string of nodes between u and v (inclusive) and places it between a and b.
+
+
+
+Definition at line 179 of file MoveString.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_move_string_8h}{MoveString.h}\item 
+src/\hyperlink{_move_string_8cpp}{MoveString.cpp}\end{DoxyCompactItemize}

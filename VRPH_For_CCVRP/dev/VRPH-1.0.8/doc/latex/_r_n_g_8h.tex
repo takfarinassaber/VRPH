@@ -1,0 +1,66 @@
+\hypertarget{_r_n_g_8h}{
+\section{inc/RNG.h File Reference}
+\label{_r_n_g_8h}\index{inc/RNG.h@{inc/RNG.h}}
+}
+\subsection*{Defines}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_r_n_g_8h_a02cb5251fc78533d9223f1fc1fc2f980}{NUM\_\-RANDVALS}~2000
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{_r_n_g_8h_adf64b5cfab9379546056f95c7e50dbb2}{lcgrand} (int stream)
+\item 
+void \hyperlink{_r_n_g_8h_a1ecd1c535d09ed1659cd67e2d2c1bdc5}{random\_\-permutation} (int $\ast$perm, int n)
+\end{DoxyCompactItemize}
+
+
+\subsection{Define Documentation}
+\hypertarget{_r_n_g_8h_a02cb5251fc78533d9223f1fc1fc2f980}{
+\index{RNG.h@{RNG.h}!NUM\_\-RANDVALS@{NUM\_\-RANDVALS}}
+\index{NUM\_\-RANDVALS@{NUM\_\-RANDVALS}!RNG.h@{RNG.h}}
+\subsubsection[{NUM\_\-RANDVALS}]{\setlength{\rightskip}{0pt plus 5cm}\#define NUM\_\-RANDVALS~2000}}
+\label{_r_n_g_8h_a02cb5251fc78533d9223f1fc1fc2f980}
+
+
+Definition at line 16 of file RNG.h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{_r_n_g_8h_adf64b5cfab9379546056f95c7e50dbb2}{
+\index{RNG.h@{RNG.h}!lcgrand@{lcgrand}}
+\index{lcgrand@{lcgrand}!RNG.h@{RNG.h}}
+\subsubsection[{lcgrand}]{\setlength{\rightskip}{0pt plus 5cm}double lcgrand (
+\begin{DoxyParamCaption}
+\item[{int}]{stream}
+\end{DoxyParamCaption}
+)}}
+\label{_r_n_g_8h_adf64b5cfab9379546056f95c7e50dbb2}
+
+
+A run of the mill LCG.
+
+
+
+Definition at line 79 of file RNG.cpp.
+
+\hypertarget{_r_n_g_8h_a1ecd1c535d09ed1659cd67e2d2c1bdc5}{
+\index{RNG.h@{RNG.h}!random\_\-permutation@{random\_\-permutation}}
+\index{random\_\-permutation@{random\_\-permutation}!RNG.h@{RNG.h}}
+\subsubsection[{random\_\-permutation}]{\setlength{\rightskip}{0pt plus 5cm}void random\_\-permutation (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{perm, }
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}
+\label{_r_n_g_8h_a1ecd1c535d09ed1659cd67e2d2c1bdc5}
+
+
+Randomly permutes the perm array of size n. Assumes that perm\mbox{[}\mbox{]} is already filled with the elements to be permuted.
+
+
+
+Definition at line 110 of file RNG.cpp.
+

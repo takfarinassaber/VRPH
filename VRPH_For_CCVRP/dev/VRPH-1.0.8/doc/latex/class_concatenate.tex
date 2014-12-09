@@ -1,0 +1,71 @@
+\hypertarget{class_concatenate}{
+\section{Concatenate Class Reference}
+\label{class_concatenate}\index{Concatenate@{Concatenate}}
+}
+
+
+{\ttfamily \#include $<$Concatenate.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_concatenate_a1d2cf2ea95364f0724e34c393167a9b0}{evaluate} (class \hyperlink{class_v_r_p}{VRP} $\ast$V, int i, int j, int criteria, \hyperlink{class_v_r_p_move}{VRPMove} $\ast$M)
+\item 
+bool \hyperlink{class_concatenate_a1e96fae3af79aa7b71b4c796a4c417a7}{move} (\hyperlink{class_v_r_p}{VRP} $\ast$V, int u, int i)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 15 of file Concatenate.h.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_concatenate_a1d2cf2ea95364f0724e34c393167a9b0}{
+\index{Concatenate@{Concatenate}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!Concatenate@{Concatenate}}
+\subsubsection[{evaluate}]{\setlength{\rightskip}{0pt plus 5cm}bool Concatenate::evaluate (
+\begin{DoxyParamCaption}
+\item[{class {\bf VRP} $\ast$}]{V, }
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{int}]{criteria, }
+\item[{{\bf VRPMove} $\ast$}]{M}
+\end{DoxyParamCaption}
+)}}
+\label{class_concatenate_a1d2cf2ea95364f0724e34c393167a9b0}
+
+
+This function takes route i\_\-route and j\_\-route and attempts to concatenate them together. Example: 1-\/i-\/a-\/b-\/c-\/...-\/x-\/1 and 1-\/aa-\/bb-\/...-\/zz-\/j-\/1 and merges them to form 1-\/aa-\/bb-\/...-\/zz-\/j-\/i-\/a-\/b-\/c-\/...-\/x-\/1 Note that the move\_\-arguments i\_\-route and j\_\-route refer to the route numbers themselves and not the node numbers!
+
+
+
+Definition at line 15 of file Concatenate.cpp.
+
+\hypertarget{class_concatenate_a1e96fae3af79aa7b71b4c796a4c417a7}{
+\index{Concatenate@{Concatenate}!move@{move}}
+\index{move@{move}!Concatenate@{Concatenate}}
+\subsubsection[{move}]{\setlength{\rightskip}{0pt plus 5cm}bool Concatenate::move (
+\begin{DoxyParamCaption}
+\item[{{\bf VRP} $\ast$}]{V, }
+\item[{int}]{u, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}
+\label{class_concatenate_a1e96fae3af79aa7b71b4c796a4c417a7}
+
+
+Attempts to merge the two routes i\_\-route and j\_\-route into a single route
+
+
+
+Definition at line 85 of file Concatenate.cpp.
+
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+inc/\hyperlink{_concatenate_8h}{Concatenate.h}\item 
+src/\hyperlink{_concatenate_8cpp}{Concatenate.cpp}\end{DoxyCompactItemize}
