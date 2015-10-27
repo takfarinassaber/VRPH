@@ -1,8 +1,7 @@
--------------
--------------
+==============
 VRPH-1.0.8 :
-- Exension of the library VRPH written by Groer to the CCVRP. 
--------------
+==============
+Exension of the library VRPH written by Groer to the CCVRP. 
 -------------
 - This version handles instances in both formats: (i) Capacitated Vehicle Routing Problem (CVRP) and (ii) Clustered
 Capacitated Vehicle Routing Problem (CCVRP).
